@@ -1,4 +1,4 @@
-import { AppBar, Box, Button, Container, IconButton, Link, Toolbar, Typography } from '@mui/material';
+import { AppBar, Box, Button, Container, IconButton, Link, Toolbar } from '@mui/material';
 import React from 'react';
 import headerProp from '../styles/header-prop';
 
@@ -37,8 +37,6 @@ function Header() {
                             <img src="ukraine_flag_flags_18063.png" alt="Ukr Flag" />
                         </IconButton>
                     </Box>
-
-                    
                 </Toolbar>
             </Container>
         </AppBar>

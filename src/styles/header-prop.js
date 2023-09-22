@@ -44,7 +44,8 @@ const headerProp =  {
             textDecoration: 'none',
 
             '&:hover': {
-                color: '#2c9ff2'
+                color: '#2c9ff2',
+                cursor: 'pointer'
             }
         }
     }
