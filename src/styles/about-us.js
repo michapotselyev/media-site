@@ -1,6 +1,6 @@
 const aboutUs = {
     container: {
-        height: '120vh',
+        height: '130vh',
         display: 'flex',
         flexDirection: 'row',
         justifyContent: 'center',
@@ -52,7 +52,7 @@ const aboutUs = {
         paddingTop: '1.5rem'
     },
     ourDiff: {
-        paddingTop: '2rem',
+        marginTop: '5rem',
         fontSize: '2rem',
         color: 'white'
     },
@@ -64,12 +64,30 @@ const aboutUs = {
         overflow: 'hidden',
         marginTop: '2rem',
         position: 'relative',
+        flexShrink: 0,
 
         item: {
             width: '25%',
             height: '100%',
             flexShrink: 0,
-            border: '1px solid black',
+            padding: '0.5rem',
+
+            img: {
+                width: '100%',
+                height: '100%',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                
+                wrapperText: {
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'space-around',
+                    alignItems: 'center',
+                    width: '100%',
+                    height: '100%',
+                    backgroundColor: 'rgba(0, 0, 0, 0.65)'
+                }
+            }
         },
         buttonWrapper: {
             position: 'absolute',
@@ -78,6 +96,12 @@ const aboutUs = {
             display: 'flex',
             alignItems: 'center'
         }
+    },
+    bottomImage: {
+        flexGrow: 1,
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'end'
     }
 }
 

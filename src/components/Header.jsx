@@ -18,7 +18,7 @@ function Header() {
                     </Box>
                     
                     <Box component='nav' sx={ headerProp.nav }>
-                        <Link sx={ headerProp.nav.link }>Про нас</Link>
+                        <Link href='#about-us' sx={ headerProp.nav.link }>Про нас</Link>
                         <Link sx={ headerProp.nav.link }>Наші послуги</Link>
                         <Link sx={ headerProp.nav.link }>Реалізовані проекти</Link>
 

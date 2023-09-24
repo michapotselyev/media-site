@@ -4,12 +4,99 @@ import aboutUs from '../../../styles/about-us';
 import Carousel from './Carusel';
 
 const slides = [
-    <Box>16</Box>,
-    <Box>11</Box>,
-    <Box>12</Box>,
-    <Box>13</Box>,
-    <Box>14</Box>,
-    <Box>15</Box>,
+    <Box sx={[ aboutUs.slider.item.img, { backgroundImage: 'url(Innovation.jpeg)' } ]}>
+        <Box sx={ aboutUs.slider.item.img.wrapperText }>
+            <Typography sx={{ color: 'white', fontSize: '1.5rem' }}>Технологічність</Typography>
+
+            <Box >
+                <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
+                    - Використовуємо передові технології та інструменти
+                </Typography>
+
+                <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
+                    - Впроваджуємо інноваційні рішення для вашого бізнесу
+                </Typography>
+            </Box>
+        </Box>
+    </Box>,
+
+    <Box sx={[ aboutUs.slider.item.img, { backgroundImage: 'url(experience-todo.jpeg)' } ]}>
+        <Box sx={ aboutUs.slider.item.img.wrapperText }>
+            <Typography sx={{ color: 'white', fontSize: '1.5rem' }}>Досвід</Typography>
+
+            <Box >
+                <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
+                    - Більше 5 років на ринку IT-&nbsp;аутсорсингу
+                </Typography>
+
+                <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
+                    - Проекти в різних напрямках бізнесу
+                </Typography>
+            </Box>
+        </Box>
+    </Box>,
+
+    <Box sx={[ aboutUs.slider.item.img, { backgroundImage: 'url(sm.jpeg)' } ]}>
+        <Box sx={ aboutUs.slider.item.img.wrapperText }>
+            <Typography sx={{ color: 'white', fontSize: '1.5rem' }}>Індивідуальний підхід</Typography>
+
+            <Box >
+                <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
+                    - Кожен клієнт для нас особливий
+                </Typography>
+
+                <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
+                    - Розробляємо індивідуальні стратегії з усіма побажаннями клієнта та з урахуванням нашого досвіду
+                </Typography>
+            </Box>
+        </Box>
+    </Box>,
+
+    <Box sx={[ aboutUs.slider.item.img, { backgroundImage: 'url(yakist.jpeg)' } ]}>
+        <Box sx={ aboutUs.slider.item.img.wrapperText }>
+            <Typography sx={{ color: 'white', fontSize: '1.5rem' }}>Високі стандарти якості</Typography>
+
+            <Box >
+                <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
+                    - Наші рішення відповідають всім стандартам IT
+                </Typography>
+
+                <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
+                    - Регулярно вивчаємо та оптимізуємо проекти у відповідності з останніми тенденціями
+                </Typography>
+            </Box>
+        </Box>
+    </Box>,
+    <Box sx={[ aboutUs.slider.item.img, { backgroundImage: 'url(Hnychkist.jpeg)' } ]}>
+        <Box sx={ aboutUs.slider.item.img.wrapperText }>
+            <Typography sx={{ color: 'white', fontSize: '1.5rem' }}>Гнучкість</Typography>
+
+            <Box >
+                <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
+                    - Швидко адаптуємося до змін у ринкових умовах
+                </Typography>
+
+                <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
+                    - Готові до викликів будь-якої складності
+                </Typography>
+            </Box>
+        </Box>
+    </Box>,
+    <Box sx={[ aboutUs.slider.item.img, { backgroundImage: 'url(comanda-profof.jpeg)' } ]}>
+        <Box sx={ aboutUs.slider.item.img.wrapperText }>
+            <Typography sx={{ color: 'white', fontSize: '1.5rem' }}>Команда професіоналів</Typography>
+
+            <Box >
+                <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
+                    - Ми експерти у своїй сфері
+                </Typography>
+
+                <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
+                    - Постійно навчаємось та підвищуємо кваліфікацію
+                </Typography>
+            </Box>
+        </Box>
+    </Box>
 ]
 
 function AboutUs() {
@@ -32,39 +119,13 @@ function AboutUs() {
                 <Typography sx={ aboutUs.ourDiff }>Наші переваги</Typography>
 
                 <Carousel slides={slides} />
+
+                <Box sx={ aboutUs.bottomImage }>
+                    <img src="office-removebg-preview.png" alt="office png"  />
+                </Box>
             </Box>
         </Container>
     );
 }
 
 export default AboutUs;
-
-//<Box sx={ aboutUs.slider }>
-     //               {
-      //                  slides.map(e => {
-      //                      return (
-     //                           <React.Fragment key={e.key}>
-    //                                {e}
-    //                            </React.Fragment>
-    //                        )
-    //                    })
-     //               }
-//                </Box>
-
-// <Grid container>
- //                    <Grid item xs={3} sx={{ border: '1px solid black', height: '25vw' }}>
-// 
-   //                  </Grid>
-// 
-    //                 <Grid item xs={3} sx={{ border: '1px solid black', height: '25vw' }}>
-// 
-    //                 </Grid>
-// 
-    //                 <Grid item xs={3} sx={{ border: '1px solid black', height: '25vw' }}>
-// 
-     //                </Grid>
-// 
-    //                 <Grid item xs={3} sx={{ border: '1px solid black', height: '25vw' }}>
-// 
-      //               </Grid>
-       //          </Grid>
