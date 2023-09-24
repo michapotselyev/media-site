@@ -8,11 +8,11 @@ function Header() {
             <Container maxWidth='xl' sx={{ padding: '1.5rem' }}>
                 <Toolbar sx={ headerProp.toolBar }>
                     <Box sx={ headerProp.logos }>
-                        <Link disableRipple edge="start" aria-label="logo" sx={[ headerProp.iconButton, { marginRight: '2rem' } ]}>
+                        <Link edge="start" aria-label="logo" sx={[ headerProp.iconButton, { marginRight: '2rem' } ]}>
                             <img src='logo.png' alt="Логотип" width="70" height="70" />
                         </Link>
 
-                        <Link disableRipple edge="start" aria-label="logo" sx={ headerProp.iconButton }>
+                        <Link edge="start" aria-label="logo" sx={ headerProp.iconButton }>
                             <img src="logo-text.png" alt="Підтримка України" width="130" height="130" />
                         </Link>
                     </Box>
