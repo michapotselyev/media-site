@@ -22,7 +22,9 @@ class Carousel extends Component {
     }
 
     componentWillUnmount() {
-        clearInterval(this.interval);
+        const { timerId } = this.state;
+
+        clearInterval(timerId);
     }
 
     clearTimer() {

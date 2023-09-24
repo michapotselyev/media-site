@@ -16,12 +16,15 @@ class CarouselV2 extends Component {
     }
 
     componentDidMount() {
+
         // const timerId = setInterval(this.nextSlide, 8000);
         // this.setState({ timerId });
     }
 
     componentWillUnmount() {
-        clearInterval(this.interval);
+        const { timerId } = this.state;
+
+        clearInterval(timerId);
     }
 
     clearTimer() {
@@ -33,36 +36,48 @@ class CarouselV2 extends Component {
         }
     }
 
-    prevSlide = () => {
-        const { visibleSlides, isAnimate } = this.state;
+    handleSlide = event => {
+        const { currentIndex } = this.state;
+        const prevIndex = currentIndex;
+        let move;
 
-        if (isAnimate) return;
+        if (currentIndex === (+ event.target.id)) return;
 
-        this.clearTimer();
+        currentIndex < (+ event.target.id) ? move = false : move = true;
 
-        const slidesQueryPrepared = visibleSlides.slice(0, visibleSlides.length - 1);
-        const lastSlide = visibleSlides.slice(visibleSlides.length - 1, visibleSlides.length);
-        const slidesQuery = lastSlide.concat(slidesQueryPrepared);
+        this.setState({ currentIndex: (+ event.target.id) }, () => {
+            const { visibleSlides, isAnimate, currentIndex } = this.state;
+            const { slides } = this.props;
 
-        this.setState({ swipeData: -150, visibleSlides: slidesQuery, isAnimate: false }, () => {
-            setTimeout(() => this.setState({ swipeData: -50, isAnimate: true }, () => {
-                setTimeout(() => this.setState({ isAnimate: false }), 1000)
-            }), 20);
-        });
-    }
+            if (isAnimate) return;
 
-    nextSlide = () => {
-        const { visibleSlides, isAnimate } = this.state;
+            this.clearTimer();
+            
+            const slidesQueryPrepared = slides.slice(currentIndex, visibleSlides.length);
+            const slidesQuery = slidesQueryPrepared.concat(slides.slice(0, currentIndex));
 
-        if (isAnimate) return;
-
-        this.clearTimer();
-
-        const slidesQueryPrepared = visibleSlides.slice(1, visibleSlides.length);
-        const slidesQuery = slidesQueryPrepared.concat(visibleSlides.slice(0, 1));
-
-        this.setState({ swipeData: -150, isAnimate: true }, () => {
-            setTimeout(() => this.setState({ swipeData: -50, visibleSlides: slidesQuery, isAnimate: false }), 1000);
+            prevIndex === 0 && currentIndex === slides.length - 1 ?
+                this.setState({ swipeData: -150, isAnimate: false, visibleSlides: slidesQuery  }, () => {
+                    setTimeout(() => this.setState({ isAnimate: true, swipeData: -50 }, () => {
+                        setTimeout(() => this.setState({ isAnimate: false }), 1000)
+                    }), 20)
+                })
+            :
+                prevIndex === slides.length - 1  && currentIndex === 0 ?
+                    this.setState({ swipeData: -150, isAnimate: true }, () => {
+                        setTimeout(() => this.setState({ isAnimate: false, swipeData: -50, visibleSlides: slidesQuery }), 1000)
+                    })
+                :
+                    move ?
+                        this.setState({ swipeData: -150 - 100 * (prevIndex - 1 - currentIndex), isAnimate: false, visibleSlides: slidesQuery  }, () => {
+                            setTimeout(() => this.setState({ isAnimate: true, swipeData: -50 }, () => {
+                                setTimeout(() => this.setState({ isAnimate: false }), 1000)
+                            }), 20)
+                        })
+                    :
+                        this.setState({ swipeData: -150 - 100 * (currentIndex - 1 - prevIndex), isAnimate: true }, () => {
+                            setTimeout(() => this.setState({ isAnimate: false, swipeData: -50, visibleSlides: slidesQuery }), 1000)
+                        })
         });
     }
 
@@ -94,26 +109,31 @@ class CarouselV2 extends Component {
                     <Box
                         id='0'
                         sx={ ourServices.slider.buttonWrapper.button }
+                        onClick={(event) => this.handleSlide(event)}
                     ></Box>
 
                     <Box
                         id='1'
                         sx={ ourServices.slider.buttonWrapper.button }
+                        onClick={(event) => this.handleSlide(event)}
                     ></Box>
 
                     <Box
                         id='2'
                         sx={ ourServices.slider.buttonWrapper.button }
+                        onClick={(event) => this.handleSlide(event)}
                     ></Box>
 
                     <Box
                         id='3'
                         sx={ ourServices.slider.buttonWrapper.button }
+                        onClick={(event) => this.handleSlide(event)}
                     ></Box>
 
                     <Box
                         id='4'
                         sx={ ourServices.slider.buttonWrapper.button }
+                        onClick={(event) => this.handleSlide(event)}
                     ></Box>
                 </Box>
             </>
