@@ -37,19 +37,19 @@ class CarouselV2 extends Component {
     }
 
     handleSlide = event => {
-        const { currentIndex } = this.state;
+        const { currentIndex, isAnimate } = this.state;
         const prevIndex = currentIndex;
         let move;
+        
+        if (isAnimate) return;
 
         if (currentIndex === (+ event.target.id)) return;
 
         currentIndex < (+ event.target.id) ? move = false : move = true;
 
         this.setState({ currentIndex: (+ event.target.id) }, () => {
-            const { visibleSlides, isAnimate, currentIndex } = this.state;
+            const { visibleSlides, currentIndex } = this.state;
             const { slides } = this.props;
-
-            if (isAnimate) return;
 
             this.clearTimer();
             
@@ -57,27 +57,39 @@ class CarouselV2 extends Component {
             const slidesQuery = slidesQueryPrepared.concat(slides.slice(0, currentIndex));
 
             prevIndex === 0 && currentIndex === slides.length - 1 ?
-                this.setState({ swipeData: -150, isAnimate: false, visibleSlides: slidesQuery  }, () => {
+                this.setState({ swipeData: -150, isAnimate: false, visibleSlides: slidesQuery }, () => {
                     setTimeout(() => this.setState({ isAnimate: true, swipeData: -50 }, () => {
                         setTimeout(() => this.setState({ isAnimate: false }), 1000)
                     }), 20)
                 })
             :
-                prevIndex === slides.length - 1  && currentIndex === 0 ?
-                    this.setState({ swipeData: -150, isAnimate: true }, () => {
-                        setTimeout(() => this.setState({ isAnimate: false, swipeData: -50, visibleSlides: slidesQuery }), 1000)
+                prevIndex === 0  && currentIndex === slides.length - 2 ?
+                    this.setState({ swipeData: -250, isAnimate: false, visibleSlides: slidesQuery }, () => {
+                        setTimeout(() => this.setState({ isAnimate: true, swipeData: -50 }, () => {
+                            setTimeout(() => this.setState({ isAnimate: false }), 1000)
+                        }), 20)
                     })
                 :
-                    move ?
-                        this.setState({ swipeData: -150 - 100 * (prevIndex - 1 - currentIndex), isAnimate: false, visibleSlides: slidesQuery  }, () => {
-                            setTimeout(() => this.setState({ isAnimate: true, swipeData: -50 }, () => {
-                                setTimeout(() => this.setState({ isAnimate: false }), 1000)
-                            }), 20)
-                        })
-                    :
-                        this.setState({ swipeData: -150 - 100 * (currentIndex - 1 - prevIndex), isAnimate: true }, () => {
+                    prevIndex === slides.length - 1  && currentIndex === 0 ?
+                        this.setState({ swipeData: -150, isAnimate: true }, () => {
                             setTimeout(() => this.setState({ isAnimate: false, swipeData: -50, visibleSlides: slidesQuery }), 1000)
                         })
+                    :
+                        prevIndex === slides.length - 2  && currentIndex === 0 ?
+                            this.setState({ swipeData: -150 - 100 * (prevIndex - 2), isAnimate: true }, () => {
+                                setTimeout(() => this.setState({ isAnimate: false, swipeData: -50, visibleSlides: slidesQuery }), 1000)
+                            })
+                        :
+                            move ?
+                                this.setState({ swipeData: -150 - 100 * (prevIndex - 1 - currentIndex), isAnimate: false, visibleSlides: slidesQuery  }, () => {
+                                    setTimeout(() => this.setState({ isAnimate: true, swipeData: -50 }, () => {
+                                        setTimeout(() => this.setState({ isAnimate: false }), 1000)
+                                    }), 20)
+                                })
+                            :
+                                this.setState({ swipeData: -150 - 100 * (currentIndex - 1 - prevIndex), isAnimate: true }, () => {
+                                    setTimeout(() => this.setState({ isAnimate: false, swipeData: -50, visibleSlides: slidesQuery }), 1000)
+                                })
         });
     }
 
