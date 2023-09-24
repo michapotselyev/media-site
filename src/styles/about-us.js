@@ -101,7 +101,9 @@ const aboutUs = {
         flexGrow: 1,
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'end'
+        justifyContent: 'end',
+        borderBottom: '1px solid #2C9FF2',
+        padding: '0 30% 0 30%'
     }
 }
 

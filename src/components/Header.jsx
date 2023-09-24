@@ -8,7 +8,7 @@ function Header() {
             <Container maxWidth='xl' sx={{ padding: '1.5rem' }}>
                 <Toolbar sx={ headerProp.toolBar }>
                     <Box sx={ headerProp.logos }>
-                        <Link edge="start" aria-label="logo" sx={[ headerProp.iconButton, { marginRight: '2rem' } ]}>
+                        <Link href='/' edge="start" aria-label="logo" sx={[ headerProp.iconButton, { marginRight: '2rem' } ]}>
                             <img src='logo.png' alt="Логотип" width="70" height="70" />
                         </Link>
 
