@@ -28,6 +28,8 @@ function HomeMain() {
             <div style={{ backgroundColor: '#0C0B63' }}>
                 <Client />
             </div>
+
+            <div style={{ backgroundColor: '#0C0B63', width: '100%', height: '10vh' }}></div>
         </main>
     );
 }

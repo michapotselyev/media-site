@@ -14,7 +14,7 @@ function Client() {
 
             <Box component='section' id='our-services' sx={ client.section }>
                 <Box sx={{ width: '47%' }}>
-                    <img preload="auto" loop autoplay src="removed-back-gifter.gif" alt="work-place" />
+                    <img src="removed-back-gifter.gif" alt="work-place" />
                 </Box>
 
                 <Box sx={{ width: '50%', marginLeft: '3%' }}>
