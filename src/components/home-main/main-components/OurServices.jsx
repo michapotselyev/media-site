@@ -1,15 +1,106 @@
 import React from 'react';
-import { Box, Container, Typography } from '@mui/material';
+import { Box, Container, Link, Typography } from '@mui/material';
 import ourServices from '../../../styles/our-services-prop';
 import aboutUs from '../../../styles/about-us';
 import CarouselV2 from './Carusel.V1.2';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 const slides = [
-    <Box>5</Box>,
-    <Box>1</Box>,
-    <Box>2</Box>,
-    <Box>3</Box>,
-    <Box>4</Box>
+    <Box sx={[ ourServices.slider.item.img, { backgroundImage: 'url(project/project-image05.jpg)' } ]}>
+        <Box sx={ ourServices.slider.item.img.wrapperText }>
+            <Box>
+                <Typography sx={{ fontSize: '0.8rem', color: '#909090' }}>
+                   Мобільні додатки
+                </Typography>
+                
+                <Link sx={{ textDecoration: 'none' }}>
+                    <Typography sx={{ fontSize: '1.5rem', color: '#2b099c' }}>
+                        Мобільний світ
+                    </Typography>
+                </Link>
+            </Box>
+
+            <Link sx={ ourServices.slider.item.img.wrapperText.arrowContainer }>
+                <ArrowForwardIosIcon sx={{ color: 'white' }} />
+            </Link>
+        </Box>
+    </Box>,
+    <Box sx={[ ourServices.slider.item.img, { backgroundImage: 'url(project/project-image01.jpg)' } ]}>
+        <Box sx={ ourServices.slider.item.img.wrapperText }>
+            <Box>
+                <Typography sx={{ fontSize: '0.8rem', color: '#909090' }}>
+                    Веб-сайти
+                </Typography>
+                
+                <Link sx={{ textDecoration: 'none' }}>
+                    <Typography sx={{ fontSize: '1.5rem', color: '#2b099c' }}>
+                        Сайти майбутнього
+                    </Typography>
+                </Link>
+            </Box>
+
+            <Link sx={ ourServices.slider.item.img.wrapperText.arrowContainer }>
+                <ArrowForwardIosIcon sx={{ color: 'white' }} />
+            </Link>
+        </Box>
+    </Box>,
+    <Box sx={[ ourServices.slider.item.img, { backgroundImage: 'url(project/project-image02.jpg)' } ]}>
+        <Box sx={ ourServices.slider.item.img.wrapperText }>
+            <Box>
+                <Typography sx={{ fontSize: '0.8rem', color: '#909090' }}>
+                    Ліцензування
+                </Typography>
+                
+                <Link sx={{ textDecoration: 'none' }}>
+                    <Typography sx={{ fontSize: '1.5rem', color: '#2b099c' }}>
+                        Ключ до програм
+                    </Typography>
+                </Link>
+            </Box>
+
+            <Link sx={ ourServices.slider.item.img.wrapperText.arrowContainer }>
+                <ArrowForwardIosIcon sx={{ color: 'white' }} />
+            </Link>
+        </Box>
+    </Box>,
+    <Box sx={[ ourServices.slider.item.img, { backgroundImage: 'url(project/project-image03.jpg)' } ]}>
+        <Box sx={ ourServices.slider.item.img.wrapperText }>
+            <Box>
+                <Typography sx={{ fontSize: '0.8rem', color: '#909090' }}>
+                    Кібербезпека
+                </Typography>
+                
+                <Link sx={{ textDecoration: 'none' }}>
+                    <Typography sx={{ fontSize: '1.5rem', color: '#2b099c' }}>
+                        Цифровий щит
+                    </Typography>
+                </Link>
+            </Box>
+
+            <Link sx={ ourServices.slider.item.img.wrapperText.arrowContainer }>
+                <ArrowForwardIosIcon sx={{ color: 'white' }} />
+            </Link>
+        </Box>
+    </Box>,
+    <Box sx={[ ourServices.slider.item.img, { backgroundImage: 'url(project/project-image04.jpg)' } ]}>
+        <Box sx={ ourServices.slider.item.img.wrapperText }>
+            <Box>
+                <Typography sx={{ fontSize: '0.8rem', color: '#909090' }}>
+                    Розробка <strong>UI</strong>
+                </Typography>
+                
+                <Link sx={{ textDecoration: 'none' }}>
+                    <Typography sx={{ fontSize: '1.5rem', color: '#2b099c' }}>
+                        Десктопні рішення
+                    </Typography>
+                </Link>
+            </Box>
+
+            <Link sx={ ourServices.slider.item.img.wrapperText.arrowContainer }>
+                <ArrowForwardIosIcon sx={{ color: 'white' }} />
+            </Link>
+        </Box>
+    </Box>
 ]
 
 function OurServices() {
@@ -21,7 +112,7 @@ function OurServices() {
             </Box>
 
             <Box component='section' id='about-us' sx={ aboutUs.section }>
-                <Typography sx={[ aboutUs.title, { marginTop: '3.5rem' } ]}>
+                <Typography sx={[ aboutUs.title, { margin: '2rem 0 2rem 0' } ]}>
                     Наші послуги
                 </Typography>
 

@@ -10,7 +10,7 @@ const ourServices = {
     },
     slider: {
         width: '100%',
-        height: '70%',
+        height: '68%',
         display: 'flex',
         flexDirection: 'row',
         overflow: 'hidden',
@@ -23,37 +23,61 @@ const ourServices = {
             height: '100%',
             flexShrink: 0,
             padding: '0.5rem',
-            border: '1px solid black',
 
             img: {
                 width: '100%',
                 height: '100%',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
+                display: 'flex',
+                justifyContent: 'column',
+                alignItems: 'end',
                 
                 wrapperText: {
-                    display: 'flex',
-                    flexDirection: 'column',
-                    justifyContent: 'space-around',
-                    alignItems: 'center',
+                    backgroundColor: 'white',
                     width: '100%',
-                    height: '100%',
-                    backgroundColor: 'rgba(0, 0, 0, 0.65)'
+                    height: '30%',
+                    margin: '1.2rem 1.5rem 1.2rem 1.5rem',
+                    borderRadius: '5px',
+                    display: 'flex',
+                    flexDirection: 'row',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    padding: '0 2rem 0 2rem',
+
+                    arrowContainer: {
+                        backgroundColor: '#2b099c',
+                        borderRadius: '50%',
+                        width: '40px',
+                        height: '40px',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        alignItems: 'center',
+                        justifyContent: 'center'
+                    }
                 }
             }
         },
         buttonWrapper: {
-            marginTop: '1rem',
-            width: '300px',
+            width: '100%',
+            height: '3rem',
             display: 'flex',
             flexDirection: 'row',
-            justifyContent: 'space-between',
+            justifyContent: 'center',
+
+            layout: {
+                width: '50px',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                cursor: 'pointer',
+                margin: '0 6px 0 6px'
+            },
 
             button: {
                 backgroundColor: '#909090',
-                flexGrow: 1,
                 height: '4px',
-                margin: '0 6px 0 6px'
+                width: '100%'
             }
         }
     }

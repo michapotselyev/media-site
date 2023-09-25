@@ -14,6 +14,8 @@ function HomeMain() {
                 <AboutUs />
             </div>
 
+            <div style={{ backgroundColor: 'rgb(17,15,138)', width: '100%', height: '35vh' }}></div>
+
             <div style={{ background: 'linear-gradient(170deg, #110f8a 64%, #0C0B63 30%)' }}>  
                 <OurServices />
             </div>
