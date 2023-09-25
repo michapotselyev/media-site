@@ -9,6 +9,20 @@ const client = {
         flexDirection: 'row',
         alignItems: 'center',
         padding: '0 10% 0 10%'
+    },
+    title: {
+        color: '#909090',
+        fontSize: '1.1rem',
+        marginBottom: '2rem'
+    },
+    description: {
+        color: 'white',
+        fontSize: '2rem',
+        marginBottom: '1rem'
+    },
+    author: {
+        color: '#666262',
+        fontSize: '0.8rem'
     }
 }
 

@@ -18,15 +18,23 @@ function Client() {
                 </Box>
 
                 <Box sx={{ width: '50%', marginLeft: '3%' }}>
-                    <Typography sx={{ color: '#909090', fontSize: '1.1rem', marginBottom: '2rem' }}>КОЖЕН КЛІЄНТ - НАШ ПРІОРИТЕТ</Typography>
+                    <Typography sx={ client.title }>КОЖЕН КЛІЄНТ - НАШ ПРІОРИТЕТ</Typography>
 
-                    <Typography sx={{ color: 'white', fontSize: '2rem', marginBottom: '1rem' }}>
+                    <Typography sx={ client.description }>
                         Ми цінуємо довіру наших клієнтів і завжди прагнемо відповідати їхнім очікуванням.
                         Наша команда зосереджена на вашому успіху, адаптуючись до ваших потреб і швидко
                         реагуючи на запити. Ваше задоволення - наша мета
                     </Typography>
 
-                    <Typography sx={{ color: '#666262', fontSize: '0.8rem' }}><span style={{ color: '#2c9ff2', fontSize: '1.1rem' }}>ТОВ</span> / ОВБК МЕДІА</Typography>
+                    <Typography sx={ client.author }>
+                        <span style={{ color: '#2c9ff2', fontSize: '1.1rem', fontWeight: '600' }}>
+                            ТОВ
+                        </span>
+
+                        <span style={{ fontSize: '1.1rem' }}>&nbsp; / &nbsp;</span>
+
+                        ОВБК МЕДІА
+                    </Typography>
                 </Box>
             </Box>
         </Container>
