@@ -2,6 +2,7 @@ import React from 'react';
 import HomeMainHeader from './main-components/HomeMainHeader';
 import AboutUs from './main-components/AboutUs';
 import OurServices from './main-components/OurServices';
+import Client from './main-components/Client';
 
 function HomeMain() {
     return (
@@ -20,6 +21,12 @@ function HomeMain() {
 
             <div style={{ background: 'linear-gradient(170deg, #110f8a 64%, #0C0B63 30%)' }}>  
                 <OurServices />
+            </div>
+
+            <div style={{ backgroundColor: '#0C0B63', width: '100%', height: '35vh' }}></div>
+
+            <div style={{ backgroundColor: '#0C0B63' }}>
+                <Client />
             </div>
         </main>
     );

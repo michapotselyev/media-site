@@ -111,7 +111,7 @@ function OurServices() {
                 <img src="logo.png" alt="background" style={{ opacity: '0.5' }} />
             </Box>
 
-            <Box component='section' id='about-us' sx={ aboutUs.section }>
+            <Box component='section' id='our-services' sx={ aboutUs.section }>
                 <Typography sx={[ aboutUs.title, { margin: '2rem 0 2rem 0' } ]}>
                     Наші послуги
                 </Typography>

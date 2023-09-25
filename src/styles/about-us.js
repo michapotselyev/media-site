@@ -38,7 +38,8 @@ const aboutUs = {
         right: 0,
         display: 'flex',
         flexDirection: 'column',
-        alignItems: 'center'
+        alignItems: 'center',
+        justifyContent: 'center'
     },
     title: {
         fontSize: '2rem',
