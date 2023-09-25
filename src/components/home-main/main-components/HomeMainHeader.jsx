@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import '../../../styles/title-styles.css';
 import { Container, Typography } from '@mui/material';
 import { animated, useSpring } from 'react-spring';
 import homeMainProp from '../../../styles/home-main-prop';
@@ -60,6 +61,10 @@ function HomeMainHeader() {
     return (
         <Container maxWidth='xl' sx={ homeMainProp.container }>
             <animated.div style={ fadeAnimation }>
+                <Typography sx={ homeMainProp.title } id='title'>
+                    ОВБК МЕДІА
+                </Typography>
+
                 <Typography sx={ homeMainProp.text }>
                     З нами інновації для вашого бізнесу без кордонів
                 </Typography>

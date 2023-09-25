@@ -25,7 +25,7 @@ class CarouselV2 extends Component {
             if (isAnimate) return;
 
             this.setState({ currentIndex: counter }, () => this.sliderChanger(prevIndex, false));
-        }, 10*60*1000);
+        }, 5000);
 
         this.setState({ timerId });
     }

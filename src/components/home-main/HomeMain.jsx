@@ -9,6 +9,8 @@ function HomeMain() {
             <div style={{ background: 'linear-gradient(170deg, #0c0b63 64%, #110f8a 30%)' }}>
                 <HomeMainHeader />
             </div>
+            
+            <div style={{ backgroundColor: 'rgb(17,15,138)', width: '100%', height: '15vh' }}></div>
 
             <div style={{ backgroundColor: 'rgb(17,15,138)' }}>  
                 <AboutUs />
