@@ -6,7 +6,7 @@ import CarouselV2 from './Carusel.V1.2';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 const slides = [
-    <Box sx={[ ourServices.slider.item.img, { backgroundImage: 'url(project/project-image05.jpg)' } ]}>
+    <Box sx={[ ourServices.slider.item.img, { backgroundImage: 'url(../project/project-image05.jpg)' } ]}>
         <Box sx={ ourServices.slider.item.img.wrapperText }>
             <Box>
                 <Typography sx={{ fontSize: '0.8rem', color: '#909090' }}>
@@ -20,12 +20,12 @@ const slides = [
                 </Link>
             </Box>
 
-            <Link sx={ ourServices.slider.item.img.wrapperText.arrowContainer }>
+            <Link href='service/5' sx={ ourServices.slider.item.img.wrapperText.arrowContainer }>
                 <ArrowForwardIosIcon sx={{ color: 'white' }} />
             </Link>
         </Box>
     </Box>,
-    <Box sx={[ ourServices.slider.item.img, { backgroundImage: 'url(project/project-image01.jpg)' } ]}>
+    <Box sx={[ ourServices.slider.item.img, { backgroundImage: 'url(../project/project-image01.jpg)' } ]}>
         <Box sx={ ourServices.slider.item.img.wrapperText }>
             <Box>
                 <Typography sx={{ fontSize: '0.8rem', color: '#909090' }}>
@@ -39,12 +39,12 @@ const slides = [
                 </Link>
             </Box>
 
-            <Link sx={ ourServices.slider.item.img.wrapperText.arrowContainer }>
+            <Link href='service/1' sx={ ourServices.slider.item.img.wrapperText.arrowContainer }>
                 <ArrowForwardIosIcon sx={{ color: 'white' }} />
             </Link>
         </Box>
     </Box>,
-    <Box sx={[ ourServices.slider.item.img, { backgroundImage: 'url(project/project-image02.jpg)' } ]}>
+    <Box sx={[ ourServices.slider.item.img, { backgroundImage: 'url(../project/project-image02.jpg)' } ]}>
         <Box sx={ ourServices.slider.item.img.wrapperText }>
             <Box>
                 <Typography sx={{ fontSize: '0.8rem', color: '#909090' }}>
@@ -58,12 +58,12 @@ const slides = [
                 </Link>
             </Box>
 
-            <Link sx={ ourServices.slider.item.img.wrapperText.arrowContainer }>
+            <Link href='service/2' sx={ ourServices.slider.item.img.wrapperText.arrowContainer }>
                 <ArrowForwardIosIcon sx={{ color: 'white' }} />
             </Link>
         </Box>
     </Box>,
-    <Box sx={[ ourServices.slider.item.img, { backgroundImage: 'url(project/project-image03.jpg)' } ]}>
+    <Box sx={[ ourServices.slider.item.img, { backgroundImage: 'url(../project/project-image03.jpg)' } ]}>
         <Box sx={ ourServices.slider.item.img.wrapperText }>
             <Box>
                 <Typography sx={{ fontSize: '0.8rem', color: '#909090' }}>
@@ -77,12 +77,12 @@ const slides = [
                 </Link>
             </Box>
 
-            <Link sx={ ourServices.slider.item.img.wrapperText.arrowContainer }>
+            <Link href='service/3' sx={ ourServices.slider.item.img.wrapperText.arrowContainer }>
                 <ArrowForwardIosIcon sx={{ color: 'white' }} />
             </Link>
         </Box>
     </Box>,
-    <Box sx={[ ourServices.slider.item.img, { backgroundImage: 'url(project/project-image04.jpg)' } ]}>
+    <Box sx={[ ourServices.slider.item.img, { backgroundImage: 'url(../project/project-image04.jpg)' } ]}>
         <Box sx={ ourServices.slider.item.img.wrapperText }>
             <Box>
                 <Typography sx={{ fontSize: '0.8rem', color: '#909090' }}>
@@ -96,7 +96,7 @@ const slides = [
                 </Link>
             </Box>
 
-            <Link sx={ ourServices.slider.item.img.wrapperText.arrowContainer }>
+            <Link href='service/4' sx={ ourServices.slider.item.img.wrapperText.arrowContainer }>
                 <ArrowForwardIosIcon sx={{ color: 'white' }} />
             </Link>
         </Box>
@@ -108,7 +108,7 @@ function OurServices() {
         <Container maxWidth='xl' sx={ ourServices.container }>
             <Box sx={ aboutUs.backgroundShadow }></Box>
             <Box>
-                <img src="logo.png" alt="background" style={{ opacity: '0.5' }} />
+                <img src="../logo.png" alt="background" style={{ opacity: '0.5' }} />
             </Box>
 
             <Box component='section' id='our-services' sx={ aboutUs.section }>

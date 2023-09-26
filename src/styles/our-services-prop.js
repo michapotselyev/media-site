@@ -53,7 +53,8 @@ const ourServices = {
                         display: 'flex',
                         flexDirection: 'column',
                         alignItems: 'center',
-                        justifyContent: 'center'
+                        justifyContent: 'center',
+                        cursor: 'pointer'
                     }
                 }
             }

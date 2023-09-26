@@ -8,14 +8,14 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import footer from '../styles/footer-prop';
 
 function Footer() {
-    const [dribble, setDribble] = useState('dribble.png');
-    const [behance, setBehance] = useState('be.png');
+    const [dribble, setDribble] = useState('../dribble.png');
+    const [behance, setBehance] = useState('../be.png');
 
-    const handleHoverDribble = () => setDribble('dribble-hover.png');
-    const handleUnHoverDribble = () => setDribble('dribble.png');
+    const handleHoverDribble = () => setDribble('../dribble-hover.png');
+    const handleUnHoverDribble = () => setDribble('../dribble.png');
 
-    const handleHoverBehance = () => setBehance('be-hover.png');
-    const handleUnHoverBehance = () => setBehance('be.png');
+    const handleHoverBehance = () => setBehance('../be-hover.png');
+    const handleUnHoverBehance = () => setBehance('../be.png');
 
     return (
         <Box sx={{ backgroundColor: '#171819' }}>

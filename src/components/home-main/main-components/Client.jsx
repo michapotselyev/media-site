@@ -9,12 +9,12 @@ function Client() {
         <Container maxWidth='xl' sx={ ourServices.container }>
             <Box sx={ aboutUs.backgroundShadow }></Box>
             <Box>
-                <img src="logo.png" alt="background" style={{ opacity: '0.5' }} />
+                <img src="../logo.png" alt="background" style={{ opacity: '0.5' }} />
             </Box>
 
             <Box component='section' id='our-services' sx={ client.section }>
                 <Box sx={{ width: '47%' }}>
-                    <img src="removed-back-gifter.gif" alt="work-place" />
+                    <img src="../removed-back-gifter.gif" alt="work-place" />
                 </Box>
 
                 <Box sx={{ width: '50%', marginLeft: '3%' }}>

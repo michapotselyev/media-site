@@ -4,7 +4,7 @@ import aboutUs from '../../../styles/about-us';
 import Carousel from './Carusel';
 
 const slides = [
-    <Box sx={[ aboutUs.slider.item.img, { backgroundImage: 'url(Innovation.jpeg)' } ]}>
+    <Box sx={[ aboutUs.slider.item.img, { backgroundImage: 'url(../Innovation.jpeg)' } ]}>
         <Box sx={ aboutUs.slider.item.img.wrapperText }>
             <Typography sx={{ color: 'white', fontSize: '1.5rem' }}>Технологічність</Typography>
 
@@ -20,7 +20,7 @@ const slides = [
         </Box>
     </Box>,
 
-    <Box sx={[ aboutUs.slider.item.img, { backgroundImage: 'url(experience-todo.jpeg)' } ]}>
+    <Box sx={[ aboutUs.slider.item.img, { backgroundImage: 'url(../experience-todo.jpeg)' } ]}>
         <Box sx={ aboutUs.slider.item.img.wrapperText }>
             <Typography sx={{ color: 'white', fontSize: '1.5rem' }}>Досвід</Typography>
 
@@ -36,7 +36,7 @@ const slides = [
         </Box>
     </Box>,
 
-    <Box sx={[ aboutUs.slider.item.img, { backgroundImage: 'url(sm.jpeg)' } ]}>
+    <Box sx={[ aboutUs.slider.item.img, { backgroundImage: 'url(../sm.jpeg)' } ]}>
         <Box sx={ aboutUs.slider.item.img.wrapperText }>
             <Typography sx={{ color: 'white', fontSize: '1.5rem' }}>Індивідуальний підхід</Typography>
 
@@ -52,7 +52,7 @@ const slides = [
         </Box>
     </Box>,
 
-    <Box sx={[ aboutUs.slider.item.img, { backgroundImage: 'url(yakist.jpeg)' } ]}>
+    <Box sx={[ aboutUs.slider.item.img, { backgroundImage: 'url(../yakist.jpeg)' } ]}>
         <Box sx={ aboutUs.slider.item.img.wrapperText }>
             <Typography sx={{ color: 'white', fontSize: '1.5rem' }}>Високі стандарти якості</Typography>
 
@@ -67,7 +67,7 @@ const slides = [
             </Box>
         </Box>
     </Box>,
-    <Box sx={[ aboutUs.slider.item.img, { backgroundImage: 'url(Hnychkist.jpeg)' } ]}>
+    <Box sx={[ aboutUs.slider.item.img, { backgroundImage: 'url(../Hnychkist.jpeg)' } ]}>
         <Box sx={ aboutUs.slider.item.img.wrapperText }>
             <Typography sx={{ color: 'white', fontSize: '1.5rem' }}>Гнучкість</Typography>
 
@@ -82,7 +82,7 @@ const slides = [
             </Box>
         </Box>
     </Box>,
-    <Box sx={[ aboutUs.slider.item.img, { backgroundImage: 'url(comanda-profof.jpeg)' } ]}>
+    <Box sx={[ aboutUs.slider.item.img, { backgroundImage: 'url(../comanda-profof.jpeg)' } ]}>
         <Box sx={ aboutUs.slider.item.img.wrapperText }>
             <Typography sx={{ color: 'white', fontSize: '1.5rem' }}>Команда професіоналів</Typography>
 
@@ -104,7 +104,7 @@ function AboutUs() {
         <Container maxWidth='xl' sx={ aboutUs.container }>
             <Box sx={ aboutUs.backgroundShadow }></Box>
             <Box>
-                <img src="logo.png" alt="background" style={{ opacity: '0.5' }} />
+                <img src="../logo.png" alt="background" style={{ opacity: '0.5' }} />
             </Box>
 
             <Box component='section' id='about-us' sx={ aboutUs.section }>
@@ -121,7 +121,7 @@ function AboutUs() {
                 <Carousel slides={slides} />
 
                 <Box sx={ aboutUs.bottomImage }>
-                    <img src="office-removebg-preview.png" alt="office png"  />
+                    <img src="../office-removebg-preview.png" alt="office png"  />
                 </Box>
             </Box>
         </Container>
