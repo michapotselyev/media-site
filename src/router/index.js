@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import { MainPage, ServicePage, PortfolioPage, ErrorPage } from "../pages";
+import { MainPage, ServicePage, PortfolioPage, ContactPage, ErrorPage } from "../pages";
 
 const router = createBrowserRouter([
     {
@@ -8,21 +8,20 @@ const router = createBrowserRouter([
         errorElement: <ErrorPage />
     },
     {
-        path: "/service",
-        children: [
-            {
-                path: "/service/:id",
-                element: <ServicePage />,
-                errorElement: <ErrorPage />
-            }
-        ],
+        path: "/service/:id",
+        element: <ServicePage />,
         errorElement: <ErrorPage />
     },
     {
         path: "/portfolio",
         element: <PortfolioPage />,
         errorElement: <ErrorPage />
-    }
+    },
+    {
+        path: "/contact-us",
+        element: <ContactPage />,
+        errorElement: <ErrorPage />
+    },
 ]);
 
 export default router;

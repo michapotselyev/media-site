@@ -53,6 +53,12 @@ const serviceData = {
 
 function ServiceMain() {
     const { id } = useParams();
+
+    if (isNaN(id) || id <= 0 || id > 5) {
+        window.location.assign('/error');
+        return null;
+    }
+
     const currentService = serviceData[id];
     
     // eslint-disable-next-line

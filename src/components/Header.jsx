@@ -29,6 +29,7 @@ function Header() {
                             disableTouchRipple
                             variant='outlined'
                             sx={ headerProp.button }
+                            onClick={() => window.location.assign('/contact-us')}
                         >
                             Зв'язатися з нами
                         </Button>
