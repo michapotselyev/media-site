@@ -39,23 +39,27 @@ const aboutUs = {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        
     },
     title: {
         fontSize: '2rem',
-        color: 'white'
+        color: 'white',
+        transition: 'all 0.5s ease-in-out'
     },
     description: {
         color: '#2C9FF2',
         width: '51%',
         fontSize: '1.3rem',
         textAlign: 'center',
-        paddingTop: '1.5rem'
+        paddingTop: '1.5rem',
+        transition: 'all 0.5s ease-in-out'
     },
     ourDiff: {
         marginTop: '5rem',
         fontSize: '2rem',
-        color: 'white'
+        color: 'white',
+        transition: 'all 0.5s ease-in-out'
     },
     slider: {
         width: '100%',
@@ -104,7 +108,8 @@ const aboutUs = {
         flexDirection: 'column',
         justifyContent: 'end',
         borderBottom: '1px solid #2C9FF2',
-        padding: '0 30% 0 30%'
+        padding: '0 30% 0 30%',
+        transition: 'all 0.5s ease-in-out',
     }
 }
 

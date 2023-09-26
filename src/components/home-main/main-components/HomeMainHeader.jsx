@@ -36,7 +36,7 @@ function HomeMainHeader() {
 
             setTimeout(() => {
                 setIsVisible2(true);
-            }, 100)
+            }, 500)
         } else {
             setIsVisible(false);
         }
@@ -48,7 +48,7 @@ function HomeMainHeader() {
 
             setTimeout(() => {
                 setIsVisible2(true);
-            }, 300)
+            }, 500)
         }
 
         window.addEventListener('scroll', handleScroll);
