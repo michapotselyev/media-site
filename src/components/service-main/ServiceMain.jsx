@@ -55,6 +55,7 @@ function ServiceMain() {
     const { id } = useParams();
     const currentService = serviceData[id];
     
+    // eslint-disable-next-line
     useEffect(() => { document.title = currentService.title }, []);
 
     return (

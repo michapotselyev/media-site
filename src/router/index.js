@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import { MainPage, ServicePage, ErrorPage } from "../pages";
+import { MainPage, ServicePage, PortfolioPage, ErrorPage } from "../pages";
 
 const router = createBrowserRouter([
     {
@@ -18,6 +18,11 @@ const router = createBrowserRouter([
         ],
         errorElement: <ErrorPage />
     },
+    {
+        path: "/portfolio",
+        element: <PortfolioPage />,
+        errorElement: <ErrorPage />
+    }
 ]);
 
 export default router;

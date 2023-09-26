@@ -20,7 +20,7 @@ function Header() {
                     <Box component='nav' sx={ headerProp.nav }>
                         <Link href='/#about-us' sx={ headerProp.nav.link }>Про нас</Link>
                         <Link href='/#our-services' sx={ headerProp.nav.link }>Наші послуги</Link>
-                        <Link sx={ headerProp.nav.link }>Реалізовані проекти</Link>
+                        <Link href='/portfolio' sx={ headerProp.nav.link }>Реалізовані проекти</Link>
 
                         <Button
                             disableRipple
