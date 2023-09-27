@@ -1,10 +1,16 @@
 import React, { useEffect } from 'react';
 import portfolio from '../../styles/portfolio-prop';
 import { Box, Container, Grid, Typography } from '@mui/material';
+import TEXT_CONSTANTS from '../../text-constants';
 
 function PortfolioMain() {
     // eslint-disable-next-line
-    useEffect(() => { document.title = 'Реалізовані проекти | ОВБК МЕДІА' }, []);
+    useEffect(() => {
+        document.title = localStorage.getItem('lung') === 'uk' ?
+            TEXT_CONSTANTS.UK.PAGE_TITLES.PORTFOLIO
+        :
+            TEXT_CONSTANTS.ENG.PAGE_TITLES.PORTFOLIO
+    }, []);
 
     return (
         <main style={{ background: 'linear-gradient(170deg, #0c0b63 64%, #110f8a 30%)' }}>
@@ -14,28 +20,58 @@ function PortfolioMain() {
                         <Box sx={[ portfolio.grid.item, { backgroundImage: 'url(bank-and-finance.jpeg)' } ]}>
                             <Box sx={ portfolio.grid.item.textWrapper }>
                                 <Typography sx={ portfolio.grid.item.title }>
-                                    Банківській та фінансовий сектор
+                                    {
+                                        localStorage.getItem('lung') === 'uk' ?
+                                            TEXT_CONSTANTS.UK.PORTFOLIO.FIRST_PROJECT.title
+                                        :
+                                            TEXT_CONSTANTS.ENG.PORTFOLIO.FIRST_PROJECT.title 
+                                    }
                                 </Typography>
 
                                 <Box sx={ portfolio.grid.item.desription }>
                                     <Typography sx={{ color: 'white' }}>
-                                        - Розробка плану та модулю для забезпечення інформаційної безпеки окремих операцій 
+                                        {
+                                            localStorage.getItem('lung') === 'uk' ?
+                                                TEXT_CONSTANTS.UK.PORTFOLIO.FIRST_PROJECT.p1
+                                            :
+                                                TEXT_CONSTANTS.ENG.PORTFOLIO.FIRST_PROJECT.p1
+                                        }
                                     </Typography>
 
                                     <Typography sx={{ color: 'white' }}>
-                                        - Впровадження модулів та методики інформаційної безпеки
+                                        {
+                                            localStorage.getItem('lung') === 'uk' ?
+                                                TEXT_CONSTANTS.UK.PORTFOLIO.FIRST_PROJECT.p2
+                                            :
+                                                TEXT_CONSTANTS.ENG.PORTFOLIO.FIRST_PROJECT.p2
+                                        }
                                     </Typography>
 
                                     <Typography sx={{ color: 'white' }}>
-                                        - Розробка реферальної програми для веб-сайту
+                                        {
+                                            localStorage.getItem('lung') === 'uk' ?
+                                                TEXT_CONSTANTS.UK.PORTFOLIO.FIRST_PROJECT.p3
+                                            :
+                                                TEXT_CONSTANTS.ENG.PORTFOLIO.FIRST_PROJECT.p3
+                                        }
                                     </Typography>
 
                                     <Typography sx={{ color: 'white' }}>
-                                        - Впровадження системи криптовалютних платежів
+                                        {
+                                            localStorage.getItem('lung') === 'uk' ?
+                                                TEXT_CONSTANTS.UK.PORTFOLIO.FIRST_PROJECT.p4
+                                            :
+                                                TEXT_CONSTANTS.ENG.PORTFOLIO.FIRST_PROJECT.p4
+                                        }
                                     </Typography>
 
                                     <Typography sx={{ color: 'white' }}>
-                                        - Створення smart-контракту
+                                        {
+                                            localStorage.getItem('lung') === 'uk' ?
+                                                TEXT_CONSTANTS.UK.PORTFOLIO.FIRST_PROJECT.p5
+                                            :
+                                                TEXT_CONSTANTS.ENG.PORTFOLIO.FIRST_PROJECT.p5
+                                        }
                                     </Typography>
                                 </Box>
                             </Box>
@@ -46,22 +82,40 @@ function PortfolioMain() {
                         <Box sx={[ portfolio.grid.item, { backgroundImage: 'url(education.jpeg)' } ]}>
                             <Box sx={ portfolio.grid.item.textWrapper }>
                                 <Typography sx={ portfolio.grid.item.title }>
-                                    Освіта
+                                    {
+                                        localStorage.getItem('lung') === 'uk' ?
+                                            TEXT_CONSTANTS.UK.PORTFOLIO.SECOND_PROJECT.title
+                                        :
+                                            TEXT_CONSTANTS.ENG.PORTFOLIO.SECOND_PROJECT.title
+                                    }
                                 </Typography>
 
                                 <Box sx={ portfolio.grid.item.desription }>
                                     <Typography sx={{ color: 'white' }}>
-                                        - Розробка web-додатків навчальних програм 
+                                        {
+                                            localStorage.getItem('lung') === 'uk' ?
+                                                TEXT_CONSTANTS.UK.PORTFOLIO.SECOND_PROJECT.p1
+                                            :
+                                                TEXT_CONSTANTS.ENG.PORTFOLIO.SECOND_PROJECT.p1
+                                        } 
                                     </Typography>
 
                                     <Typography sx={{ color: 'white' }}>
-                                        - Розробка додатків для смартфонів і планшетів,
-                                        які допомагають  вивчати новий матеріал та практикувати навички.
+                                        {
+                                            localStorage.getItem('lung') === 'uk' ?
+                                                TEXT_CONSTANTS.UK.PORTFOLIO.SECOND_PROJECT.p2
+                                            :
+                                                TEXT_CONSTANTS.ENG.PORTFOLIO.SECOND_PROJECT.p2
+                                        }
                                     </Typography>
 
                                     <Typography sx={{ color: 'white' }}>
-                                        - Створення онлайн-бібліотек, де надається доступ до навчальних
-                                        матеріалів, підручників, журналів і наукових досліджень.
+                                        {
+                                            localStorage.getItem('lung') === 'uk' ?
+                                                TEXT_CONSTANTS.UK.PORTFOLIO.SECOND_PROJECT.p3
+                                            :
+                                                TEXT_CONSTANTS.ENG.PORTFOLIO.SECOND_PROJECT.p3
+                                        }
                                     </Typography>
                                 </Box>
                             </Box>
@@ -72,20 +126,40 @@ function PortfolioMain() {
                         <Box sx={[ portfolio.grid.item, { backgroundImage: 'url(mettalurg.jpeg)' } ]}>
                             <Box sx={ portfolio.grid.item.textWrapper }>
                                 <Typography sx={ portfolio.grid.item.title }>
-                                    Металургія
+                                    {
+                                        localStorage.getItem('lung') === 'uk' ?
+                                            TEXT_CONSTANTS.UK.PORTFOLIO.THIRD_PROJECT.title
+                                        :
+                                            TEXT_CONSTANTS.ENG.PORTFOLIO.THIRD_PROJECT.title
+                                    }
                                 </Typography>
 
                                 <Box sx={ portfolio.grid.item.desription }>
                                     <Typography sx={{ color: 'white' }}>
-                                        - Впровадження модулю для поєднання логістичних ланцюгів різних етапів виробництва
+                                        {
+                                            localStorage.getItem('lung') === 'uk' ?
+                                                TEXT_CONSTANTS.UK.PORTFOLIO.THIRD_PROJECT.p1
+                                            :
+                                                TEXT_CONSTANTS.ENG.PORTFOLIO.THIRD_PROJECT.p1
+                                        }
                                     </Typography>
 
                                     <Typography sx={{ color: 'white' }}>
-                                        - Впровадження єдиної системи керування виробничими запасами
+                                        {
+                                            localStorage.getItem('lung') === 'uk' ?
+                                                TEXT_CONSTANTS.UK.PORTFOLIO.THIRD_PROJECT.p2
+                                            :
+                                                TEXT_CONSTANTS.ENG.PORTFOLIO.THIRD_PROJECT.p2
+                                        }
                                     </Typography>
 
                                     <Typography sx={{ color: 'white' }}>
-                                        - Інтеграція впроваджених модулів з обліковою системою підприємства
+                                        {
+                                            localStorage.getItem('lung') === 'uk' ?
+                                                TEXT_CONSTANTS.UK.PORTFOLIO.THIRD_PROJECT.p3
+                                            :
+                                                TEXT_CONSTANTS.ENG.PORTFOLIO.THIRD_PROJECT.p3
+                                        }
                                     </Typography>
                                 </Box>
                             </Box>
@@ -96,20 +170,31 @@ function PortfolioMain() {
                         <Box sx={[ portfolio.grid.item, { backgroundImage: 'url(sales.png)' } ]}>
                             <Box sx={ portfolio.grid.item.textWrapper }>
                                 <Typography sx={ portfolio.grid.item.title }>
-                                    Торгівля
+                                    {
+                                        localStorage.getItem('lung') === 'uk' ?
+                                            TEXT_CONSTANTS.UK.PORTFOLIO.FOURTH_PROJECT.title
+                                        :
+                                            TEXT_CONSTANTS.ENG.PORTFOLIO.FOURTH_PROJECT.title
+                                    }
                                 </Typography>
 
                                 <Box sx={ portfolio.grid.item.desription }>
                                     <Typography sx={{ color: 'white' }}>
-                                        - Створення та впровадження клієнтського сервісу для оптової торгівлі
-                                        паливом та систематизації логістичних ланцюгів
-                                        (онлайн оформлення доставки замовлення до клієнта) 
+                                        {
+                                            localStorage.getItem('lung') === 'uk' ?
+                                                TEXT_CONSTANTS.UK.PORTFOLIO.FOURTH_PROJECT.p1
+                                            :
+                                                TEXT_CONSTANTS.ENG.PORTFOLIO.FOURTH_PROJECT.p1
+                                        } 
                                     </Typography>
 
                                     <Typography sx={{ color: 'white' }}>
-                                        - Створення та впровадження корпоративного додатку для функціонування
-                                        «електронного складу» матеріалів, створення клієнтського додатку для
-                                        оптової торгівлі кольоровими металами та синхронізація обох систем
+                                        {
+                                            localStorage.getItem('lung') === 'uk' ?
+                                                TEXT_CONSTANTS.UK.PORTFOLIO.FOURTH_PROJECT.p2
+                                            :
+                                                TEXT_CONSTANTS.ENG.PORTFOLIO.FOURTH_PROJECT.p2
+                                        }
                                     </Typography>
                                 </Box>
                             </Box>

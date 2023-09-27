@@ -3,6 +3,7 @@ import '../../../styles/title-styles.css';
 import { Container, Typography } from '@mui/material';
 import { animated, useSpring } from 'react-spring';
 import homeMainProp from '../../../styles/home-main-prop';
+import TEXT_CONSTANTS from '../../../text-constants';
 
 function HomeMainHeader() {
     const [isVisible, setIsVisible] = useState(false);
@@ -66,7 +67,12 @@ function HomeMainHeader() {
                 </Typography>
 
                 <Typography sx={ homeMainProp.text }>
-                    З нами інновації для вашого бізнесу без кордонів
+                    {
+                        localStorage.getItem('lung') === 'uk' ?
+                            TEXT_CONSTANTS.UK.INDRODUCTION
+                        :
+                            TEXT_CONSTANTS.ENG.INDRODUCTION
+                    }
                 </Typography>
             </animated.div>
 

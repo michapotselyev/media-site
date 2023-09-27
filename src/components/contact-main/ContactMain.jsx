@@ -1,7 +1,15 @@
 import { Box, Button, Container, Typography } from '@mui/material';
-import React from 'react';
+import React, { useEffect } from 'react';
+import TEXT_CONSTANTS from '../../text-constants';
 
 function ContactMain() {
+    useEffect(() => {
+        document.title = localStorage.getItem('lung') === 'uk' ?
+            TEXT_CONSTANTS.UK.PAGE_TITLES.CONTACT_US
+        :
+            TEXT_CONSTANTS.ENG.PAGE_TITLES.CONTACT_US
+    }, []);
+
     return (
         <main style={{ background: 'linear-gradient(170deg, #0c0b63 64%, #110f8a 30%)' }}>
             <Container maxWidth='xl' sx={{ minHeight: '100vh' }}>
@@ -23,7 +31,12 @@ function ContactMain() {
                                 marginBottom: '1rem'
                             }}
                         >
-                            Зв'язатися з
+                            {
+                                localStorage.getItem('lung') === 'uk' ?
+                                    TEXT_CONSTANTS.UK.CONTACT_US.title
+                                :
+                                    TEXT_CONSTANTS.ENG.CONTACT_US.title
+                            }
                             <span
                                 style={{
                                     color: '#2C9FF2',
@@ -41,7 +54,12 @@ function ContactMain() {
                                 color: '#666262'
                             }}
                         >
-                            чи напишіть самостійно office@ovbkmedia.com
+                            {
+                                localStorage.getItem('lung') === 'uk' ?
+                                    TEXT_CONSTANTS.UK.CONTACT_US.subtitle
+                                :
+                                    TEXT_CONSTANTS.ENG.CONTACT_US.subtitle
+                            }
                         </Typography>
                     </Box>
 
@@ -58,7 +76,12 @@ function ContactMain() {
                             type="text"
                             name="first-name"
                             id="name"
-                            placeholder="Ім'я"
+                            placeholder={
+                                localStorage.getItem('lung') === 'uk' ?
+                                    TEXT_CONSTANTS.UK.CONTACT_US.plchName
+                                :
+                                    TEXT_CONSTANTS.ENG.CONTACT_US.plchName
+                            }
                             required
                             style={{
                                 backgroundColor: '#f0f8ff',
@@ -73,7 +96,12 @@ function ContactMain() {
                             type="email"
                             name="email"
                             id="eml"
-                            placeholder='Пошта'
+                            placeholder={
+                                localStorage.getItem('lung') === 'uk' ?
+                                    TEXT_CONSTANTS.UK.CONTACT_US.plchEmail
+                                :
+                                    TEXT_CONSTANTS.ENG.CONTACT_US.plchEmail
+                            }
                             required
                             style={{
                                 backgroundColor: '#f0f8ff',
@@ -89,7 +117,12 @@ function ContactMain() {
                         <textarea
                             name="message"
                             id="mess"
-                            placeholder='Повідомлення'
+                            placeholder={
+                                localStorage.getItem('lung') === 'uk' ?
+                                    TEXT_CONSTANTS.UK.CONTACT_US.plchMessage
+                                :
+                                    TEXT_CONSTANTS.ENG.CONTACT_US.plchMessage
+                            }
                             style={{
                                 backgroundColor: '#f0f8ff',
                                 width: '100%',
@@ -121,7 +154,12 @@ function ContactMain() {
                         }}
                         onClick={() => window.location.assign('/contact-us')}
                     >
-                        Надіслати лист
+                        {
+                            localStorage.getItem('lung') === 'uk' ?
+                                TEXT_CONSTANTS.UK.CONTACT_US.button
+                            :
+                                TEXT_CONSTANTS.ENG.CONTACT_US.button
+                        }
                     </Button>
                 </Box>
             </Container>

@@ -6,6 +6,7 @@ import ApartmentIcon from '@mui/icons-material/Apartment';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import footer from '../styles/footer-prop';
+import TEXT_CONSTANTS from '../text-constants';
 
 function Footer() {
     const [dribble, setDribble] = useState('../dribble.png');
@@ -24,14 +25,38 @@ function Footer() {
                     <Grid container sx={ footer.grid }>
                         <Grid item sx={[ footer.grid.item, { height: '75%' } ]} xs={5}>
                             <Typography sx={ footer.grid.item.title }>
-                                Тільки <span style={{ color: '#2c9ff2', fontWeight: '600' }}>креативні</span> рішення.
+                                {
+                                    localStorage.getItem('lung') === 'uk' ?
+                                        TEXT_CONSTANTS.UK.FOOTER.title1
+                                    :
+                                        TEXT_CONSTANTS.ENG.FOOTER.title1
+                                }
+                                <span style={{ color: '#2c9ff2', fontWeight: '600' }}>
+                                    {
+                                        localStorage.getItem('lung') === 'uk' ?
+                                            TEXT_CONSTANTS.UK.FOOTER.specialWord
+                                        :
+                                            TEXT_CONSTANTS.ENG.FOOTER.specialWord
+                                    }
+                                </span>
+                                {
+                                    localStorage.getItem('lung') === 'uk' ?
+                                        TEXT_CONSTANTS.UK.FOOTER.title2
+                                    :
+                                        TEXT_CONSTANTS.ENG.FOOTER.title2
+                                }
                             </Typography>
                         </Grid>
 
                         <Grid item sx={[ footer.grid.item, { height: '75%' } ]} xs={3.5}>
                             <Box sx={ footer.grid.item.contactInfo }>
                                 <Typography sx={ footer.grid.item.contactInfo.title }>
-                                    КОНТАКТНА ІНФОРМАЦІЯ
+                                    {
+                                        localStorage.getItem('lung') === 'uk' ?
+                                            TEXT_CONSTANTS.UK.FOOTER.subtitle1
+                                        :
+                                            TEXT_CONSTANTS.ENG.FOOTER.subtitle1
+                                    }
                                 </Typography>
 
                                 <Box sx={ footer.grid.item.contactInfo.contacts }>
@@ -65,7 +90,12 @@ function Footer() {
                         <Grid item sx={[ footer.grid.item, { height: '75%' } ]} xs={3.5}>
                             <Box sx={ footer.grid.item.officeInfo }>
                                 <Typography sx={ footer.grid.item.officeInfo.title }>
-                                    ОФІС
+                                    {
+                                        localStorage.getItem('lung') === 'uk' ?
+                                            TEXT_CONSTANTS.UK.FOOTER.subtitle2
+                                        :
+                                            TEXT_CONSTANTS.ENG.FOOTER.subtitle2
+                                    }
                                 </Typography>
 
                                 <Box sx={ footer.grid.item.officeInfo.contacts }>
@@ -75,7 +105,12 @@ function Footer() {
                                         <Link
                                             sx={ footer.grid.item.officeInfo.contacts.link }
                                         >
-                                            Вул Алмазова Генерала буд. 4, оф. 6, м Київ
+                                            {
+                                                localStorage.getItem('lung') === 'uk' ?
+                                                    TEXT_CONSTANTS.UK.FOOTER.place
+                                                :
+                                                    TEXT_CONSTANTS.ENG.FOOTER.place
+                                            }
                                         </Link>
                                     </Box>
                                 </Box>
@@ -104,7 +139,12 @@ function Footer() {
                                         }
                                     }}
                                 >
-                                    Історії
+                                    {
+                                        localStorage.getItem('lung') === 'uk' ?
+                                            TEXT_CONSTANTS.UK.FOOTER.route1
+                                        :
+                                            TEXT_CONSTANTS.ENG.FOOTER.route1
+                                    }
                                 </Typography>
 
                                 <Typography
@@ -117,7 +157,12 @@ function Footer() {
                                         }
                                     }}
                                 >
-                                    Співпраця
+                                    {
+                                        localStorage.getItem('lung') === 'uk' ?
+                                            TEXT_CONSTANTS.UK.FOOTER.route2
+                                        :
+                                            TEXT_CONSTANTS.ENG.FOOTER.route2
+                                    }
                                 </Typography>
 
                                 <Typography
@@ -130,7 +175,12 @@ function Footer() {
                                         }
                                     }}
                                 >
-                                    Конфедіційність
+                                    {
+                                        localStorage.getItem('lung') === 'uk' ?
+                                            TEXT_CONSTANTS.UK.FOOTER.route3
+                                        :
+                                            TEXT_CONSTANTS.ENG.FOOTER.route3
+                                    }
                                 </Typography>
                             </Box>
                         </Grid>

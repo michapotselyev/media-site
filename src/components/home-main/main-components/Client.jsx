@@ -3,6 +3,7 @@ import { Box, Container, Typography } from '@mui/material';
 import aboutUs from '../../../styles/about-us';
 import ourServices from '../../../styles/our-services-prop';
 import client from '../../../styles/client-prop';
+import TEXT_CONSTANTS from '../../../text-constants';
 
 function Client() {
     const [isVisible, setIsVisible] = useState(false);
@@ -69,7 +70,12 @@ function Client() {
                                 { opacity: '0', transform: 'translateY(100px)' }
                         ]}
                     >
-                        КОЖЕН КЛІЄНТ - НАШ ПРІОРИТЕТ
+                        {
+                            localStorage.getItem('lung') === 'uk' ?
+                                TEXT_CONSTANTS.UK.CLIENT.title
+                            :
+                                TEXT_CONSTANTS.ENG.CLIENT.title
+                        }
                     </Typography>
 
                     <Typography
@@ -82,9 +88,12 @@ function Client() {
                                 { opacity: '0', transform: 'translateY(100px)' }
                         ]}
                     >
-                        Ми цінуємо довіру наших клієнтів і завжди прагнемо відповідати їхнім очікуванням.
-                        Наша команда зосереджена на вашому успіху, адаптуючись до ваших потреб і швидко
-                        реагуючи на запити. Ваше задоволення - наша мета
+                        {
+                            localStorage.getItem('lung') === 'uk' ?
+                                TEXT_CONSTANTS.UK.CLIENT.description
+                            :
+                                TEXT_CONSTANTS.ENG.CLIENT.description
+                        }
                     </Typography>
 
                     <Typography
@@ -98,7 +107,12 @@ function Client() {
                         ]}
                     >
                         <span style={{ color: '#2c9ff2', fontSize: '1.1rem', fontWeight: '600' }}>
-                            ТОВ
+                            {
+                                localStorage.getItem('lung') === 'uk' ?
+                                    TEXT_CONSTANTS.UK.CLIENT.author
+                                :
+                                    TEXT_CONSTANTS.ENG.CLIENT.author
+                            }
                         </span>
 
                         <span style={{ fontSize: '1.1rem' }}>&nbsp; / &nbsp;</span>
