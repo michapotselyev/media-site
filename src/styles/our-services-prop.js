@@ -10,7 +10,7 @@ const ourServices = {
     },
     slider: {
         width: '100%',
-        height: '30vw',
+        height: '70vh',
         display: 'flex',
         flexDirection: 'row',
         overflow: 'hidden',
@@ -19,7 +19,6 @@ const ourServices = {
         flexShrink: 0,
 
         item: {
-            width: '50%',
             height: '100%',
             flexShrink: 0,
             padding: '0.5rem',

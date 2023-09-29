@@ -49,20 +49,26 @@ function Client() {
             </Box>
 
             <Box component='section' id='our-services' sx={ client.section }>
-                <Box
-                    sx={[
-                        { width: '47%' },
-                        { transition: 'all 0.5s ease-in-out' },
-                        isVisible ?
-                            { opacity: '1', transform: 'translateY(0)' }
-                        :
-                            { opacity: '0', transform: 'translateY(100px)' }
-                    ]}
-                >
-                    <img src="../removed-back-gifter.gif" alt="work-place" />
-                </Box>
+                {
+                    isSmallScreen ?
+                        <></>
+                    :
+                        <Box
+                            sx={[
+                                { width: '47%' },
+                                { transition: 'all 0.5s ease-in-out' },
+                                isVisible ?
+                                    { opacity: '1', transform: 'translateY(0)' }
+                                :
+                                    { opacity: '0', transform: 'translateY(100px)' }
+                            ]}
+                        >
+                            <img src="../removed-back-gifter.gif" alt="work-place" />
+                        </Box>
+                }
+                
 
-                <Box sx={{ width: '50%', marginLeft: '3%' }}>
+                <Box sx={{ width: isSmallScreen ? '100%' : '50%', marginLeft: isSmallScreen ? '0%' : '3%', textAlign: 'center' }}>
                     <Typography
                         sx={[
                             client.title,
@@ -84,7 +90,7 @@ function Client() {
                     <Typography
                         sx={[
                             client.description,
-                            { transition: 'all 0.5s ease-in-out' },
+                            { transition: 'all 0.5s ease-in-out', fontSize: isSmallScreen ? '1.7rem' : '2rem' },
                             isVisible2 ?
                                 { opacity: '1', transform: 'translateY(0)' }
                             :

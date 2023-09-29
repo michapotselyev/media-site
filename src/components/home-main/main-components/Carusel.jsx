@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Box, Button } from '@mui/material';
+import { Box, Button, useMediaQuery } from '@mui/material';
 import aboutUs from '../../../styles/about-us';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
@@ -14,6 +14,8 @@ class Carousel extends Component {
             isAnimate: false,
             timerId: null
         };
+
+        this.isSmallScreen = this.props.isSmallScreen;
     }
 
     componentDidMount() {
@@ -82,6 +84,7 @@ class Carousel extends Component {
                                     key={index}
                                     sx={{
                                         ...aboutUs.slider.item,
+                                        width: this.isSmallScreen ? '50%' : '25%',
                                         transform: `translateX(${swipeData}%)`,
                                         transition: isAnimate ? 'transform 1s ease-in-out' : ''
                                     }}

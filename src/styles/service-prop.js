@@ -1,10 +1,10 @@
 const service = {
     container: {
-        height: '120vh'
+        minHeight: '120vh'
     },
     wrapper: {
         width: '100%',
-        height: '100%',
+        minHeight: '120vh',
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
@@ -20,7 +20,7 @@ const service = {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'space-between',
-        height: '70vh'
+        minHeight: '70vh'
     },
     title: {
         color: 'white',

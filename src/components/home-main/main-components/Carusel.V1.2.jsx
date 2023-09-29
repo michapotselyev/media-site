@@ -9,10 +9,12 @@ class CarouselV2 extends Component {
         this.state = {
             currentIndex: 0,
             visibleSlides: this.props.slides,
-            swipeData: -50,
+            swipeData: this.props.isSmallScreen ? 0 : -50,
             isAnimate: false,
             timerId: null
         };
+
+        this.isSmallScreen = this.props.isSmallScreen;
     }
 
     componentDidMount() {
@@ -68,38 +70,38 @@ class CarouselV2 extends Component {
         const slidesQuery = slidesQueryPrepared.concat(slides.slice(0, currentIndex));
 
         prevIndex === 0 && currentIndex === slides.length - 1 ?
-            this.setState({ swipeData: -150, isAnimate: false, visibleSlides: slidesQuery }, () => {
-                setTimeout(() => this.setState({ isAnimate: true, swipeData: -50 }, () => {
+            this.setState({ swipeData:  this.isSmallScreen ? -100 : -150, isAnimate: false, visibleSlides: slidesQuery }, () => {
+                setTimeout(() => this.setState({ isAnimate: true, swipeData: this.isSmallScreen ? 0 : -50 }, () => {
                     setTimeout(() => this.setState({ isAnimate: false }), 1000)
                 }), 20)
             })
         :
             prevIndex === 0  && currentIndex === slides.length - 2 ?
-                this.setState({ swipeData: -250, isAnimate: false, visibleSlides: slidesQuery }, () => {
-                    setTimeout(() => this.setState({ isAnimate: true, swipeData: -50 }, () => {
+                this.setState({ swipeData:  this.isSmallScreen ? -200 : -250, isAnimate: false, visibleSlides: slidesQuery }, () => {
+                    setTimeout(() => this.setState({ isAnimate: true, swipeData: this.isSmallScreen ? 0 : -50 }, () => {
                         setTimeout(() => this.setState({ isAnimate: false }), 1000)
                     }), 20)
                 })
             :
                 prevIndex === slides.length - 1  && currentIndex === 0 ?
-                    this.setState({ swipeData: -150, isAnimate: true }, () => {
-                        setTimeout(() => this.setState({ isAnimate: false, swipeData: -50, visibleSlides: slidesQuery }), 1000)
+                    this.setState({ swipeData: ( this.isSmallScreen ? -100 : -150), isAnimate: true }, () => {
+                        setTimeout(() => this.setState({ isAnimate: false, swipeData: this.isSmallScreen ? 0 : -50, visibleSlides: slidesQuery }), 1000)
                     })
                 :
                     prevIndex === slides.length - 2  && currentIndex === 0 ?
-                        this.setState({ swipeData: -150 - 100 * (prevIndex - 2), isAnimate: true }, () => {
-                            setTimeout(() => this.setState({ isAnimate: false, swipeData: -50, visibleSlides: slidesQuery }), 1000)
+                        this.setState({ swipeData: ( this.isSmallScreen ? -100 : -150) - 100 * (prevIndex - 2), isAnimate: true }, () => {
+                            setTimeout(() => this.setState({ isAnimate: false, swipeData: this.isSmallScreen ? 0 : -50, visibleSlides: slidesQuery }), 1000)
                         })
                     :
                         move ?
-                            this.setState({ swipeData: -150 - 100 * (prevIndex - 1 - currentIndex), isAnimate: false, visibleSlides: slidesQuery  }, () => {
-                                setTimeout(() => this.setState({ isAnimate: true, swipeData: -50 }, () => {
+                            this.setState({ swipeData: ( this.isSmallScreen ? -100 : -150) - 100 * (prevIndex - 1 - currentIndex), isAnimate: false, visibleSlides: slidesQuery  }, () => {
+                                setTimeout(() => this.setState({ isAnimate: true, swipeData: this.isSmallScreen ? 0 : -50 }, () => {
                                     setTimeout(() => this.setState({ isAnimate: false }), 1000)
                                 }), 20)
                             })
                         :
-                            this.setState({ swipeData: -150 - 100 * (currentIndex - 1 - prevIndex), isAnimate: true }, () => {
-                                setTimeout(() => this.setState({ isAnimate: false, swipeData: -50, visibleSlides: slidesQuery }), 1000)
+                            this.setState({ swipeData: ( this.isSmallScreen ? -100 : -150) - 100 * (currentIndex - 1 - prevIndex), isAnimate: true }, () => {
+                                setTimeout(() => this.setState({ isAnimate: false, swipeData: this.isSmallScreen ? 0 : -50, visibleSlides: slidesQuery }), 1000)
                             })
     }
 
@@ -116,6 +118,7 @@ class CarouselV2 extends Component {
                                     key={index}
                                     sx={{
                                         ...ourServices.slider.item,
+                                        width: this.isSmallScreen ? '100%' : '50%',
                                         transform: `translateX(${swipeData}%)`,
                                         transition: isAnimate ? 'transform 1s ease-in-out' : ''
                                     }}

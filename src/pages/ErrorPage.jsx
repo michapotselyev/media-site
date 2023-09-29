@@ -2,14 +2,23 @@ import React from 'react';
 import { useRouteError } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import { Box, Container, Typography } from '@mui/material';
+import { Box, Container, Typography, useMediaQuery } from '@mui/material';
+import HeaderMobile from '../components/HeaderMobile';
+import FooterMobile from '../components/FooterMobile';
 
 function ErrorPage() {
     const error = useRouteError();
+    const isSmallScreen = useMediaQuery('(max-width:600px)');
 
     return (
         <>
-            <Header />
+            {
+                isSmallScreen ?
+                    <HeaderMobile />
+                :
+                    <Header />
+            }
+
             <main style={{ background: 'linear-gradient(170deg, #0c0b63 64%, #110f8a 30%)' }}>
                 <Container maxWidth='xl' sx={{ height: '80vh' }}>
                     <Box
@@ -42,7 +51,12 @@ function ErrorPage() {
                     </Box>
                 </Container>
             </main>
-            <Footer />
+            {
+                isSmallScreen ?
+                    <FooterMobile />
+                :
+                    <Footer />
+            }
         </>
     );
 }

@@ -25,7 +25,7 @@ const TEXT_CONSTANTS = {
                 slides: [
                     <Box sx={[ aboutUs.slider.item.img, { backgroundImage: 'url(../Innovation.jpeg)' } ]}>
                         <Box sx={ aboutUs.slider.item.img.wrapperText }>
-                            <Typography sx={{ color: 'white', fontSize: '1.5rem' }}>Технологічність</Typography>
+                            <Typography sx={{ color: 'white', fontSize: '1.5rem', textAlign: 'center' }}>Технологічність</Typography>
                 
                             <Box >
                                 <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
@@ -41,7 +41,7 @@ const TEXT_CONSTANTS = {
                 
                     <Box sx={[ aboutUs.slider.item.img, { backgroundImage: 'url(../experience-todo.jpeg)' } ]}>
                         <Box sx={ aboutUs.slider.item.img.wrapperText }>
-                            <Typography sx={{ color: 'white', fontSize: '1.5rem' }}>Досвід</Typography>
+                            <Typography sx={{ color: 'white', fontSize: '1.5rem', textAlign: 'center' }}>Досвід</Typography>
                 
                             <Box >
                                 <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
@@ -57,7 +57,7 @@ const TEXT_CONSTANTS = {
                 
                     <Box sx={[ aboutUs.slider.item.img, { backgroundImage: 'url(../sm.jpeg)' } ]}>
                         <Box sx={ aboutUs.slider.item.img.wrapperText }>
-                            <Typography sx={{ color: 'white', fontSize: '1.5rem' }}>Індивідуальний підхід</Typography>
+                            <Typography sx={{ color: 'white', fontSize: '1.5rem', textAlign: 'center' }}>Індивідуальний підхід</Typography>
                 
                             <Box >
                                 <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
@@ -73,7 +73,7 @@ const TEXT_CONSTANTS = {
                 
                     <Box sx={[ aboutUs.slider.item.img, { backgroundImage: 'url(../yakist.jpeg)' } ]}>
                         <Box sx={ aboutUs.slider.item.img.wrapperText }>
-                            <Typography sx={{ color: 'white', fontSize: '1.5rem' }}>Високі стандарти якості</Typography>
+                            <Typography sx={{ color: 'white', fontSize: '1.5rem', textAlign: 'center' }}>Високі стандарти якості</Typography>
                 
                             <Box >
                                 <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
@@ -88,7 +88,7 @@ const TEXT_CONSTANTS = {
                     </Box>,
                     <Box sx={[ aboutUs.slider.item.img, { backgroundImage: 'url(../Hnychkist.jpeg)' } ]}>
                         <Box sx={ aboutUs.slider.item.img.wrapperText }>
-                            <Typography sx={{ color: 'white', fontSize: '1.5rem' }}>Гнучкість</Typography>
+                            <Typography sx={{ color: 'white', fontSize: '1.5rem', textAlign: 'center' }}>Гнучкість</Typography>
                 
                             <Box >
                                 <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
@@ -103,7 +103,7 @@ const TEXT_CONSTANTS = {
                     </Box>,
                     <Box sx={[ aboutUs.slider.item.img, { backgroundImage: 'url(../comanda-profof.jpeg)' } ]}>
                         <Box sx={ aboutUs.slider.item.img.wrapperText }>
-                            <Typography sx={{ color: 'white', fontSize: '1.5rem' }}>Команда професіоналів</Typography>
+                            <Typography sx={{ color: 'white', fontSize: '1.5rem', textAlign: 'center' }}>Команда професіоналів</Typography>
                 
                             <Box >
                                 <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
@@ -341,7 +341,7 @@ const TEXT_CONSTANTS = {
                 slides: [
                     <Box sx={[ aboutUs.slider.item.img, { backgroundImage: 'url(../Innovation.jpeg)' } ]}>
                         <Box sx={ aboutUs.slider.item.img.wrapperText }>
-                            <Typography sx={{ color: 'white', fontSize: '1.5rem' }}>Technological Excellence</Typography>
+                            <Typography sx={{ color: 'white', fontSize: '1.5rem', textAlign: 'center' }}>Technological Excellence</Typography>
                 
                             <Box >
                                 <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
@@ -357,7 +357,7 @@ const TEXT_CONSTANTS = {
                 
                     <Box sx={[ aboutUs.slider.item.img, { backgroundImage: 'url(../experience-todo.jpeg)' } ]}>
                         <Box sx={ aboutUs.slider.item.img.wrapperText }>
-                            <Typography sx={{ color: 'white', fontSize: '1.5rem' }}>Experience</Typography>
+                            <Typography sx={{ color: 'white', fontSize: '1.5rem', textAlign: 'center' }}>Experience</Typography>
                 
                             <Box >
                                 <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
@@ -373,7 +373,7 @@ const TEXT_CONSTANTS = {
                 
                     <Box sx={[ aboutUs.slider.item.img, { backgroundImage: 'url(../sm.jpeg)' } ]}>
                         <Box sx={ aboutUs.slider.item.img.wrapperText }>
-                            <Typography sx={{ color: 'white', fontSize: '1.5rem' }}>Individual Approach</Typography>
+                            <Typography sx={{ color: 'white', fontSize: '1.5rem', textAlign: 'center' }}>Individual Approach</Typography>
                 
                             <Box >
                                 <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
@@ -389,7 +389,7 @@ const TEXT_CONSTANTS = {
                 
                     <Box sx={[ aboutUs.slider.item.img, { backgroundImage: 'url(../yakist.jpeg)' } ]}>
                         <Box sx={ aboutUs.slider.item.img.wrapperText }>
-                            <Typography sx={{ color: 'white', fontSize: '1.5rem' }}>High Quality Standards</Typography>
+                            <Typography sx={{ color: 'white', fontSize: '1.5rem', textAlign: 'center' }}>High Quality Standards</Typography>
                 
                             <Box >
                                 <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
@@ -404,7 +404,7 @@ const TEXT_CONSTANTS = {
                     </Box>,
                     <Box sx={[ aboutUs.slider.item.img, { backgroundImage: 'url(../Hnychkist.jpeg)' } ]}>
                         <Box sx={ aboutUs.slider.item.img.wrapperText }>
-                            <Typography sx={{ color: 'white', fontSize: '1.5rem' }}>Flexibility</Typography>
+                            <Typography sx={{ color: 'white', fontSize: '1.5rem', textAlign: 'center' }}>Flexibility</Typography>
                 
                             <Box >
                                 <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
@@ -419,7 +419,7 @@ const TEXT_CONSTANTS = {
                     </Box>,
                     <Box sx={[ aboutUs.slider.item.img, { backgroundImage: 'url(../comanda-profof.jpeg)' } ]}>
                         <Box sx={ aboutUs.slider.item.img.wrapperText }>
-                            <Typography sx={{ color: 'white', fontSize: '1.5rem' }}>Professional Team</Typography>
+                            <Typography sx={{ color: 'white', fontSize: '1.5rem', textAlign: 'center' }}>Professional Team</Typography>
                 
                             <Box >
                                 <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>

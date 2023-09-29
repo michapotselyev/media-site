@@ -72,7 +72,6 @@ const aboutUs = {
         flexShrink: 0,
 
         item: {
-            width: '25%',
             height: '100%',
             flexShrink: 0,
             padding: '0.5rem',

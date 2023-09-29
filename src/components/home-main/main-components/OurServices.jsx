@@ -61,7 +61,7 @@ function OurServices() {
                     }
                 </Typography>
 
-                <CarouselV2 slides={slides} />
+                <CarouselV2 slides={slides} isSmallScreen={isSmallScreen} />
             </Box>
         </Container>
     );

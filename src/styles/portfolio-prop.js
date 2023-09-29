@@ -1,10 +1,10 @@
 const portfolio = {
     container: {
-        height: '200vh'
+        minHeight: '200vh'
     },
     grid: {
         width: '100%',
-        height: '100%',
+        minHeight: '200vh',
 
         wrapper: {
             display: 'flex',

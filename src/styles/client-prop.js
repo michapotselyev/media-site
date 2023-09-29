@@ -17,7 +17,6 @@ const client = {
     },
     description: {
         color: 'white',
-        fontSize: '2rem',
         marginBottom: '1rem'
     },
     author: {

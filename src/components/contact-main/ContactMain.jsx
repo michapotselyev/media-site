@@ -1,8 +1,10 @@
-import { Box, Button, Container, Typography } from '@mui/material';
+import { Box, Button, Container, Typography, useMediaQuery } from '@mui/material';
 import React, { useEffect } from 'react';
 import TEXT_CONSTANTS from '../../text-constants';
 
 function ContactMain() {
+    const isSmallScreen = useMediaQuery('(max-width:600px)');
+
     useEffect(() => {
         document.title = localStorage.getItem('lung') === 'uk' ?
             TEXT_CONSTANTS.UK.PAGE_TITLES.CONTACT_US
@@ -37,19 +39,31 @@ function ContactMain() {
                                 :
                                     TEXT_CONSTANTS.ENG.CONTACT_US.title
                             }
-                            <span
-                                style={{
-                                    color: '#2C9FF2',
-                                    fontWeight: '600',
-                                }}
-                            >
-                                &nbsp;ОВБК МЕДІА
-                            </span>
+                            {
+                                isSmallScreen ?
+                                    <span
+                                        style={{
+                                            color: '#2C9FF2',
+                                            fontWeight: '600',
+                                        }}
+                                    >
+                                        &nbsp;ОВБК&nbsp;МЕДІА
+                                    </span>
+                                :    
+                                    <span
+                                        style={{
+                                            color: '#2C9FF2',
+                                            fontWeight: '600',
+                                        }}
+                                    >
+                                        &nbsp;ОВБК МЕДІА
+                                    </span>
+                            }
                         </Typography>
 
                         <Typography
                             sx={{
-                                fontSize: '1.2rem',
+                                fontSize: isSmallScreen ? '1.35rem' : '1.2rem',
                                 textAlign: 'center',
                                 color: '#666262'
                             }}
@@ -65,9 +79,9 @@ function ContactMain() {
 
                     <Box
                         sx={{
-                            width: '50%',
+                            width: isSmallScreen ? '80%' : '50%',
                             display: 'flex',
-                            flexDirection: 'row',
+                            flexDirection: isSmallScreen ? 'column' : 'row',
                             justifyContent: 'space-between',
                             marginBottom: '1rem'
                         }}
@@ -87,9 +101,11 @@ function ContactMain() {
                                 backgroundColor: '#f0f8ff',
                                 minHeight: '2.25rem',
                                 flexGrow: 1,
-                                marginRight: '1rem',
+                                marginRight: isSmallScreen ? 0 : '1rem',
+                                marginBottom: isSmallScreen ? '1rem' : 0,
                                 borderRadius: '5px',
-                                padding: '1rem'
+                                padding: '1rem',
+                                fontSize: '1.3rem'
                             }}
                         />
                         <input
@@ -108,12 +124,13 @@ function ContactMain() {
                                 minHeight: '2.25rem',
                                 flexGrow: 1,
                                 borderRadius: '5px',
-                                padding: '1rem'
+                                padding: '1rem',
+                                fontSize: '1.3rem'
                             }}
                         />
                     </Box>
 
-                    <Box sx={{ width: '50%', minHeight: '25vh' }}>
+                    <Box sx={{ width: isSmallScreen ? '80%' : '50%', minHeight: '25vh' }}>
                         <textarea
                             name="message"
                             id="mess"
@@ -131,7 +148,8 @@ function ContactMain() {
                                 borderRadius: '5px',
                                 padding: '1rem',
                                 outline: 'none',
-                                border: 'none'
+                                border: 'none',
+                                fontSize: '1.3rem'
                             }}
                         ></textarea>
                     </Box>
@@ -142,7 +160,7 @@ function ContactMain() {
                             backgroundColor: '#2C9FF2',
                             color: 'white',
                             borderRadius: '100px',
-                            fontSize: '1rem',
+                            fontSize: isSmallScreen ? '1.3rem' : '1rem',
                             textTransform: 'none',
                             padding: '0.5rem 2rem 0.5rem 2rem',
                             transition: 'transform 0.3s ease-in-out',

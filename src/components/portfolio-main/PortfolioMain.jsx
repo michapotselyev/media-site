@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react';
 import portfolio from '../../styles/portfolio-prop';
-import { Box, Container, Grid, Typography } from '@mui/material';
+import { Box, Container, Grid, Typography, useMediaQuery } from '@mui/material';
 import TEXT_CONSTANTS from '../../text-constants';
 
 function PortfolioMain() {
+    const isSmallScreen = useMediaQuery('(max-width:600px)');
+
     // eslint-disable-next-line
     useEffect(() => {
         document.title = localStorage.getItem('lung') === 'uk' ?
@@ -16,8 +18,8 @@ function PortfolioMain() {
         <main style={{ background: 'linear-gradient(170deg, #0c0b63 64%, #110f8a 30%)' }}>
             <Container maxWidth='xl' sx={ portfolio.container }>
                 <Grid container sx={ portfolio.grid }>
-                    <Grid item xs={6} sx={ portfolio.grid.wrapper }>
-                        <Box sx={[ portfolio.grid.item, { backgroundImage: 'url(bank-and-finance.jpeg)' } ]}>
+                    <Grid item xs={isSmallScreen ? 12 : 6} sx={[ portfolio.grid.wrapper, { padding: isSmallScreen ? '3rem 0 3rem 0' : 0 } ]}>
+                        <Box sx={[ portfolio.grid.item, { backgroundImage: 'url(bank-and-finance.jpeg)', width: isSmallScreen ? '80vw' : '37vw' } ]}>
                             <Box sx={ portfolio.grid.item.textWrapper }>
                                 <Typography sx={ portfolio.grid.item.title }>
                                     {
@@ -78,8 +80,8 @@ function PortfolioMain() {
                         </Box>
                     </Grid>
 
-                    <Grid item xs={6} sx={ portfolio.grid.wrapper }>
-                        <Box sx={[ portfolio.grid.item, { backgroundImage: 'url(education.jpeg)' } ]}>
+                    <Grid item xs={isSmallScreen ? 12 : 6} sx={[ portfolio.grid.wrapper, { padding: isSmallScreen ? '3rem 0 3rem 0' : 0 } ]}>
+                        <Box sx={[ portfolio.grid.item, { backgroundImage: 'url(education.jpeg)', width: isSmallScreen ? '80vw' : '37vw' } ]}>
                             <Box sx={ portfolio.grid.item.textWrapper }>
                                 <Typography sx={ portfolio.grid.item.title }>
                                     {
@@ -122,8 +124,8 @@ function PortfolioMain() {
                         </Box>
                     </Grid>
 
-                    <Grid item xs={6} sx={ portfolio.grid.wrapper }>
-                        <Box sx={[ portfolio.grid.item, { backgroundImage: 'url(mettalurg.jpeg)' } ]}>
+                    <Grid item xs={isSmallScreen ? 12 : 6} sx={[ portfolio.grid.wrapper, { padding: isSmallScreen ? '3rem 0 3rem 0' : 0 } ]}>
+                        <Box sx={[ portfolio.grid.item, { backgroundImage: 'url(mettalurg.jpeg)', width: isSmallScreen ? '80vw' : '37vw' } ]}>
                             <Box sx={ portfolio.grid.item.textWrapper }>
                                 <Typography sx={ portfolio.grid.item.title }>
                                     {
@@ -166,8 +168,8 @@ function PortfolioMain() {
                         </Box>
                     </Grid>
 
-                    <Grid item xs={6} sx={ portfolio.grid.wrapper }>
-                        <Box sx={[ portfolio.grid.item, { backgroundImage: 'url(sales.png)' } ]}>
+                    <Grid item xs={isSmallScreen ? 12 : 6} sx={[ portfolio.grid.wrapper, { padding: isSmallScreen ? '3rem 0 3rem 0' : 0 } ]}>
+                        <Box sx={[ portfolio.grid.item, { backgroundImage: 'url(sales.png)', width: isSmallScreen ? '80vw' : '37vw' } ]}>
                             <Box sx={ portfolio.grid.item.textWrapper }>
                                 <Typography sx={ portfolio.grid.item.title }>
                                     {

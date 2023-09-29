@@ -116,14 +116,14 @@ function AboutUs() {
                 
                 <Box
                     sx={[
-                        { transition: 'all 0.5s ease-in-out' },
+                        { transition: 'all 0.5s ease-in-out', width: '100%' },
                         isVisible31 ?
                             { opacity: '1', transform: 'translateY(0)' }
                         :
                             { opacity: '0', transform: 'translateY(100px)' }
                     ]}
                 >
-                    <Carousel slides={slides} />
+                    <Carousel slides={slides} isSmallScreen={isSmallScreen} />
                 </Box>
 
                 <Box
