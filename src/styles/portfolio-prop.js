@@ -13,7 +13,7 @@ const portfolio = {
         },
 
         item: {
-            width: '80vh',
+            width: '37vw',
             height: '80vh',
             backgroundSize: 'cover',
             backgroundPosition: 'center',

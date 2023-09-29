@@ -23,7 +23,7 @@ const footer = {
                 height: '100%',
                 display: 'flex',
                 flexDirection: 'column',
-                alignItems: 'center',
+                alignItems: 'start',
 
                 title: {
                     fontSize: '1.1rem',
@@ -32,7 +32,6 @@ const footer = {
                     flexDirection: 'column',
                     justifyContent: 'center',
                     height: '40%',
-                    textAlign: 'center'
                 },
 
                 contacts: {

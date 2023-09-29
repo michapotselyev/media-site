@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Box, Container, Typography } from '@mui/material';
+import { Box, Container, Typography, useMediaQuery } from '@mui/material';
 import aboutUs from '../../../styles/about-us';
 import Carousel from './Carusel';
 import TEXT_CONSTANTS from '../../../text-constants';
@@ -10,6 +10,9 @@ const slides = localStorage.getItem('lung') === 'uk' ?
                     TEXT_CONSTANTS.ENG.ABOUT_US.OUR_ADVANTAGES.slides;
 
 function AboutUs() {
+    const isSmallScreen = useMediaQuery('(max-width:600px)');
+    const isLargeScreen = useMediaQuery('(min-width:1441px)');
+
     const [isVisible, setIsVisible] = useState(false);
     const [isVisible2, setIsVisible2] = useState(false);
     const [isVisible3, setIsVisible3] = useState(false);
@@ -17,7 +20,7 @@ function AboutUs() {
     const [isVisible4, setIsVisible4] = useState(false);
 
     const handleScroll = () => {
-        if (window.scrollY < 300) {
+        if (window.scrollY < (isLargeScreen ? 700: 300)) {
             setIsVisible(false);
             setIsVisible2(false);
             setIsVisible3(false);
@@ -25,20 +28,20 @@ function AboutUs() {
             setIsVisible4(false);
         }
 
-        if (window.scrollY > 300) {
+        if (window.scrollY > (isLargeScreen ? 700: 300)) {
             setIsVisible(true);
         }
         
-        if (window.scrollY > 450) {
+        if (window.scrollY > (isLargeScreen ? 850: 450)) {
             setIsVisible2(true);
         }
         
-        if (window.scrollY > 700) {
+        if (window.scrollY > (isLargeScreen ? 1100: 700)) {
             setIsVisible3(true);
             setIsVisible31(true);
         }
 
-        if (window.scrollY > 900) {
+        if (window.scrollY > (isLargeScreen ? 1300 : 900)) {
             setIsVisible4(true);
         }
     };
@@ -49,6 +52,7 @@ function AboutUs() {
         return () => {
           window.removeEventListener('scroll', handleScroll);
         };
+    // eslint-disable-next-line
     }, []);
 
     return (

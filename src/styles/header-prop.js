@@ -18,6 +18,10 @@ const headerProp =  {
             cursor: 'pointer'
         }
     },
+    iconButton2: {
+        margin: 0,
+        padding: '0.33rem 0 0.33rem 0'
+    },
     button: {
         border: '2px solid #2c9ff2',
         borderRadius: 100,

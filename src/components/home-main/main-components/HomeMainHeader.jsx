@@ -44,7 +44,7 @@ function HomeMainHeader() {
     };
     
     useEffect(() => {
-        if (window.screenTop === 0) {
+        if (window.screenTop >= 0) {
             setIsVisible(true);
 
             setTimeout(() => {

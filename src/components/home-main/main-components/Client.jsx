@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Box, Container, Typography } from '@mui/material';
+import { Box, Container, Typography, useMediaQuery } from '@mui/material';
 import aboutUs from '../../../styles/about-us';
 import ourServices from '../../../styles/our-services-prop';
 import client from '../../../styles/client-prop';
@@ -9,23 +9,26 @@ function Client() {
     const [isVisible, setIsVisible] = useState(false);
     const [isVisible2, setIsVisible2] = useState(false);
     const [isVisible3, setIsVisible3] = useState(false);
+    
+    const isSmallScreen = useMediaQuery('(max-width:600px)');
+    const isLargeScreen = useMediaQuery('(min-width:1441px)');
 
     const handleScroll = () => {
-        if (window.scrollY < 2400) {
+        if (window.scrollY < (isLargeScreen ? 3800: 2400)) {
             setIsVisible(false);
             setIsVisible2(false);
             setIsVisible3(false);
         }
 
-        if (window.scrollY > 2400) {
+        if (window.scrollY > (isLargeScreen ? 3800: 2400)) {
             setIsVisible(true);
         }
 
-        if (window.scrollY > 2550) {
+        if (window.scrollY > (isLargeScreen ? 3950: 2550)) {
             setIsVisible2(true);
         }
 
-        if (window.scrollY > 2650) {
+        if (window.scrollY > (isLargeScreen ? 4050: 2650)) {
             setIsVisible3(true);
         }
     };

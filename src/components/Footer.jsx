@@ -65,10 +65,10 @@ function Footer() {
 
                                         <Link
                                             sx={ footer.grid.item.contactInfo.contacts.link }
-                                            href='tel:+380950645456'
+                                            href='tel:+380668371142'
                                             target='_blank'
                                         >
-                                            +380 95 064 54 56
+                                            +380 66 837 11 42
                                         </Link>
                                     </Box>
 
@@ -215,7 +215,7 @@ function Footer() {
 
                                 <Link sx={ footer.grid.item.socialMedia.item }>
                                     <img
-                                        style={{ width: '20px', height: '20px', cursor: 'pointer' }}
+                                        style={{ width: '20px', height: '20px', cursor: 'pointer', marginBottom: '4px' }}
                                         src={ dribble }
                                         alt="dribble-logo"
                                         onMouseEnter={handleHoverDribble}
@@ -225,7 +225,7 @@ function Footer() {
 
                                 <Link sx={ footer.grid.item.socialMedia.item }>
                                     <img
-                                        style={{ width: '20px', height: '20px', cursor: 'pointer' }}
+                                        style={{ width: '20px', height: '20px', cursor: 'pointer', marginBottom: '4px' }}
                                         src={ behance }
                                         alt="behance-logo"
                                         onMouseEnter={handleHoverBehance}

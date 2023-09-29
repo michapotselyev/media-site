@@ -10,7 +10,7 @@ const ourServices = {
     },
     slider: {
         width: '100%',
-        height: '68%',
+        height: '30vw',
         display: 'flex',
         flexDirection: 'row',
         overflow: 'hidden',

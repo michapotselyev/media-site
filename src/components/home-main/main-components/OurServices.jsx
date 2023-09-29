@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Box, Container, Typography } from '@mui/material';
+import { Box, Container, Typography, useMediaQuery } from '@mui/material';
 import ourServices from '../../../styles/our-services-prop';
 import aboutUs from '../../../styles/about-us';
 import CarouselV2 from './Carusel.V1.2';
@@ -12,13 +12,16 @@ const slides = localStorage.getItem('lung') === 'uk' ?
 
 function OurServices() {
     const [isVisible, setIsVisible] = useState(false);
+    
+    const isSmallScreen = useMediaQuery('(max-width:600px)');
+    const isLargeScreen = useMediaQuery('(min-width:1441px)');
 
     const handleScroll = () => {
-        if (window.scrollY < 1600) {
+        if (window.scrollY < (isLargeScreen ? 2400 : 1400)) {
             setIsVisible(false);
         }
 
-        if (window.scrollY > 1600) {
+        if (window.scrollY > (isLargeScreen ? 2400 : 1400)) {
             setIsVisible(true);
         }
     };
