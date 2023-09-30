@@ -32,6 +32,7 @@ function OurServices() {
         return () => {
           window.removeEventListener('scroll', handleScroll);
         };
+    // eslint-disable-next-line
     }, []);
 
     return (

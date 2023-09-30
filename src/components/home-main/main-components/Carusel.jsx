@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Box, Button, useMediaQuery } from '@mui/material';
+import { Box, Button } from '@mui/material';
 import aboutUs from '../../../styles/about-us';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';

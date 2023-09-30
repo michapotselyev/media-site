@@ -1,9 +1,46 @@
 import { Box, Button, Container, Typography, useMediaQuery } from '@mui/material';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import TEXT_CONSTANTS from '../../text-constants';
+import axios from 'axios';
 
 function ContactMain() {
     const isSmallScreen = useMediaQuery('(max-width:600px)');
+    const [userData, setUserData] = useState({
+        name: '',
+        email: '',
+        message: ''
+    });
+
+    const changeHandler = (event) => {
+        setUserData({ ...userData, [event.target.name]: event.target.value  });
+    }
+
+    const submitHandler = async (event) => {
+        event.preventDefault();
+
+        const apiKey = process.env.REACT_APP_API_KEY;
+        const domain = process.env.REACT_APP_DOMAIN;
+
+        try {
+            await axios.post(`https://api.mailgun.net/v3/${domain}/messages`, null, {
+                params: {
+                    from: `postmaster@${domain}`,
+                    to: 'office@ovbkmedia.com',
+                    subject: 'Нове повідомлення з сайту ovbkmedia.com',
+                    text: `Повідомлення було надіслано користувачем ${userData.name}!\n\nПовідомлення:\n${userData.message}\n\nКористувач чекає на Вашу відповідь за email: ${userData.email}`,
+                }, auth: {
+                    username: 'api',
+                    password: apiKey,
+                },
+            });
+
+            alert('Повідомлення відправлено успішно!');
+            window.location.assign('/contact-us')
+        } catch (error) {
+            alert('При відправлені повідомлення сталася помилка, будь-ласка, спробуйте ще раз!');
+            console.log('Response data:', error.response.data);
+        }
+    }
 
     useEffect(() => {
         document.title = localStorage.getItem('lung') === 'uk' ?
@@ -23,6 +60,9 @@ function ContactMain() {
                         justifyContent: 'center',
                         minHeight: '100vh'
                     }}
+                    component={'form'}
+                    method='post'
+                    onSubmit={submitHandler}
                 >
                     <Box sx={{ marginBottom: '3rem' }}>
                         <Typography
@@ -88,8 +128,10 @@ function ContactMain() {
                     >
                         <input
                             type="text"
-                            name="first-name"
+                            name="name"
                             id="name"
+                            value={userData.name}
+                            onChange={changeHandler}
                             placeholder={
                                 localStorage.getItem('lung') === 'uk' ?
                                     TEXT_CONSTANTS.UK.CONTACT_US.plchName
@@ -112,6 +154,8 @@ function ContactMain() {
                             type="email"
                             name="email"
                             id="eml"
+                            value={userData.email}
+                            onChange={changeHandler}
                             placeholder={
                                 localStorage.getItem('lung') === 'uk' ?
                                     TEXT_CONSTANTS.UK.CONTACT_US.plchEmail
@@ -134,6 +178,8 @@ function ContactMain() {
                         <textarea
                             name="message"
                             id="mess"
+                            value={userData.message}
+                            onChange={changeHandler}
                             placeholder={
                                 localStorage.getItem('lung') === 'uk' ?
                                     TEXT_CONSTANTS.UK.CONTACT_US.plchMessage
@@ -170,7 +216,7 @@ function ContactMain() {
                                 transform: 'scale(1.1)'
                             }
                         }}
-                        onClick={() => window.location.assign('/contact-us')}
+                        type='submit'
                     >
                         {
                             localStorage.getItem('lung') === 'uk' ?
@@ -186,3 +232,5 @@ function ContactMain() {
 }
 
 export default ContactMain;
+
+
