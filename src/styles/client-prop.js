@@ -8,6 +8,7 @@ const client = {
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
+        justifyContent: 'center',
         padding: '0 10% 0 10%'
     },
     title: {

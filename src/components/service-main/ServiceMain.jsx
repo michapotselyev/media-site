@@ -24,7 +24,8 @@ function ServiceMain() {
     useEffect(() => { document.title = currentService.title }, []);
 
     return (
-        <main style={{ background: 'linear-gradient(170deg, #0c0b63 64%, #110f8a 30%)' }}>
+        <main style={{ background: 'linear-gradient(170deg, #0c0b63 64%, #110f8a 30%)', position: 'relative' }}>
+            <div style={{ position: 'absolute', width: '100%', height: '100%', backgroundColor: 'rgba(0, 0, 0, 0.2)' }} ></div>
             <Container maxWidth='xl' sx={ service.container }>
                 <Box sx={[ service.wrapper, { flexDirection: isSmallScreen ? 'column' : 'row' } ]}>
                     <Box sx={[ service.imageWrapper, { width: isSmallScreen ? '100%' : '50%', paddingLeft: isSmallScreen ? 0 : '2rem' } ]}>

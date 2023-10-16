@@ -33,7 +33,17 @@ function Header() {
     }, []);
 
     return (
-        <AppBar position="static" sx={{ background: 'linear-gradient(45deg, #0c0b63 0%, #110f8a 70%, #0e0e30 100%)' }}>
+        <AppBar
+            position="relative"
+            sx={{
+                background: 'linear-gradient(45deg, #0c0b63 0%, #110f8a 70%, #0e0e30 100%)',
+                '-webkit-box-shadow': '0px 5px 18px 15px rgba(0,0,0,0.1)',
+                '-moz-box-shadow': '0px 5px 18px 15px rgba(0,0,0,0.1)',
+                boxShadow: '0px 5px 18px 15px rgba(0,0,0,0.1)',
+                zIndex: 999
+            }}
+        >
+            <div style={{ position: 'absolute', width: '100%', height: '100%', backgroundColor: 'rgba(0, 0, 0, 0.1)' }} ></div>
             <Container maxWidth='xl' sx={{ padding: '1.5rem' }}>
                 <Toolbar sx={ headerProp.toolBar }>
                     <Box sx={ headerProp.logos }>
@@ -65,7 +75,7 @@ function Header() {
                             }
                         </Link>
 
-                        <Link href='/portfolio' sx={ headerProp.nav.link }>
+                        <Link href='/#implemented-projects' sx={ headerProp.nav.link }>
                             {
                                 localStorage.getItem('lung') === 'uk' ?
                                     TEXT_CONSTANTS.UK.HEADER.THIRD_ROUTE

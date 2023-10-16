@@ -50,7 +50,8 @@ function ContactMain() {
     }, []);
 
     return (
-        <main style={{ background: 'linear-gradient(170deg, #0c0b63 64%, #110f8a 30%)' }}>
+        <main style={{ background: 'linear-gradient(170deg, #0c0b63 64%, #110f8a 30%)', position: 'relative' }}>
+            <div style={{ position: 'absolute', width: '100%', minHeight: '100%', backgroundColor: 'rgba(0, 0, 0, 0.2)' }} ></div>
             <Container maxWidth='xl' sx={{ minHeight: '100vh' }}>
                 <Box
                     sx={{
@@ -64,7 +65,7 @@ function ContactMain() {
                     method='post'
                     onSubmit={submitHandler}
                 >
-                    <Box sx={{ marginBottom: '3rem' }}>
+                    <Box sx={{ marginBottom: '3rem', zIndex: '1' }}>
                         <Typography
                             sx={{
                                 fontSize: '2.5rem',
@@ -123,7 +124,8 @@ function ContactMain() {
                             display: 'flex',
                             flexDirection: isSmallScreen ? 'column' : 'row',
                             justifyContent: 'space-between',
-                            marginBottom: '1rem'
+                            marginBottom: '1rem',
+                            zIndex: '1'
                         }}
                     >
                         <input
@@ -174,7 +176,7 @@ function ContactMain() {
                         />
                     </Box>
 
-                    <Box sx={{ width: isSmallScreen ? '80%' : '50%', minHeight: '25vh' }}>
+                    <Box sx={{ width: isSmallScreen ? '80%' : '50%', minHeight: '25vh', zIndex: '1' }}>
                         <textarea
                             name="message"
                             id="mess"

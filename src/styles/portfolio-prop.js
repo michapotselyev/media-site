@@ -1,15 +1,31 @@
 const portfolio = {
+    title: {
+        position: 'relative',
+        fontSize: '2rem',
+        color: 'white',
+        transition: 'all 0.5s ease-in-out',
+        width: '100%',
+        textAlign: 'center',
+        textShadow: '0px 0px 10px black',
+        zIndex: 1
+    },
     container: {
-        minHeight: '200vh'
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'center',
+        alignItems: 'center',
+        position: 'relative',
+        zIndex: 1
     },
     grid: {
         width: '100%',
-        minHeight: '200vh',
+        height: '100%',
 
         wrapper: {
             display: 'flex',
             justifyContent: 'center',
-            alignItems: 'center'
+            alignItems: 'center',
+            height: '90vh',
         },
 
         item: {
@@ -17,6 +33,10 @@ const portfolio = {
             height: '80vh',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
+            border: '1px solid rgb(17,15,138)',
+            '-webkit-box-shadow': '0px 0px 20px 3px rgb(17,15,138)',
+            '-moz-box-shadow': '0px 0px 20px 3px rgb(17,15,138)',
+            boxShadow: '0px 0px 20px 3px rgb(17,15,138)',
             borderRadius: '5px',
 
             textWrapper: {

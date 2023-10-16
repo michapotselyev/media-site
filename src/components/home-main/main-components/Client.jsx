@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Box, Container, Typography, useMediaQuery } from '@mui/material';
-import aboutUs from '../../../styles/about-us';
 import ourServices from '../../../styles/our-services-prop';
 import client from '../../../styles/client-prop';
 import TEXT_CONSTANTS from '../../../text-constants';
@@ -14,21 +13,21 @@ function Client() {
     const isLargeScreen = useMediaQuery('(min-width:1441px)');
 
     const handleScroll = () => {
-        if (window.scrollY < (isLargeScreen ? 3800: 2400)) {
+        if (window.scrollY < (isLargeScreen ? 3500: 2100)) {
             setIsVisible(false);
             setIsVisible2(false);
             setIsVisible3(false);
         }
 
-        if (window.scrollY > (isLargeScreen ? 3800: 2400)) {
+        if (window.scrollY > (isLargeScreen ? 3500: 2100)) {
             setIsVisible(true);
         }
 
-        if (window.scrollY > (isLargeScreen ? 3950: 2550)) {
+        if (window.scrollY > (isLargeScreen ? 3650: 2250)) {
             setIsVisible2(true);
         }
 
-        if (window.scrollY > (isLargeScreen ? 4050: 2650)) {
+        if (window.scrollY > (isLargeScreen ? 3750: 2400)) {
             setIsVisible3(true);
         }
     };
@@ -43,33 +42,18 @@ function Client() {
     }, []);
 
     return (
-        <Container maxWidth='xl' sx={ ourServices.container }>
-            <Box sx={ aboutUs.backgroundShadow }></Box>
-            <Box>
-                <img src="../logo.png" alt="background" style={{ opacity: '0.5' }} />
-            </Box>
-
-            <Box component='section' id='our-services' sx={ client.section }>
-                {
-                    isSmallScreen ?
-                        <></>
-                    :
-                        <Box
-                            sx={[
-                                { width: '47%' },
-                                { transition: 'all 0.5s ease-in-out' },
-                                isVisible ?
-                                    { opacity: '1', transform: 'translateY(0)' }
-                                :
-                                    { opacity: '0', transform: 'translateY(100px)' }
-                            ]}
-                        >
-                            <img src="../removed-back-gifter.gif" alt="work-place" />
-                        </Box>
-                }
-                
-
-                <Box sx={{ width: isSmallScreen ? '100%' : '50%', marginLeft: isSmallScreen ? '0%' : '3%', textAlign: 'center' }}>
+        <Container
+            maxWidth='xl'
+            sx={{
+                ...ourServices.container,
+                height: '50vh',
+                '-webkit-box-shadow': '0px 0px 20px 3px rgb(17,15,138)',
+                '-moz-box-shadow': '0px 0px 20px 3px rgb(17,15,138)',
+                boxShadow: '0px 0px 20px 3px rgb(17,15,138)'
+            }}
+        >
+            <Box component='section' sx={ client.section }>
+                <Box sx={{ width: '85%', textAlign: 'center' }}>
                     <Typography
                         sx={[
                             client.title,
@@ -91,7 +75,7 @@ function Client() {
                     <Typography
                         sx={[
                             client.description,
-                            { transition: 'all 0.5s ease-in-out', fontSize: isSmallScreen ? '1.7rem' : '2rem' },
+                            { transition: 'all 0.5s ease-in-out', fontSize: isSmallScreen ? '1.1rem' : '1.7rem' },
                             isVisible2 ?
                                 { opacity: '1', transform: 'translateY(0)' }
                             :

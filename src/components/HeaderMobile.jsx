@@ -116,7 +116,7 @@ function HeaderMobile() {
                         }
                     </Link>
 
-                    <Link href='/portfolio' sx={ headerProp.nav.link }>
+                    <Link href='/#implemented-projects' sx={ headerProp.nav.link }>
                         {
                             localStorage.getItem('lung') === 'uk' ?
                                 TEXT_CONSTANTS.UK.HEADER.THIRD_ROUTE

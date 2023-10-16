@@ -63,8 +63,6 @@ class CarouselV2 extends Component {
     sliderChanger = (prevIndex, move) => {
         const { visibleSlides, currentIndex } = this.state;
         const { slides } = this.props;
-
-        this.clearTimer();
         
         const slidesQueryPrepared = slides.slice(currentIndex, visibleSlides.length);
         const slidesQuery = slidesQueryPrepared.concat(slides.slice(0, currentIndex));

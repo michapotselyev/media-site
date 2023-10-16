@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import { MainPage, ServicePage, PortfolioPage, ContactPage, ErrorPage } from "../pages";
+import { MainPage, ServicePage, ContactPage, ErrorPage } from "../pages";
 
 const router = createBrowserRouter([
     {
@@ -10,11 +10,6 @@ const router = createBrowserRouter([
     {
         path: "/service/:id",
         element: <ServicePage />,
-        errorElement: <ErrorPage />
-    },
-    {
-        path: "/portfolio",
-        element: <PortfolioPage />,
         errorElement: <ErrorPage />
     },
     {

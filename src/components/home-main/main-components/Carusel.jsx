@@ -29,21 +29,10 @@ class Carousel extends Component {
         clearInterval(timerId);
     }
 
-    clearTimer() {
-        const { timerId } = this.state;
-
-        if (timerId) {
-            clearInterval(timerId);
-            this.setState({ timerId: null });
-        }
-    }
-
     prevSlide = () => {
         const { visibleSlides, isAnimate } = this.state;
 
         if (isAnimate) return;
-
-        this.clearTimer();
 
         const slidesQueryPrepared = visibleSlides.slice(0, visibleSlides.length - 1);
         const lastSlide = visibleSlides.slice(visibleSlides.length - 1, visibleSlides.length);
@@ -60,8 +49,6 @@ class Carousel extends Component {
         const { visibleSlides, isAnimate } = this.state;
 
         if (isAnimate) return;
-
-        this.clearTimer();
 
         const slidesQueryPrepared = visibleSlides.slice(1, visibleSlides.length);
         const slidesQuery = slidesQueryPrepared.concat(visibleSlides.slice(0, 1));

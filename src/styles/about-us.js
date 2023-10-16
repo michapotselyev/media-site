@@ -45,7 +45,8 @@ const aboutUs = {
     title: {
         fontSize: '2rem',
         color: 'white',
-        transition: 'all 0.5s ease-in-out'
+        transition: 'all 0.5s ease-in-out',
+        textShadow: '0px 0px 3px black'
     },
     description: {
         color: '#2C9FF2',
@@ -53,12 +54,14 @@ const aboutUs = {
         fontSize: '1.3rem',
         textAlign: 'center',
         paddingTop: '1.5rem',
+        textShadow: '0px 0px 10px black',
         transition: 'all 0.5s ease-in-out'
     },
     ourDiff: {
         marginTop: '5rem',
         fontSize: '2rem',
         color: 'white',
+        textShadow: '0px 0px 10px black',
         transition: 'all 0.5s ease-in-out'
     },
     slider: {
@@ -81,6 +84,9 @@ const aboutUs = {
                 height: '100%',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
+                '-webkit-box-shadow': '0px 0px 6px 3px rgb(17,15,138)',
+                '-moz-box-shadow': '0px 0px 6px 3px rgb(17,15,138)',
+                boxShadow: '0px 0px 6px 3px rgb(17,15,138)',
                 
                 wrapperText: {
                     display: 'flex',
