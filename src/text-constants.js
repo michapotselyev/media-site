@@ -224,45 +224,45 @@ const TEXT_CONSTANTS = {
                 url: '../project/project-image01.jpg',
                 title: 'Веб-сайти: Сайти майбутнього',
                 description: {
-                    p1: 'Наша команда професіоналів готова надати вам найкращі рішення для вдосконалення вашого бізнесу через сучасний та ефективний веб-простір',
-                    p2: 'Кожен сайт, який ми створюємо, - це майстерність та інновації в дії',
-                    p3: 'Ми ретельно вивчаємо ваші потреби та бізнес-цілі, щоб забезпечити рішення, яке відповідає найвищим стандартам'
+                    p1: 'Наша кваліфікована команда готова забезпечити вам передові рішення для оптимізації вашого бізнесу за допомогою найсучасніших технологій, таких як React та Node.js, а також використання агільних методологій розробки',
+                    p2: 'Кожен веб-сайт, створений нашою командою, втілює в собі найвищу майстерність та передові інновації в дії, застосовуючи сучасні стеки розробки, такі як MERN або MEAN, а також використовуючи високоефективні інструменти Frontend та Backend розробки',
+                    p3: 'Ми пристосовуємо наші рішення до ваших бізнес-потреб, здійснюючи докладне дослідження та аналіз вашого бізнесу, щоб забезпечити найвищий стандарт та ефективність реалізації проектів за допомогою DevOps та Continuous Integration / Continuous Deployment (CI / CD)'
                 }
             },
             "2": {
                 url: '../project/project-image02.jpg',
                 title: 'Ліцензування: Ключ до програм',
                 description: {
-                    p1: 'Ви можете легко відстежувати ліцензії, оновлення та активації',
-                    p2: 'Ми пропонуємо послуги ліцензування ключів до програм, які забезпечують максимальний рівень захисту та зручності',
-                    p3: 'Наші системи ліцензування дають вам повний контроль над розповсюдженням та використанням програм'
+                    p1: 'Забезпечте легке відстеження ліцензій, оновлень та активацій завдяки нашим сучасним системам управління ліцензіями, що використовують технології DRM (Digital Rights Management) та SaaS (Software as a Service)',
+                    p2: 'Ми пропонуємо високоефективні послуги ліцензування ключів до програмного забезпечення, які гарантують максимальний рівень захисту та зручності, використовуючи передові методи шифрування та аутентифікації',
+                    p3: 'Наші інтегровані системи ліцензування дозволяють вам здійснювати повний контроль над розповсюдженням та використанням програм, використовуючи механізми автоматичної активації та управління дозволами'
                 }
             },
             "3": {
                 url: '../project/project-image03.jpg',
                 title: 'Кібербезпека: Цифровий щит',
                 description: {
-                    p1: 'Наші цифрові щити постійно оновлюються, щоб бути на крок попереду перед потенційними загрозами',
-                    p2: 'Ми використовуємо передові технології та методи для виявлення та запобігання кіберзагрозам',
-                    p3: 'Ми спеціалізуємося на створенні надійних цифрових щитів, які захищають ваш бізнес від сьогоднішніх кіберзагроз'
+                    p1: 'Наші цифрові оборонні системи постійно оновлюються, щоб вести перевагу над потенційними загрозами та забезпечувати безпеку вашого бізнесу',
+                    p2: 'Ми використовуємо передові технології та інноваційні методи для виявлення та запобігання кіберзагрозам, застосовуючи інструменти, такі як машинне навчання та аналіз поведінки',
+                    p3: 'Наша спеціалізація - розробка надійних цифрових бар\'єрів, які забезпечують комплексний захист вашого бізнесу від сучасних кіберзагроз та зловмисників.'
                 }
             },
             "4": {
                 url: '../project/project-image04.jpg',
                 title: 'Розробка UI: Десктопні рішення',
                 description: {
-                    p1: 'Наша команда професіоналів спеціалізується на розробці UI, які не лише ефективні, але й вражають своєю користувацькою дружністю та естетикою',
-                    p2: 'Ми маємо досвід у розробці десктопних UI для різних галузей, що дає нам унікальний погляд  на проекти',
-                    p3: 'Використовуємо передові дизайнерські підходи та тренди, щоб створювати UI, які виглядають сучасно, наші UI не лише красиві, але і практичні'
-                }
+                    p1: 'Наша команда професіоналів у галузі розробки користувацьких інтерфейсів (UI) спрямована на створення не лише ефективних, але й захоплюючих рішень, які відзначаються надзвичайною користувацькою дружністю та естетикою, використовуючи найновітніші технології, такі як React та Angular',
+                    p2: 'Ми маємо багаторічний досвід у створенні десктопних інтерфейсів користувача для широкого спектру галузей, що дозволяє нам мати унікальну перспективу на кожен проект і підходити до нього індивідуально з метою забезпечити максимальну задоволеність користувачів',
+                    p3: 'Ми використовуємо передові дизайнерські методики та тренди, такі як Material Design та адаптивний дизайн, для створення користувацьких інтерфейсів, які не лише виглядають сучасно, але і максимально практичні та зручні для кінцевих користувачів'
+                }    
             },
             "5": {
                 url: '../project/project-image05.jpg',
                 title: 'Мобільні додатки: Мобільний світ',
                 description: {
-                    p1: 'Розробляємо сучасні та інноваційні мобільні додатки, які забезпечують функціональність',
-                    p2: 'Створюємо зручні інтерфейси для вашої цільової аудиторії, спрощуючи взаємодію та підвищуючи залученість користувачів',
-                    p3: 'Допомагаємо визначити ваші потреби, розробляємо додаток та забезпечуємо його підтримку та оновлення'
+                    p1: 'Ми спеціалізуємося на створенні передових та інноваційних мобільних додатків, що відзначаються високою функціональністю та продуманим дизайном, використовуючи технології, такі як React Native та Flutter',
+                    p2: 'Наша команда зосереджена на створенні зручних та інтуїтивно зрозумілих інтерфейсів, спеціально розроблених для вашої цільової аудиторії, щоб спростити їх взаємодію з додатком та підвищити загальний рівень задоволення від користування',
+                    p3: 'Ми надаємо комплексну підтримку у визначенні вашої мобільної стратегії, розробці додатка та забезпеченні його стабільної та безперебійної роботи, включаючи регулярне оновлення та адаптацію до змінних потреб ринку'
                 }
             }
         },
@@ -541,45 +541,45 @@ const TEXT_CONSTANTS = {
                 "url": '../project/project-image01.jpg',
                 "title": 'Websites: Websites of the Future',
                 "description": {
-                    "p1": 'Our team of professionals is ready to provide you with the best solutions to enhance your business through the modern and efficient web space',
-                    "p2": 'Every website we create is a mastery and innovation in action',
-                    "p3": 'We thoroughly study your needs and business goals to provide a solution that meets the highest standards'
+                    p1: 'Our skilled team is ready to provide you with cutting-edge solutions to optimize your business using the latest technologies such as React and Node.js, along with the implementation of agile development methodologies',
+                    p2: 'Each website created by our team embodies the highest craftsmanship and cutting-edge innovation, employing modern development stacks such as MERN or MEAN, as well as leveraging high-performance Frontend and Backend development tools',
+                    p3: 'We tailor our solutions to your business needs, conducting in-depth research and analysis of your business to ensure the highest standard and efficiency in project implementation through DevOps and Continuous Integration/Continuous Deployment (CI/CD)'
                 }
             },
             "2": {
                 "url": '../project/project-image02.jpg',
                 "title": 'Licensing: Key to Software',
                 "description": {
-                    "p1": 'You can easily track licenses, updates, and activations',
-                    "p2": 'We offer key licensing services that provide maximum security and convenience',
-                    "p3": 'Our licensing systems give you full control over the distribution and use of software'
+                    p1: 'Facilitate easy tracking of licenses, updates, and activations through our modern license management systems that utilize DRM (Digital Rights Management) and SaaS (Software as a Service) technologies',
+                    p2: 'We offer highly efficient software key licensing services that guarantee the highest level of protection and convenience, employing advanced encryption and authentication methods',
+                    p3: 'Our integrated licensing systems allow you to have complete control over the distribution and use of programs, using mechanisms for automated activation and permission management'
                 }
             },
             "3": {
                 "url": '../project/project-image03.jpg',
                 "title": 'Cybersecurity: Digital Shield',
                 "description": {
-                    "p1": 'Our digital shields are constantly updated to stay one step ahead of potential threats',
-                    "p2": 'Our company uses advanced technologies and methods to detect and prevent cyber threats',
-                    "p3": 'We specialize in creating reliable digital shields that protect your business from today\'s cyber threats'
+                    p1: 'Our digital defense systems are constantly updated to stay ahead of potential threats and ensure the security of your business',
+                    p2: 'We utilize advanced technologies and innovative methods to detect and prevent cyber threats, employing tools such as machine learning and behavior analysis',
+                    p3: 'Our specialization lies in the development of reliable digital barriers that provide comprehensive protection for your business against modern cyber threats and adversaries'
                 }
             },
             "4": {
                 "url": '../project/project-image04.jpg',
                 "title": 'UI Development: Desktop Solutions',
                 "description": {
-                    "p1": 'Our team of professionals specializes in UI development that is not only effective but also impresses with user-friendliness and aesthetics',
-                    "p2": 'We have experience in developing desktop UIs for various industries, giving us a unique perspective on projects',
-                    "p3": 'We use advanced design approaches and trends to create UIs that look modern, our UIs are not only beautiful but also practical'
+                    p1: 'Our team of professionals in the field of User Interface (UI) development is dedicated to creating not only efficient but also engaging solutions distinguished by exceptional user-friendliness and aesthetics, utilizing cutting-edge technologies such as React and Angular',
+                    p2: 'We have years of experience in creating desktop user interfaces for a wide range of industries, which allows us to have a unique perspective on each project and approach it individually to ensure maximum user satisfaction',
+                    p3: 'We employ advanced design methodologies and trends such as Material Design and responsive design to create user interfaces that not only look modern but are also highly practical and convenient for end users'
                 }
             },
             "5": {
                 "url": '../project/project-image05.jpg',
                 "title": 'Mobile Apps: Mobile World',
                 "description": {
-                    "p1": 'We develop modern and innovative mobile applications that provide functionality',
-                    "p2": 'We create user-friendly interfaces for your target audience, making interaction easier and increasing user engagement',
-                    "p3": 'We help define your needs, develop the application, and provide support and updates'
+                    p1: 'We specialize in creating advanced and innovative mobile applications characterized by high functionality and thoughtful design, using technologies such as React Native and Flutter',
+                    p2: 'Our team is focused on creating convenient and intuitive interfaces specially designed for your target audience to simplify their interaction with the application and enhance overall user satisfaction',
+                    p3: 'We provide comprehensive support in defining your mobile strategy, developing the application, and ensuring its stable and uninterrupted operation, including regular updates and adaptation to changing market needs'
                 }
             }
         },

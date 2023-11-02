@@ -78,7 +78,7 @@ function HomeMainHeader() {
             </animated.div>
 
             <animated.div style={fadeAnimation2}>
-                <img src="../working-girl.png" alt="Working Girl" />
+                <img src="../men-working.jpg" alt="Working Men" />
             </animated.div>
         </Container>
     );
