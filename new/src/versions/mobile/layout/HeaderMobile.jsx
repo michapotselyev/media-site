@@ -11,9 +11,6 @@ import TEXT_CONSTANTS from '../../../text-constants';
 function HeaderMobile() {
     const [fadeAnimation, setFadeAnimation] = useState(false);
     const [open, setOpen] = useState(false);
-    const [currentLunguage, setCurrentLunguage] = useState(
-        localStorage.getItem('lung') === 'uk' ? true : false
-    );
 
     const openHandler = () => {
         window.scrollTo({
@@ -40,15 +37,40 @@ function HeaderMobile() {
         const currentLung = localStorage.getItem('lung'); 
         
         if (currentLung === 'uk') {
-            setCurrentLunguage(false);
             localStorage.setItem('lung', 'eng');
             return window.location.assign(window.location.pathname);
         }
 
         if (currentLung === 'eng') {
-            setCurrentLunguage(true);
             localStorage.setItem('lung', 'uk');
             return window.location.assign(window.location.pathname);
+        }
+    }
+
+    const linkHandler = (event) => {
+        switch (event.target.id) {
+            case 'first':
+                closeHandler();
+                window.location.assign('#about-us');
+                return;
+
+            case 'second':
+                closeHandler();
+                window.location.assign('#our-services');
+                return;
+
+            case 'third':
+                closeHandler();
+                window.location.assign('#portfolio');
+                return;
+
+            case 'button':
+                closeHandler();
+                window.location.assign('#contact-us');
+                return;
+        
+            default:
+                return;
         }
     }
 
@@ -112,8 +134,8 @@ function HeaderMobile() {
                                 ]
                             }
                         >
-                            <Link>
-                                <Typography>
+                            <Link id='first' onClick={linkHandler}>
+                                <Typography id='first'>
                                     {
                                         localStorage.getItem('lung') === 'uk' ?
                                             TEXT_CONSTANTS.UK.HEADER.FIRST_ROUTE
@@ -138,8 +160,8 @@ function HeaderMobile() {
                                 ]
                             }
                         >
-                            <Link>
-                                <Typography>
+                            <Link id='second' onClick={linkHandler}>
+                                <Typography id='second'>
                                     {
                                         localStorage.getItem('lung') === 'uk' ?
                                             TEXT_CONSTANTS.UK.HEADER.SECOND_ROUTE
@@ -164,8 +186,8 @@ function HeaderMobile() {
                                 ]
                             }
                         >
-                            <Link>
-                                <Typography>
+                            <Link id='third' onClick={linkHandler}>
+                                <Typography id='third'>
                                     {
                                         localStorage.getItem('lung') === 'uk' ?
                                             TEXT_CONSTANTS.UK.HEADER.THIRD_ROUTE
@@ -240,6 +262,31 @@ function HeaderMobile() {
                                     <Typography>Українська</Typography>
                                 </Box>
                             </Collapse>
+                        </Box>
+                    </Box>
+
+                    <Box sx={ headerStyle.menuProp.propDiv.signButtons } component={'section'}>
+                        <Box
+                            sx={
+                                [
+                                    headerStyle.menuProp.propDiv.signButtons.signUp,
+                                    fadeAnimation ?
+                                        { opacity: '1', transform: 'translateY(0)' }
+                                    :
+                                        { opacity: '0', transform: 'translateY(100px)' }
+                                ]
+                            }
+                            id='button'
+                            onClick={linkHandler}
+                        >
+                            <Typography id='button'>
+                                {
+                                    localStorage.getItem('lung') === 'uk' ?
+                                        TEXT_CONSTANTS.UK.HEADER.BUTTON
+                                    :
+                                        TEXT_CONSTANTS.ENG.HEADER.BUTTON
+                                }
+                            </Typography>
                         </Box>
                     </Box>
                 </Box>

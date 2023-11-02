@@ -4,7 +4,7 @@ import homeMainAboutUsStyle from '../../../../globalStyles/styles/mobile/compone
 
 function HomeMainAboutUs() {
     return (
-        <Box component={'section'} sx={ homeMainAboutUsStyle.section }>
+        <Box id='about-us' component={'section'} sx={ homeMainAboutUsStyle.section }>
             <Box sx={ homeMainAboutUsStyle.section.infoDiv }>
                 <Typography sx={ homeMainAboutUsStyle.section.infoDiv.title }>
                     Про нас

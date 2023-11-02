@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Grid, Typography } from '@mui/material';
+import { Box, Grid } from '@mui/material';
 import homeMainOurAdvantagesStyle from '../../../../globalStyles/styles/mobile/components/home-main-our-advantages-prop';
 
 function HomeMainOurAdvantages() {

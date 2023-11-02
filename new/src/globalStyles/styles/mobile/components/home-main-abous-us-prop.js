@@ -11,7 +11,7 @@ const homeMainAboutUsStyle = {
 
             title: {
                 fontSize: '2.1rem',
-                fontWeight: '700',
+                fontWeight: '600',
                 paddingBottom: '0.5rem',
                 marginBottom: '1rem',
                 borderBottom: '3px solid black'
@@ -19,7 +19,7 @@ const homeMainAboutUsStyle = {
 
             description: {
                 fontSize: '1.6rem',
-                fontWeight: '600',
+                fontWeight: '500',
                 paddingBottom: '3rem'
             },
 

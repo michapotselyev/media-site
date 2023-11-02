@@ -89,7 +89,11 @@ const headerStyle = {
 
                 '& > li > a': {
                     textDecoration: 'none',
-                    color: 'inherit'
+                    color: 'inherit',
+
+                    '&:hover': {
+                        textDecoration: 'underline'
+                    }
                 },
 
                 '& > li > a > p': {
@@ -135,6 +139,34 @@ const headerStyle = {
                     '& > img': {
                         width: '30px',
                         height: '30px'
+                    }
+                }
+            },
+
+            signButtons: {
+                height: '20%',
+                display: 'flex',
+                flexDirection: 'row',
+                alignItems: 'center',
+                justifyContent: 'center',
+                
+                '& > div > p': {
+                    fontSize: '1.8rem',
+                    fontWeight: '700',
+                    textAlign: 'center'
+                },
+
+                signUp: {
+                    color: 'black',
+                    background: 'insert',
+                    borderRadius: '20px',
+                    padding: '1rem 1.5rem',
+                    border: '1px solid black',
+                    boxShadow: '0px 0px 5px 1px #000',
+                    transition: 'all 0.7s ease-in-out',
+                    
+                    '&:active': {
+                        transform: 'scale(0.8)'
                     }
                 }
             }
