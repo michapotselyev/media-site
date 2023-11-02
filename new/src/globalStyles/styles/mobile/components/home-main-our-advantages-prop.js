@@ -4,14 +4,19 @@ const homeMainOurAdvantagesStyle = {
         width: '100%',
     },
 
+    gridItem: {
+        height: 'calc(80vw - 4rem)',
+        padding: '1rem'
+    },
+
     img: {
         width: '100%',
         height: '100%',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        WebkitBoxShadow: '0px 0px 6px 3px rgb(17,15,138)',
-        MozBoxShadow: '0px 0px 6px 3px rgb(17,15,138)',
-        boxShadow: '0px 0px 6px 3px rgb(17,15,138)',
+        WebkitBoxShadow: '0px 0px 6px 3px rgb(0,0,0)',
+        MozBoxShadow: '0px 0px 6px 3px rgb(0,0,0)',
+        boxShadow: '0px 0px 6px 3px rgb(0,0,0)',
         
         wrapperText: {
             display: 'flex',

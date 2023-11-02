@@ -15,100 +15,99 @@ const TEXT_CONSTANTS = {
         COMPANY_NAME: 'ОВБК Медіа',
         INDRODUCTION: 'З нами інновації для вашого бізнесу без кордонів',
         ABOUT_US: {
-            title: 'Про нас',
+            title: 'ПРО НАС',
             description: 'Команда ОВБК МЕДІА працює з 2017 року. За цей час були успішно реалізовані проекти для компаній з банківського та фінансового секторів, паливного та металургійного бізнесів, в сфері освіти',
             stack: 'Наші технології розробки',
             OUR_ADVANTAGES: {
-                title: 'Наші переваги',
                 slides: [
-                    <Box sx={[ homeMainOurAdvantagesStyle.img, { backgroundImage: 'url(../Innovation.jpeg)' } ]}>
+                    <Box sx={[ homeMainOurAdvantagesStyle.img, { backgroundImage: 'url(assets/Innovation.jpeg)' } ]}>
                         <Box sx={ homeMainOurAdvantagesStyle.img.wrapperText }>
-                            <Typography sx={{ color: 'white', fontSize: '1.5rem', textAlign: 'center' }}>Технологічність</Typography>
+                            <Typography sx={{ color: 'white', fontSize: '2.1rem', fontWeight: '600', textAlign: 'center' }}>Технологічність</Typography>
                 
                             <Box >
-                                <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
+                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
                                     - Використовуємо передові технології та інструменти
                                 </Typography>
                 
-                                <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
+                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
                                     - Впроваджуємо інноваційні рішення для вашого бізнесу
                                 </Typography>
                             </Box>
                         </Box>
                     </Box>,
                 
-                    <Box sx={[ homeMainOurAdvantagesStyle.img, { backgroundImage: 'url(../experience-todo.jpeg)' } ]}>
+                    <Box sx={[ homeMainOurAdvantagesStyle.img, { backgroundImage: 'url(assets/experience-todo.jpeg)' } ]}>
                         <Box sx={ homeMainOurAdvantagesStyle.img.wrapperText }>
-                            <Typography sx={{ color: 'white', fontSize: '1.5rem', textAlign: 'center' }}>Досвід</Typography>
+                            <Typography sx={{ color: 'white', fontSize: '2.1rem', fontWeight: '600', textAlign: 'center' }}>Досвід</Typography>
                 
                             <Box >
-                                <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
+                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
                                     - Більше 5 років на ринку IT-&nbsp;аутсорсингу
                                 </Typography>
                 
-                                <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
+                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
                                     - Проекти в різних напрямках бізнесу
                                 </Typography>
                             </Box>
                         </Box>
                     </Box>,
                 
-                    <Box sx={[ homeMainOurAdvantagesStyle.img, { backgroundImage: 'url(../sm.jpeg)' } ]}>
+                    <Box sx={[ homeMainOurAdvantagesStyle.img, { backgroundImage: 'url(assets/sm.jpeg)' } ]}>
                         <Box sx={ homeMainOurAdvantagesStyle.img.wrapperText }>
-                            <Typography sx={{ color: 'white', fontSize: '1.5rem', textAlign: 'center' }}>Індивідуальний підхід</Typography>
+                            <Typography sx={{ color: 'white', fontSize: '2.1rem', fontWeight: '600', textAlign: 'center' }}>Індивідуальний підхід</Typography>
                 
                             <Box >
-                                <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
+                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
                                     - Кожен клієнт для нас особливий
                                 </Typography>
                 
-                                <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
+                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
                                     - Розробляємо індивідуальні стратегії з усіма побажаннями клієнта та з урахуванням нашого досвіду
                                 </Typography>
                             </Box>
                         </Box>
                     </Box>,
                 
-                    <Box sx={[ homeMainOurAdvantagesStyle.img, { backgroundImage: 'url(../yakist.jpeg)' } ]}>
+                    <Box sx={[ homeMainOurAdvantagesStyle.img, { backgroundImage: 'url(assets/yakist.jpeg)' } ]}>
                         <Box sx={ homeMainOurAdvantagesStyle.img.wrapperText }>
-                            <Typography sx={{ color: 'white', fontSize: '1.5rem', textAlign: 'center' }}>Високі стандарти якості</Typography>
+                            <Typography sx={{ color: 'white', fontSize: '2.1rem', fontWeight: '600', textAlign: 'center' }}>Високі стандарти якості</Typography>
                 
                             <Box >
-                                <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
+                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
                                     - Наші рішення відповідають всім стандартам IT
                                 </Typography>
                 
-                                <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
+                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
                                     - Регулярно вивчаємо та оптимізуємо проекти у відповідності з останніми тенденціями
                                 </Typography>
                             </Box>
                         </Box>
                     </Box>,
-                    <Box sx={[ homeMainOurAdvantagesStyle.img, { backgroundImage: 'url(../Hnychkist.jpeg)' } ]}>
+                    <Box sx={[ homeMainOurAdvantagesStyle.img, { backgroundImage: 'url(assets/Hnychkist.jpeg)' } ]}>
                         <Box sx={ homeMainOurAdvantagesStyle.img.wrapperText }>
-                            <Typography sx={{ color: 'white', fontSize: '1.5rem', textAlign: 'center' }}>Гнучкість</Typography>
+                            <Typography sx={{ color: 'white', fontSize: '2.1rem', fontWeight: '600', textAlign: 'center' }}>Гнучкість</Typography>
                 
                             <Box >
-                                <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
+                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
                                     - Швидко адаптуємося до змін у ринкових умовах
                                 </Typography>
                 
-                                <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
+                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
                                     - Готові до викликів будь-якої складності
                                 </Typography>
                             </Box>
                         </Box>
                     </Box>,
-                    <Box sx={[ homeMainOurAdvantagesStyle.img, { backgroundImage: 'url(../comanda-profof.jpeg)' } ]}>
+                    <Box sx={[ homeMainOurAdvantagesStyle.img, { backgroundImage: 'url(assets/comanda-profof.jpeg)' } ]}>
                         <Box sx={ homeMainOurAdvantagesStyle.img.wrapperText }>
-                            <Typography sx={{ color: 'white', fontSize: '1.5rem', textAlign: 'center' }}>Команда професіоналів</Typography>
+                            <Typography sx={{ color: 'white', fontSize: '2.1rem', fontWeight: '600', textAlign: 'center' }}>Команда професіоналів</Typography>
                 
                             <Box >
-                                <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
+                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
                                     - Ми експерти у своїй сфері
                                 </Typography>
                 
-                                <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
+                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
                                     - Постійно навчаємось та підвищуємо кваліфікацію
                                 </Typography>
                             </Box>
@@ -120,7 +119,7 @@ const TEXT_CONSTANTS = {
         OUR_SERVICE: {
             title: 'Наші послуги',
             slides: [
-                <Box sx={[ homeMainOurServicesStyle.img, { backgroundImage: 'url(../project/project-image05.jpg)' } ]}>
+                <Box sx={[ homeMainOurServicesStyle.img, { backgroundImage: 'url(assets/project/project-image05.jpg)' } ]}>
                     <Box sx={ homeMainOurServicesStyle.img.wrapperText }>
                         <Box>
                             <Typography sx={{ fontSize: '0.8rem', color: '#909090' }}>
@@ -139,7 +138,7 @@ const TEXT_CONSTANTS = {
                         </Link>
                     </Box>
                 </Box>,
-                <Box sx={[ homeMainOurServicesStyle.img, { backgroundImage: 'url(../project/project-image01.jpg)' } ]}>
+                <Box sx={[ homeMainOurServicesStyle.img, { backgroundImage: 'url(assets/project/project-image01.jpg)' } ]}>
                     <Box sx={ homeMainOurServicesStyle.img.wrapperText }>
                         <Box>
                             <Typography sx={{ fontSize: '0.8rem', color: '#909090' }}>
@@ -158,7 +157,7 @@ const TEXT_CONSTANTS = {
                         </Link>
                     </Box>
                 </Box>,
-                <Box sx={[ homeMainOurServicesStyle.img, { backgroundImage: 'url(../project/project-image02.jpg)' } ]}>
+                <Box sx={[ homeMainOurServicesStyle.img, { backgroundImage: 'url(assets/project/project-image02.jpg)' } ]}>
                     <Box sx={ homeMainOurServicesStyle.img.wrapperText }>
                         <Box>
                             <Typography sx={{ fontSize: '0.8rem', color: '#909090' }}>
@@ -177,7 +176,7 @@ const TEXT_CONSTANTS = {
                         </Link>
                     </Box>
                 </Box>,
-                <Box sx={[ homeMainOurServicesStyle.img, { backgroundImage: 'url(../project/project-image03.jpg)' } ]}>
+                <Box sx={[ homeMainOurServicesStyle.img, { backgroundImage: 'url(assets/project/project-image03.jpg)' } ]}>
                     <Box sx={ homeMainOurServicesStyle.img.wrapperText }>
                         <Box>
                             <Typography sx={{ fontSize: '0.8rem', color: '#909090' }}>
@@ -196,7 +195,7 @@ const TEXT_CONSTANTS = {
                         </Link>
                     </Box>
                 </Box>,
-                <Box sx={[ homeMainOurServicesStyle.img, { backgroundImage: 'url(../project/project-image04.jpg)' } ]}>
+                <Box sx={[ homeMainOurServicesStyle.img, { backgroundImage: 'url(assets/project/project-image04.jpg)' } ]}>
                     <Box sx={ homeMainOurServicesStyle.img.wrapperText }>
                         <Box>
                             <Typography sx={{ fontSize: '0.8rem', color: '#909090' }}>
@@ -219,7 +218,7 @@ const TEXT_CONSTANTS = {
         },
         SERVICE_DATA: {
             "1": {
-                url: '../project/project-image01.jpg',
+                url: 'assets/project/project-image01.jpg',
                 title: 'Веб-сайти: Сайти майбутнього',
                 description: {
                     p1: 'Наша кваліфікована команда готова забезпечити вам передові рішення для оптимізації вашого бізнесу за допомогою найсучасніших технологій, таких як React та Node.js, а також використання агільних методологій розробки',
@@ -228,7 +227,7 @@ const TEXT_CONSTANTS = {
                 }
             },
             "2": {
-                url: '../project/project-image02.jpg',
+                url: 'assets/project/project-image02.jpg',
                 title: 'Ліцензування: Ключ до програм',
                 description: {
                     p1: 'Забезпечте легке відстеження ліцензій, оновлень та активацій завдяки нашим сучасним системам управління ліцензіями, що використовують технології DRM (Digital Rights Management) та SaaS (Software as a Service)',
@@ -237,7 +236,7 @@ const TEXT_CONSTANTS = {
                 }
             },
             "3": {
-                url: '../project/project-image03.jpg',
+                url: 'assets/project/project-image03.jpg',
                 title: 'Кібербезпека: Цифровий щит',
                 description: {
                     p1: 'Наші цифрові оборонні системи постійно оновлюються, щоб вести перевагу над потенційними загрозами та забезпечувати безпеку вашого бізнесу',
@@ -246,7 +245,7 @@ const TEXT_CONSTANTS = {
                 }
             },
             "4": {
-                url: '../project/project-image04.jpg',
+                url: 'assets/project/project-image04.jpg',
                 title: 'Розробка UI: Десктопні рішення',
                 description: {
                     p1: 'Наша команда професіоналів у галузі розробки користувацьких інтерфейсів (UI) спрямована на створення не лише ефективних, але й захоплюючих рішень, які відзначаються надзвичайною користувацькою дружністю та естетикою, використовуючи найновітніші технології, такі як React та Angular',
@@ -255,7 +254,7 @@ const TEXT_CONSTANTS = {
                 }    
             },
             "5": {
-                url: '../project/project-image05.jpg',
+                url: 'assets/project/project-image05.jpg',
                 title: 'Мобільні додатки: Мобільний світ',
                 description: {
                     p1: 'Ми спеціалізуємося на створенні передових та інноваційних мобільних додатків, що відзначаються високою функціональністю та продуманим дизайном, використовуючи технології, такі як React Native та Flutter',
@@ -330,100 +329,99 @@ const TEXT_CONSTANTS = {
         COMPANY_NAME: 'OVBK MEDIA',
         INDRODUCTION: 'With us, innovation knows no boundaries for your business',
         ABOUT_US: {
-            title: 'About us',
-            description: 'The ОВБК МЕДІА team has been working since 2017. During this time, successful projects have been implemented for companies in the banking and financial sectors, as well as in the fuel and metallurgical industries, and in the field of education',
+            title: 'ABOUT US',
+            description: 'The OVBK MEDIA team has been working since 2017. During this time, successful projects have been implemented for companies in the banking and financial sectors, as well as in the fuel and metallurgical industries, and in the field of education',
             stack: 'Our development technologies',
             OUR_ADVANTAGES: {
-                title: 'Our advantages',
                 slides: [
-                    <Box sx={[ homeMainOurAdvantagesStyle.img, { backgroundImage: 'url(../Innovation.jpeg)' } ]}>
+                    <Box sx={[ homeMainOurAdvantagesStyle.img, { backgroundImage: 'url(assets/Innovation.jpeg)' } ]}>
                         <Box sx={ homeMainOurAdvantagesStyle.img.wrapperText }>
-                            <Typography sx={{ color: 'white', fontSize: '1.5rem', textAlign: 'center' }}>Technological Excellence</Typography>
+                            <Typography sx={{ color: 'white', fontSize: '2.1rem', fontWeight: '600', textAlign: 'center' }}>Technological Excellence</Typography>
                 
                             <Box >
-                                <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
+                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
                                     - We utilize cutting-edge technologies and tools
                                 </Typography>
                 
-                                <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
+                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
                                     - Implement innovative solutions for your business
                                 </Typography>
                             </Box>
                         </Box>
                     </Box>,
                 
-                    <Box sx={[ homeMainOurAdvantagesStyle.img, { backgroundImage: 'url(../experience-todo.jpeg)' } ]}>
+                    <Box sx={[ homeMainOurAdvantagesStyle.img, { backgroundImage: 'url(assets/experience-todo.jpeg)' } ]}>
                         <Box sx={ homeMainOurAdvantagesStyle.img.wrapperText }>
-                            <Typography sx={{ color: 'white', fontSize: '1.5rem', textAlign: 'center' }}>Experience</Typography>
+                            <Typography sx={{ color: 'white', fontSize: '2.1rem', fontWeight: '600', textAlign: 'center' }}>Experience</Typography>
                 
                             <Box >
-                                <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
+                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
                                     - Over 5 years in the IT outsourcing market
                                 </Typography>
                 
-                                <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
+                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
                                     - Projects in various business domains
                                 </Typography>
                             </Box>
                         </Box>
                     </Box>,
                 
-                    <Box sx={[ homeMainOurAdvantagesStyle.img, { backgroundImage: 'url(../sm.jpeg)' } ]}>
+                    <Box sx={[ homeMainOurAdvantagesStyle.img, { backgroundImage: 'url(assets/sm.jpeg)' } ]}>
                         <Box sx={ homeMainOurAdvantagesStyle.img.wrapperText }>
-                            <Typography sx={{ color: 'white', fontSize: '1.5rem', textAlign: 'center' }}>Individual Approach</Typography>
+                            <Typography sx={{ color: 'white', fontSize: '2.1rem', fontWeight: '600', textAlign: 'center' }}>Individual Approach</Typography>
                 
                             <Box >
-                                <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
+                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
                                     - Every client is special to us
                                 </Typography>
                 
-                                <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
+                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
                                     - We develop individual strategies tailored to client preferences and our expertise
                                 </Typography>
                             </Box>
                         </Box>
                     </Box>,
                 
-                    <Box sx={[ homeMainOurAdvantagesStyle.img, { backgroundImage: 'url(../yakist.jpeg)' } ]}>
+                    <Box sx={[ homeMainOurAdvantagesStyle.img, { backgroundImage: 'url(assets/yakist.jpeg)' } ]}>
                         <Box sx={ homeMainOurAdvantagesStyle.img.wrapperText }>
-                            <Typography sx={{ color: 'white', fontSize: '1.5rem', textAlign: 'center' }}>High Quality Standards</Typography>
+                            <Typography sx={{ color: 'white', fontSize: '2.1rem', fontWeight: '600', textAlign: 'center' }}>High Quality Standards</Typography>
                 
                             <Box >
-                                <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
+                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
                                     - Our solutions meet all IT standards
                                 </Typography>
                 
-                                <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
+                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
                                     - We regularly study and optimize projects in line with the latest trends
                                 </Typography>
                             </Box>
                         </Box>
                     </Box>,
-                    <Box sx={[ homeMainOurAdvantagesStyle.img, { backgroundImage: 'url(../Hnychkist.jpeg)' } ]}>
+                    <Box sx={[ homeMainOurAdvantagesStyle.img, { backgroundImage: 'url(assets/Hnychkist.jpeg)' } ]}>
                         <Box sx={ homeMainOurAdvantagesStyle.img.wrapperText }>
-                            <Typography sx={{ color: 'white', fontSize: '1.5rem', textAlign: 'center' }}>Flexibility</Typography>
+                            <Typography sx={{ color: 'white', fontSize: '2.1rem', fontWeight: '600', textAlign: 'center' }}>Flexibility</Typography>
                 
                             <Box >
-                                <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
+                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
                                     - Quick adaptation to changing market conditions
                                 </Typography>
                 
-                                <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
+                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
                                     - Ready for challenges of any complexity
                                 </Typography>
                             </Box>
                         </Box>
                     </Box>,
-                    <Box sx={[ homeMainOurAdvantagesStyle.img, { backgroundImage: 'url(../comanda-profof.jpeg)' } ]}>
+                    <Box sx={[ homeMainOurAdvantagesStyle.img, { backgroundImage: 'url(assets/comanda-profof.jpeg)' } ]}>
                         <Box sx={ homeMainOurAdvantagesStyle.img.wrapperText }>
-                            <Typography sx={{ color: 'white', fontSize: '1.5rem', textAlign: 'center' }}>Professional Team</Typography>
+                            <Typography sx={{ color: 'white', fontSize: '2.1rem', fontWeight: '600', textAlign: 'center' }}>Professional Team</Typography>
                 
                             <Box >
-                                <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
+                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
                                     - We are experts in our field
                                 </Typography>
                 
-                                <Typography sx={{ color: 'white', fontSize: '1.08rem', textAlign: 'center' }}>
+                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
                                     - We constantly learn and improve our qualifications
                                 </Typography>
                             </Box>
@@ -435,7 +433,7 @@ const TEXT_CONSTANTS = {
         OUR_SERVICE: {
             title: 'Our Services',
             slides: [
-                <Box sx={[ homeMainOurServicesStyle.img, { backgroundImage: 'url(../project/project-image05.jpg)' } ]}>
+                <Box sx={[ homeMainOurServicesStyle.img, { backgroundImage: 'url(assets/project/project-image05.jpg)' } ]}>
                     <Box sx={ homeMainOurServicesStyle.img.wrapperText }>
                         <Box>
                             <Typography sx={{ fontSize: '0.8rem', color: '#909090' }}>
@@ -454,7 +452,7 @@ const TEXT_CONSTANTS = {
                         </Link>
                     </Box>
                 </Box>,
-                <Box sx={[ homeMainOurServicesStyle.img, { backgroundImage: 'url(../project/project-image01.jpg)' } ]}>
+                <Box sx={[ homeMainOurServicesStyle.img, { backgroundImage: 'url(assets/project/project-image01.jpg)' } ]}>
                     <Box sx={ homeMainOurServicesStyle.img.wrapperText }>
                         <Box>
                             <Typography sx={{ fontSize: '0.8rem', color: '#909090' }}>
@@ -473,7 +471,7 @@ const TEXT_CONSTANTS = {
                         </Link>
                     </Box>
                 </Box>,
-                <Box sx={[ homeMainOurServicesStyle.img, { backgroundImage: 'url(../project/project-image02.jpg)' } ]}>
+                <Box sx={[ homeMainOurServicesStyle.img, { backgroundImage: 'url(assets/project/project-image02.jpg)' } ]}>
                     <Box sx={ homeMainOurServicesStyle.img.wrapperText }>
                         <Box>
                             <Typography sx={{ fontSize: '0.8rem', color: '#909090' }}>
@@ -492,7 +490,7 @@ const TEXT_CONSTANTS = {
                         </Link>
                     </Box>
                 </Box>,
-                <Box sx={[ homeMainOurServicesStyle.img, { backgroundImage: 'url(../project/project-image03.jpg)' } ]}>
+                <Box sx={[ homeMainOurServicesStyle.img, { backgroundImage: 'url(assets/project/project-image03.jpg)' } ]}>
                     <Box sx={ homeMainOurServicesStyle.img.wrapperText }>
                         <Box>
                             <Typography sx={{ fontSize: '0.8rem', color: '#909090' }}>
@@ -511,7 +509,7 @@ const TEXT_CONSTANTS = {
                         </Link>
                     </Box>
                 </Box>,
-                <Box sx={[ homeMainOurServicesStyle.img, { backgroundImage: 'url(../project/project-image04.jpg)' } ]}>
+                <Box sx={[ homeMainOurServicesStyle.img, { backgroundImage: 'url(assets/project/project-image04.jpg)' } ]}>
                     <Box sx={ homeMainOurServicesStyle.img.wrapperText }>
                         <Box>
                             <Typography sx={{ fontSize: '0.8rem', color: '#909090' }}>
@@ -534,7 +532,7 @@ const TEXT_CONSTANTS = {
         },
         SERVICE_DATA: {
             "1": {
-                "url": '../project/project-image01.jpg',
+                "url": 'assets/project/project-image01.jpg',
                 "title": 'Websites: Websites of the Future',
                 "description": {
                     p1: 'Our skilled team is ready to provide you with cutting-edge solutions to optimize your business using the latest technologies such as React and Node.js, along with the implementation of agile development methodologies',
@@ -543,7 +541,7 @@ const TEXT_CONSTANTS = {
                 }
             },
             "2": {
-                "url": '../project/project-image02.jpg',
+                "url": 'assets/project/project-image02.jpg',
                 "title": 'Licensing: Key to Software',
                 "description": {
                     p1: 'Facilitate easy tracking of licenses, updates, and activations through our modern license management systems that utilize DRM (Digital Rights Management) and SaaS (Software as a Service) technologies',
@@ -552,7 +550,7 @@ const TEXT_CONSTANTS = {
                 }
             },
             "3": {
-                "url": '../project/project-image03.jpg',
+                "url": 'assets/project/project-image03.jpg',
                 "title": 'Cybersecurity: Digital Shield',
                 "description": {
                     p1: 'Our digital defense systems are constantly updated to stay ahead of potential threats and ensure the security of your business',
@@ -561,7 +559,7 @@ const TEXT_CONSTANTS = {
                 }
             },
             "4": {
-                "url": '../project/project-image04.jpg',
+                "url": 'assets/project/project-image04.jpg',
                 "title": 'UI Development: Desktop Solutions',
                 "description": {
                     p1: 'Our team of professionals in the field of User Interface (UI) development is dedicated to creating not only efficient but also engaging solutions distinguished by exceptional user-friendliness and aesthetics, utilizing cutting-edge technologies such as React and Angular',
@@ -570,7 +568,7 @@ const TEXT_CONSTANTS = {
                 }
             },
             "5": {
-                "url": '../project/project-image05.jpg',
+                "url": 'assets/project/project-image05.jpg',
                 "title": 'Mobile Apps: Mobile World',
                 "description": {
                     p1: 'We specialize in creating advanced and innovative mobile applications characterized by high functionality and thoughtful design, using technologies such as React Native and Flutter',
