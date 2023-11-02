@@ -33,9 +33,7 @@ function HeaderMobile() {
         window.location.assign('/');
     }
 
-    const handleLungChange = () => {
-        const currentLung = localStorage.getItem('lung'); 
-        
+    const handleLungChange = (currentLung) => {
         if (currentLung === 'uk') {
             localStorage.setItem('lung', 'eng');
             return window.location.assign(window.location.pathname);
@@ -79,6 +77,7 @@ function HeaderMobile() {
 
         if (!currentLung) {
             localStorage.setItem('lung', 'uk');
+            window.location.reload();
         }
     }, []);
 
@@ -240,7 +239,7 @@ function HeaderMobile() {
                                             }
                                         ]
                                     }
-                                    onClick={handleLungChange}
+                                    onClick={() => handleLungChange('uk')}
                                 >
                                     <Box component={'img'} src='assets/usa.png' alt='usa' />
                                     <Typography>English</Typography>
@@ -256,7 +255,7 @@ function HeaderMobile() {
                                             }
                                         ]
                                     }
-                                    onClick={handleLungChange}
+                                    onClick={() => handleLungChange('eng')}
                                 >
                                     <Box component={'img'} src='assets/ukraine.png' alt='ukraine' />
                                     <Typography>Українська</Typography>

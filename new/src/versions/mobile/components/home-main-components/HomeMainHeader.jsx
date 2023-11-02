@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
 import homeMainHeaderStyle from '../../../../globalStyles/styles/mobile/components/home-main-header-prop';
+import TEXT_CONSTANTS from '../../../../text-constants';
 
 function HomeMainHeader() {
     return (
@@ -10,11 +11,21 @@ function HomeMainHeader() {
 
             <Box sx={ homeMainHeaderStyle.textDiv }>
                 <Typography component={'h1'}>
-                    ОВБК МЕДІА
+                    {
+                        localStorage.getItem('lung') === 'uk' ?
+                            TEXT_CONSTANTS.UK.COMPANY_NAME
+                        :
+                            TEXT_CONSTANTS.ENG.COMPANY_NAME
+                    }
                 </Typography>
 
                 <Typography>
-                    З нами інновації для вашого бізнесу без кордонів
+                    {
+                        localStorage.getItem('lung') === 'uk' ?
+                            TEXT_CONSTANTS.UK.INDRODUCTION
+                        :
+                            TEXT_CONSTANTS.ENG.INDRODUCTION
+                    }
                 </Typography>
             </Box>
         </Box>

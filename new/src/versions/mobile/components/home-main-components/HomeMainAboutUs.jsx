@@ -1,21 +1,37 @@
 import React from 'react';
 import { Box, Grid, Typography } from '@mui/material';
 import homeMainAboutUsStyle from '../../../../globalStyles/styles/mobile/components/home-main-abous-us-prop';
+import TEXT_CONSTANTS from '../../../../text-constants';
 
 function HomeMainAboutUs() {
     return (
         <Box id='about-us' component={'section'} sx={ homeMainAboutUsStyle.section }>
             <Box sx={ homeMainAboutUsStyle.section.infoDiv }>
                 <Typography sx={ homeMainAboutUsStyle.section.infoDiv.title }>
-                    Про нас
+                    {
+                        localStorage.getItem('lung') === 'uk' ?
+                            TEXT_CONSTANTS.UK.ABOUT_US.title
+                        :
+                            TEXT_CONSTANTS.ENG.ABOUT_US.title
+                    }
                 </Typography>
 
                 <Typography sx={ homeMainAboutUsStyle.section.infoDiv.description }>
-                    Команда ОВБК МЕДІА працює з 2017 року. За цей час були успішно реалізовані проекти для компаній з банківського та фінансового секторів, паливного та металургійного бізнесів, в сфері освіти
+                    {
+                        localStorage.getItem('lung') === 'uk' ?
+                            TEXT_CONSTANTS.UK.ABOUT_US.description
+                        :
+                            TEXT_CONSTANTS.ENG.ABOUT_US.description
+                    }
                 </Typography>
 
                 <Typography sx={ homeMainAboutUsStyle.section.infoDiv.title }>
-                    Наші технології розробки
+                    {
+                        localStorage.getItem('lung') === 'uk' ?
+                            TEXT_CONSTANTS.UK.ABOUT_US.stack
+                        :
+                            TEXT_CONSTANTS.ENG.ABOUT_US.stack
+                    }
                 </Typography>
 
                 <Grid container sx={ homeMainAboutUsStyle.section.infoDiv.works }>

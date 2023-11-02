@@ -12,10 +12,12 @@ const TEXT_CONSTANTS = {
             LANGUAGE: 'Мова',
             BUTTON: 'Зв\'язатися з нами'
         },
+        COMPANY_NAME: 'ОВБК Медіа',
         INDRODUCTION: 'З нами інновації для вашого бізнесу без кордонів',
         ABOUT_US: {
             title: 'Про нас',
             description: 'Команда ОВБК МЕДІА працює з 2017 року. За цей час були успішно реалізовані проекти для компаній з банківського та фінансового секторів, паливного та металургійного бізнесів, в сфері освіти',
+            stack: 'Наші технології розробки',
             OUR_ADVANTAGES: {
                 title: 'Наші переваги',
                 slides: [
@@ -325,10 +327,12 @@ const TEXT_CONSTANTS = {
             LANGUAGE: 'Language',
             BUTTON: 'Contact with us'
         },
+        COMPANY_NAME: 'OVBK MEDIA',
         INDRODUCTION: 'With us, innovation knows no boundaries for your business',
         ABOUT_US: {
             title: 'About us',
             description: 'The ОВБК МЕДІА team has been working since 2017. During this time, successful projects have been implemented for companies in the banking and financial sectors, as well as in the fuel and metallurgical industries, and in the field of education',
+            stack: 'Our development technologies',
             OUR_ADVANTAGES: {
                 title: 'Our advantages',
                 slides: [
