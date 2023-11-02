@@ -1,39 +1,51 @@
 const homeMainOurServicesStyle = {
-    img: {
+    section: {
+        position: 'relative',
+        padding: '2rem',
         width: '100%',
-        height: '100%',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        display: 'flex',
-        justifyContent: 'column',
-        alignItems: 'end',
-        '-webkit-box-shadow': '0px 0px 6px 3px rgb(17,15,138)',
-        '-moz-box-shadow': '0px 0px 6px 3px rgb(17,15,138)',
-        boxShadow: '0px 0px 6px 3px rgb(17,15,138)',
-        
-        wrapperText: {
-            backgroundColor: 'white',
-            width: '100%',
-            height: '30%',
-            margin: '1.2rem 1.5rem 1.2rem 1.5rem',
-            borderRadius: '5px',
-            display: 'flex',
-            flexDirection: 'row',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            padding: '0 2rem 0 2rem',
+        backgroundColor: '#F2F2F2',
+        zIndex: 1000
+    },
+    title: {
+        fontSize: '2.1rem',
+        fontWeight: '600',
+        paddingBottom: '0.5rem',
+        marginBottom: '1rem',
+        borderBottom: '3px solid black'
+    },
+    gridItem: {
+        border: '1px solid black',
+        borderRadius: '20px',
+        padding: '1rem',
+        margin: '2rem 0',
 
-            arrowContainer: {
-                backgroundColor: '#2b099c',
-                borderRadius: '50%',
-                width: '40px',
-                height: '40px',
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                justifyContent: 'center',
-                cursor: 'pointer'
+        '& > img': {
+            marginBottom: '1rem'
+        },
+
+        title: {
+            fontSize: '1.5rem',
+            fontWeight: '600',
+        },
+
+        moreButton: {
+            marginTop: '2.4rem',
+            display: 'inline-block',
+            border: '2px solid black',
+            borderRadius: '20px',
+            textAlign: 'start',
+
+            '& > p': {
+                fontSize: '1.2rem',
+                fontWeight: '500',
+                margin: '1rem'
             }
+        },
+
+        moreText: {
+            fontSize: '1rem',
+            fontWeight: '500',
+            margin: '1rem 0'
         }
     }
 }

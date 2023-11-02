@@ -6,7 +6,7 @@ const homeMainOurAdvantagesStyle = {
 
     gridItem: {
         height: 'calc(80vw - 4rem)',
-        padding: '1rem'
+        padding: '1rem 0'
     },
 
     img: {
