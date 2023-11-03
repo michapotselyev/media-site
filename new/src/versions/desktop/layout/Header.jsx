@@ -64,15 +64,16 @@ function Header() {
         const currentLung = localStorage.getItem('lung');
 
         if (!currentLung) {
-            localStorage.setItem('lung', 'uk');
+            localStorage.setItem('lung', 'eng');
             window.location.reload();
         }
     }, []);
 
     return (
         <Box component={'header'} sx={ headerStyle.header }>
-            <Box sx={ headerStyle.logoBox } onClick={reloadHandler}>
-                <Box component={'img'} src={'/assets/logo.png'} alt='logo' />
+            <Box sx={ headerStyle.logoBox }>
+                <Box id='logo' component={'img'} src={'/assets/logo.png'} alt='logo' onClick={reloadHandler} />
+                <Box id='logo-text' component={'img'} src={'/assets/logo-text.png'} alt='flag' />
             </Box>
 
             <Box component={'section'} sx={ headerStyle.nav }>

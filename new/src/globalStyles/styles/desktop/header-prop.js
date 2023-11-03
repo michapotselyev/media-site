@@ -10,8 +10,11 @@ const headerStyle = {
     },
     logoBox: {
         zIndex: 1,
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center',
 
-        '& > img': {
+        '& > [id=logo]': {
             width: '100px',
             height: '100px',
             transition: 'transform ease-in-out 0.2s',
@@ -19,6 +22,12 @@ const headerStyle = {
             '&:hover': {
                 transform: 'scale(1.1)'
             }
+        },
+
+        '& > [id=logo-text]': {
+            width: '135px',
+            height: '80px',
+            objectFit: 'cover',
         }
     },
     nav: {
