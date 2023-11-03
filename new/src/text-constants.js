@@ -174,7 +174,7 @@ const TEXT_CONSTANTS = {
         CLIENT: {
             title: 'КОЖЕН КЛІЄНТ - НАШ ПРІОРИТЕТ',
             description: 'Ми цінуємо довіру наших клієнтів і завжди прагнемо відповідати їхнім очікуванням. Наша команда зосереджена на вашому успіху, адаптуючись до ваших потреб і швидко реагуючи на запити. Ваше задоволення - наша мета',
-            author: 'ТОВ'
+            author: 'ТОВ / ОВБК МЕДІА'
         },
         PORTFOLIO: {
             TITLE: 'Реалізовані проекти',
@@ -398,7 +398,7 @@ const TEXT_CONSTANTS = {
         CLIENT: {
             title: 'CUSTOMER SATISFACTION IS OUR PRIORITY',
             description: 'We value the trust of our clients and always strive to meet their expectations. Our team is dedicated to your success, adapting to your needs and responding promptly to requests. Your satisfaction is our goal',
-            author: 'LLC'
+            author: 'LLC / OVBK MEDIA'
         },
         PORTFOLIO: {
             TITLE: 'Implemented projects',
