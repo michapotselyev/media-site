@@ -1,4 +1,4 @@
-import { Box, Typography,Link } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import homeMainOurAdvantagesStyle from "./globalStyles/styles/mobile/components/home-main-our-advantages-prop";
 
 const TEXT_CONSTANTS = {
@@ -177,7 +177,7 @@ const TEXT_CONSTANTS = {
             author: 'ТОВ / ОВБК МЕДІА'
         },
         PORTFOLIO: {
-            TITLE: 'Реалізовані проекти',
+            TITLE: 'Портфоліо',
             FIRST_PROJECT: {
                 title: 'Банківській та фінансовий сектор',
                 p1: '- Розробка плану та модулю для забезпечення інформаційної безпеки окремих операцій',
@@ -200,6 +200,12 @@ const TEXT_CONSTANTS = {
             },
             FOURTH_PROJECT: {
                 title: 'Торгівля',
+                p1: '- Створення та впровадження клієнтського сервісу для оптової торгівлі паливом та систематизації логістичних ланцюгів (онлайн оформлення доставки замовлення до клієнта)',
+                p2: '- Створення та впровадження корпоративного додатку для функціонування «електронного складу» матеріалів, створення клієнтського додатку для оптової торгівлі кольоровими металами та синхронізація обох систем',
+                
+            },
+            FIFTH_PROJECT: {
+                title: 'Розробка веб-додатків',
                 p1: '- Створення та впровадження клієнтського сервісу для оптової торгівлі паливом та систематизації логістичних ланцюгів (онлайн оформлення доставки замовлення до клієнта)',
                 p2: '- Створення та впровадження корпоративного додатку для функціонування «електронного складу» матеріалів, створення клієнтського додатку для оптової торгівлі кольоровими металами та синхронізація обох систем',
                 
@@ -401,7 +407,7 @@ const TEXT_CONSTANTS = {
             author: 'LLC / OVBK MEDIA'
         },
         PORTFOLIO: {
-            TITLE: 'Implemented projects',
+            TITLE: 'Portfolio',
             FIRST_PROJECT: {
                 title: 'Banking and Financial Sector',
                 p1: '- Development of a plan and module to ensure information security of specific transactions',
@@ -426,6 +432,12 @@ const TEXT_CONSTANTS = {
                 title: 'Trade',
                 p1: '- Creation and implementation of a customer service for wholesale fuel trade and logistics chain organization (online order delivery to the customer)',
                 p2: '- Development and implementation of a corporate application for the functioning of a "virtual warehouse" for materials, creation of a customer application for wholesale trading of non-ferrous metals, and synchronization of both systems',
+            },
+            FIFTH_PROJECT: {
+                title: 'Web App development',
+                p1: '',
+                p2: '',
+                
             },
         },
         CONTACT_US: {
