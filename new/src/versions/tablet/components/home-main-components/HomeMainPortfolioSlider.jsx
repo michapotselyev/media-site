@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Box } from '@mui/material';
-import homeMainPortfolioStyle from '../../../../globalStyles/styles/mobile/components/home-main-portfolio';
+import homeMainPortfolioStyle from '../../../../globalStyles/styles/tablet/components/home-main-portfolio';
 
 class HomeMainPortfolioSlider extends Component {
     constructor(props) {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
-import homeMainOurClientStyle from '../../../../globalStyles/styles/mobile/components/home-main-our-client-prop';
+import homeMainOurClientStyle from '../../../../globalStyles/styles/tablet/components/home-main-our-client-prop';
 import TEXT_CONSTANTS from '../../../../text-constants';
 
 function HomeMainOurClient() {

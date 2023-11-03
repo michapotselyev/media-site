@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
-import homeMainPortfolioStyle from '../../../../globalStyles/styles/mobile/components/home-main-portfolio';
+import homeMainPortfolioStyle from '../../../../globalStyles/styles/tablet/components/home-main-portfolio';
 import TEXT_CONSTANTS from '../../../../text-constants';
 import HomeMainPortfolioSlider from './HomeMainPortfolioSlider';
 

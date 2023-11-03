@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
-import homeMainHeaderStyle from '../../../../globalStyles/styles/mobile/components/home-main-header-prop';
+import homeMainHeaderStyle from '../../../../globalStyles/styles/tablet/components/home-main-header-prop';
 import TEXT_CONSTANTS from '../../../../text-constants';
 
 function HomeMainHeader() {

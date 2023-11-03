@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Grid } from '@mui/material';
-import homeMainOurAdvantagesStyle from '../../../../globalStyles/styles/mobile/components/home-main-our-advantages-prop';
+import homeMainOurAdvantagesStyle from '../../../../globalStyles/styles/tablet/components/home-main-our-advantages-prop';
 import TEXT_CONSTANTS from '../../../../text-constants';
 
 const slides =  localStorage.getItem('lung') === 'uk' ?

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Box, Grid, Typography, Link } from '@mui/material';
-import footerStyle from '../../../globalStyles/styles/mobile/footer-prop';
+import footerStyle from '../../../globalStyles/styles/tablet/footer-prop';
 import CallIcon from '@mui/icons-material/Call';
 import MailIcon from '@mui/icons-material/Mail';
 import ApartmentIcon from '@mui/icons-material/Apartment';

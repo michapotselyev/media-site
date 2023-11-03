@@ -4,7 +4,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import headerStyle from '../../../globalStyles/styles/mobile/header-prop';
+import headerStyle from '../../../globalStyles/styles/tablet/header-prop';
 import { Link } from 'react-router-dom';
 import TEXT_CONSTANTS from '../../../text-constants';
 
