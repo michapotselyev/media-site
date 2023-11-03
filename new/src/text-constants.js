@@ -96,6 +96,7 @@ const TEXT_CONSTANTS = {
                             </Box>
                         </Box>
                     </Box>,
+                    
                     <Box sx={[ homeMainOurAdvantagesStyle.img, { backgroundImage: 'url(assets/comanda-profof.jpeg)' } ]}>
                         <Box sx={ homeMainOurAdvantagesStyle.img.wrapperText }>
                             <Typography sx={{ color: 'white', fontSize: '2.1rem', fontWeight: '600', textAlign: 'center' }}>Команда професіоналів</Typography>

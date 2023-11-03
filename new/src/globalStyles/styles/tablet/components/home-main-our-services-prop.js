@@ -14,10 +14,14 @@ const homeMainOurServicesStyle = {
         borderBottom: '3px solid black'
     },
     gridItem: {
-        border: '1px solid black',
-        borderRadius: '20px',
-        padding: '1rem',
         margin: '2rem 0',
+
+        wrapper: {
+            border: '1px solid black',
+            borderRadius: '20px',
+            padding: '1rem',
+            margin: '1rem',
+        },
 
         '& > img': {
             marginBottom: '1rem'
@@ -43,9 +47,9 @@ const homeMainOurServicesStyle = {
         },
 
         moreText: {
-            fontSize: '1rem',
+            fontSize: '1.2rem',
             fontWeight: '500',
-            margin: '1rem 0'
+            margin: '2rem 0'
         }
     }
 }

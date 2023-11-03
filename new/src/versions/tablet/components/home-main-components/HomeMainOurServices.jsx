@@ -37,57 +37,59 @@ function HomeMainOurServices() {
                     slides.map((element, index) => {
                         return (
                             <React.Fragment key={'' + index}>
-                                <Grid item xs={12} sx={ homeMainOurServicesStyle.gridItem }>
-                                    <Box component={'img'} width={'100px'} height={'100px'} src={element.src} />
+                                <Grid item xs={slides[index + 1] ? 6 : 12} sx={ homeMainOurServicesStyle.gridItem }>
+                                    <Box sx={ homeMainOurServicesStyle.gridItem.wrapper }>
+                                        <Box component={'img'} width={'100px'} height={'100px'} src={element.src} />
 
-                                    <Typography sx={ homeMainOurServicesStyle.gridItem.title }>
-                                        { element.title }
-                                        <br />
-                                        { element.subtitle }
-                                    </Typography>
-
-                                    <Box
-                                        sx={
-                                            [
-                                                { transition: 'all 0.5s ease-in-out' },
-                                                {
-                                                    height: more && current[index] ? '85vh' : 0,
-                                                    overflow: 'hidden',
-                                                    display: 'flex',
-                                                    flexDirection: 'column',
-                                                    justifyContent: 'space-between'
-                                                }
-                                            ]
-                                        }
-                                    >
-                                        <Typography sx={ homeMainOurServicesStyle.gridItem.moreText }>
-                                            - { element.description.p1 }
+                                        <Typography sx={ homeMainOurServicesStyle.gridItem.title }>
+                                            { element.title }
+                                            <br />
+                                            { element.subtitle }
                                         </Typography>
 
-                                        <Typography sx={ homeMainOurServicesStyle.gridItem.moreText }>
-                                            - { element.description.p2 }
-                                        </Typography>
-
-                                        <Typography sx={ homeMainOurServicesStyle.gridItem.moreText }>
-                                            - { element.description.p3 }
-                                        </Typography>
-                                    </Box>
-
-                                    <Box id={index} sx={ homeMainOurServicesStyle.gridItem.moreButton } onClick={moreHandler}>
-                                        <Typography id={index}>
-                                            {
-                                                localStorage.getItem('lung') === 'uk' ?
-                                                    more && current[index] ?
-                                                        TEXT_CONSTANTS.UK.OUR_SERVICE.less
-                                                    :
-                                                        TEXT_CONSTANTS.UK.OUR_SERVICE.more
-                                                :
-                                                    more && current[index] ?
-                                                        TEXT_CONSTANTS.ENG.OUR_SERVICE.less
-                                                    :
-                                                        TEXT_CONSTANTS.ENG.OUR_SERVICE.more
+                                        <Box
+                                            sx={
+                                                [
+                                                    { transition: 'all 0.5s ease-in-out' },
+                                                    {
+                                                        height: more && current[index] ? '73vh' : 0,
+                                                        overflow: 'hidden',
+                                                        display: 'flex',
+                                                        flexDirection: 'column',
+                                                        justifyContent: 'space-between'
+                                                    }
+                                                ]
                                             }
-                                        </Typography>
+                                        >
+                                            <Typography sx={ homeMainOurServicesStyle.gridItem.moreText }>
+                                                - { element.description.p1 }
+                                            </Typography>
+
+                                            <Typography sx={ homeMainOurServicesStyle.gridItem.moreText }>
+                                                - { element.description.p2 }
+                                            </Typography>
+
+                                            <Typography sx={ homeMainOurServicesStyle.gridItem.moreText }>
+                                                - { element.description.p3 }
+                                            </Typography>
+                                        </Box>
+
+                                        <Box id={index} sx={ homeMainOurServicesStyle.gridItem.moreButton } onClick={moreHandler}>
+                                            <Typography id={index}>
+                                                {
+                                                    localStorage.getItem('lung') === 'uk' ?
+                                                        more && current[index] ?
+                                                            TEXT_CONSTANTS.UK.OUR_SERVICE.less
+                                                        :
+                                                            TEXT_CONSTANTS.UK.OUR_SERVICE.more
+                                                    :
+                                                        more && current[index] ?
+                                                            TEXT_CONSTANTS.ENG.OUR_SERVICE.less
+                                                        :
+                                                            TEXT_CONSTANTS.ENG.OUR_SERVICE.more
+                                                }
+                                            </Typography>
+                                        </Box>
                                     </Box>
                                 </Grid>
                             </React.Fragment>

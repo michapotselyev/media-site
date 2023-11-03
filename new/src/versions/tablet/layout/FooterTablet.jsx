@@ -31,7 +31,7 @@ function FooterTablet() {
                                     :
                                         TEXT_CONSTANTS.ENG.FOOTER.title1
                                 }
-                                <span style={{ color: '#2c9ff2', fontWeight: '600' }}>
+                                <span style={{ color: '#2c9ff2', fontWeight: '700' }}>
                                     {
                                         localStorage.getItem('lung') === 'uk' ?
                                             TEXT_CONSTANTS.UK.FOOTER.specialWord
@@ -121,7 +121,7 @@ function FooterTablet() {
 
                         <Grid item sx={ footerStyle.grid.item } xs={12}>
                             <Box sx={ footerStyle.grid.item.copyright }>
-                                <Typography sx={{ fontSize: '1.1rem', color: '#666262' }}>
+                                <Typography sx={{ fontSize: '1.5rem', color: '#666262' }}>
                                     Copyright © 2023 ОВБК МЕДІА
                                 </Typography>
                             </Box>
@@ -131,7 +131,7 @@ function FooterTablet() {
                             <Box sx={ footerStyle.grid.item.wrapperBotomSection }>
                                 <Typography
                                     sx={{
-                                        fontSize: '1rem',
+                                        fontSize: '1.5rem',
                                         cursor: 'pointer',
                                         color: '#666262',
                                         '&:hover': {
@@ -149,7 +149,7 @@ function FooterTablet() {
 
                                 <Typography
                                     sx={{
-                                        fontSize: '1rem',
+                                        fontSize: '1.5rem',
                                         cursor: 'pointer',
                                         color: '#666262',
                                         '&:hover': {
@@ -167,7 +167,7 @@ function FooterTablet() {
 
                                 <Typography
                                     sx={{
-                                        fontSize: '1rem',
+                                        fontSize: '1.5rem',
                                         cursor: 'pointer',
                                         color: '#666262',
                                         '&:hover': {
@@ -189,7 +189,7 @@ function FooterTablet() {
                             <Box sx={[ footerStyle.grid.item.socialMedia, { justifyContent: 'start' } ]}>
                                 <Link sx={ footerStyle.grid.item.socialMedia.item }>
                                     <InstagramIcon
-                                        fontSize='small'
+                                        fontSize='large'
                                         sx={{
                                             color: '#666262',
                                             cursor: 'pointer',
@@ -202,7 +202,7 @@ function FooterTablet() {
 
                                 <Link sx={ footerStyle.grid.item.socialMedia.item }>
                                     <TwitterIcon
-                                        fontSize='small'
+                                        fontSize='large'
                                         sx={{
                                             color: '#666262',
                                             cursor: 'pointer',
@@ -215,7 +215,7 @@ function FooterTablet() {
 
                                 <Link sx={ footerStyle.grid.item.socialMedia.item }>
                                     <img
-                                        style={{ width: '15px', height: '15px', cursor: 'pointer', marginBottom: '4px' }}
+                                        style={{ width: '30px', height: '30px', cursor: 'pointer', marginBottom: '4px' }}
                                         src={ dribble }
                                         alt="dribble-logo"
                                         onMouseEnter={handleHoverDribble}
@@ -225,7 +225,7 @@ function FooterTablet() {
 
                                 <Link sx={ footerStyle.grid.item.socialMedia.item }>
                                     <img
-                                        style={{ width: '15px', height: '15px', cursor: 'pointer', marginBottom: '4px' }}
+                                        style={{ width: '30px', height: '30px', cursor: 'pointer', marginBottom: '4px' }}
                                         src={ behance }
                                         alt="behance-logo"
                                         onMouseEnter={handleHoverBehance}

@@ -69,7 +69,8 @@ function HomeMainContactUs() {
                             fontSize: '2.5rem',
                             textAlign: 'center',
                             color: 'black',
-                            marginBottom: '1rem'
+                            marginBottom: '1rem',
+                            fontWeight: '600'
                         }}
                     >
                         {
@@ -81,7 +82,7 @@ function HomeMainContactUs() {
                         <span
                             style={{
                                 color: '#EE3030',
-                                fontWeight: '600',
+                                fontWeight: '700',
                             }}
                         >
                             &nbsp;ОВБК&nbsp;МЕДІА
@@ -90,7 +91,7 @@ function HomeMainContactUs() {
 
                     <Typography
                         sx={{
-                            fontSize: '1.35rem',
+                            fontSize: '1.5rem',
                             textAlign: 'center',
                             color: '#666666'
                         }}
@@ -136,7 +137,7 @@ function HomeMainContactUs() {
                             borderRadius: '20px',
                             border: '2px solid black',
                             padding: '1rem',
-                            fontSize: '1.3rem'
+                            fontSize: '1.6rem'
                         }}
                     />
                     <input
@@ -159,7 +160,7 @@ function HomeMainContactUs() {
                             borderRadius: '20px',
                             border: '2px solid black',
                             padding: '1rem',
-                            fontSize: '1.3rem'
+                            fontSize: '1.6rem'
                         }}
                     />
                 </Box>
@@ -185,7 +186,7 @@ function HomeMainContactUs() {
                             border: '2px solid black',
                             padding: '1rem',
                             outline: 'none',
-                            fontSize: '1.3rem',
+                            fontSize: '1.6rem',
                         }}
                     ></textarea>
                 </Box>
@@ -199,7 +200,7 @@ function HomeMainContactUs() {
                         border: '1px solid black',
                         boxShadow: '0px 0px 5px 1px #000',
                         transition: 'transform 0.3s ease-in-out',
-                        fontSize: '1.2rem',
+                        fontSize: '1.5rem',
                         fontWeight: '700',
                         marginTop: '1.5rem',
                         textAlign: 'center',

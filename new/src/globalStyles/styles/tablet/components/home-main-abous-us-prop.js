@@ -2,6 +2,8 @@ const homeMainAboutUsStyle = {
     section: {
         padding: '2rem',
         width: '100%',
+        position: 'relative',
+        zIndex: 1000,
 
         infoDiv: {
             width: '100%',
@@ -10,7 +12,7 @@ const homeMainAboutUsStyle = {
             backgroundColor: '#F2F2F2',
 
             title: {
-                fontSize: '2.1rem',
+                fontSize: '2.3rem',
                 fontWeight: '600',
                 paddingBottom: '0.5rem',
                 marginBottom: '1rem',
@@ -18,7 +20,7 @@ const homeMainAboutUsStyle = {
             },
 
             description: {
-                fontSize: '1.6rem',
+                fontSize: '1.5rem',
                 fontWeight: '500',
                 paddingBottom: '3rem'
             },
@@ -37,7 +39,8 @@ const homeMainAboutUsStyle = {
                     '& > p': {
                         marginTop: '1rem',
                         fontWeight: '700',
-                        width: '90%'
+                        width: '90%',
+                        fontSize: '1.2rem'
                     }
                 }
             }

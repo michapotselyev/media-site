@@ -49,7 +49,7 @@ const homeMainPortfolioStyle = {
 
                     '& > p': {
                         color: 'white',
-                        fontSize: '1.8rem',
+                        fontSize: '2.3rem',
                         textAlign: 'center'
                     }
                 }

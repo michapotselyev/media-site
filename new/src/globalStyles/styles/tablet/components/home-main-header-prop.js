@@ -3,6 +3,7 @@ const homeMainHeaderStyle = {
         width: '100%',
         height: '100vh',
         position: 'relative',
+        zIndex: 1000,
 
         '& > img': {
             zIndex: '-1',
@@ -38,15 +39,16 @@ const homeMainHeaderStyle = {
             backgroundClip: 'text',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
-            fontSize: '4.8rem',
+            fontSize: '6rem',
             fontWeight: '700'
         },
 
         '& > p': {
             zIndex: 1,
-            fontSize: '2rem',
+            fontSize: '2.3rem',
             fontWeight: '500',
-            paddingLeft: '0.3rem'
+            paddingLeft: '0.3rem',
+            width: '80%'
         }
     }
 }

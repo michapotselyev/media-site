@@ -102,7 +102,7 @@ function HeaderTablet() {
                         headerStyle.menuProp,
                         {
                             opacity: fadeAnimation ? 1 : 0,
-                            zIndex: fadeAnimation ? 9999 : -1 
+                            transform: fadeAnimation ? 'translateY(0)' : 'translateY(100%)'
                         }
                     ]
                 }
@@ -227,7 +227,7 @@ function HeaderTablet() {
                                 in={open}
                                 timeout={{ enter: 500, exit: 500 }}
                                 unmountOnExit
-                                sx={{ width: '53vw' }}
+                                sx={{ width: '30vw' }}
                             >
                                 <Box
                                     sx={

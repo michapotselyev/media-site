@@ -102,7 +102,7 @@ function HeaderMobile() {
                         headerStyle.menuProp,
                         {
                             opacity: fadeAnimation ? 1 : 0,
-                            zIndex: fadeAnimation ? 9999 : -1 
+                            transform: fadeAnimation ? 'translateY(0)' : 'translateY(100%)'
                         }
                     ]
                 }

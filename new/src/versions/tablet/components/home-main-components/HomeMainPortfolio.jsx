@@ -79,7 +79,7 @@ function HomeMainPortfolio() {
                 }
             </Typography>
 
-            <HomeMainPortfolioSlider slides={slides} isSmallScreen={true} />
+            <HomeMainPortfolioSlider slides={slides} isSmallScreen={false} />
         </Box>
     );
 }

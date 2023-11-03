@@ -6,14 +6,14 @@ const headerStyle = {
         flexDirection: 'row',
         justifyContent: 'space-between',
         position: 'absolute',
-        zIndex: 999
+        zIndex: 10001
     },
     logoBox: {
         zIndex: 1,
 
         '& > img': {
-            width: '70px',
-            height: '70px'
+            width: '90px',
+            height: '90px'
         }
     },
     nav: {
@@ -28,8 +28,8 @@ const headerStyle = {
         alignItems: 'flex-end',
 
         '& > svg': {
-            width: '60px',
-            height: '60px',
+            width: '80px',
+            height: '80px',
             color: 'white'
         }
     },
@@ -42,6 +42,7 @@ const headerStyle = {
         right: 0,
         transition: 'all 0.3s ease-out',
         overflow: 'hidden',
+        zIndex: '999',
 
         header: {
             display: 'flex',
@@ -56,8 +57,8 @@ const headerStyle = {
                 alignItems: 'flex-end',
 
                 '& > svg': {
-                    width: '60px',
-                    height: '60px',
+                    width: '80px',
+                    height: '80px',
                     color: 'black'
                 }
             },
@@ -68,8 +69,8 @@ const headerStyle = {
                 alignItems: 'center',
 
                 '& > img': {
-                    width: '70px',
-                    height: '70px',
+                    width: '90px',
+                    height: '90px',
                     marginRight: '1rem'
                 }
             }
@@ -97,7 +98,7 @@ const headerStyle = {
                 },
 
                 '& > li > a > p': {
-                    fontSize: '2rem',
+                    fontSize: '2.5rem',
                     fontWeight: '500',
                     textAlign: 'center'
                 },
@@ -107,10 +108,10 @@ const headerStyle = {
                     flexDirection: 'row',
                     alignItems: 'center',
                     justifyContent: 'space-between',
-                    width: '53vw',
+                    width: '30vw',
 
                     '& > p': {
-                        fontSize: '2rem',
+                        fontSize: '2.5rem',
                         fontWeight: '500',
                         textAlign: 'center'
                     },
@@ -131,7 +132,7 @@ const headerStyle = {
                     margin: '1rem 0',
 
                     '& > p': {
-                        fontSize: '1.8rem',
+                        fontSize: '2rem',
                         fontWeight: '500',
                         textAlign: 'center'
                     },
@@ -151,7 +152,7 @@ const headerStyle = {
                 justifyContent: 'center',
                 
                 '& > div > p': {
-                    fontSize: '1.8rem',
+                    fontSize: '2.3rem',
                     fontWeight: '700',
                     textAlign: 'center'
                 },
