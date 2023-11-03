@@ -29,7 +29,7 @@ function Header() {
 
         if (currentLung === 'eng') {
             localStorage.setItem('lung', 'uk');
-            return window.location.reload();
+            window.location.assign('/');
         }
     }
 
