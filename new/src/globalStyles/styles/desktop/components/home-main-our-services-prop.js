@@ -1,7 +1,7 @@
 const homeMainOurServicesStyle = {
     section: {
         position: 'relative',
-        padding: '2rem',
+        padding: '2rem 10rem',
         width: '100%',
         backgroundColor: '#F2F2F2',
         zIndex: 1000
@@ -14,8 +14,6 @@ const homeMainOurServicesStyle = {
         borderBottom: '3px solid black'
     },
     gridItem: {
-        margin: '2rem 0',
-
         wrapper: {
             border: '1px solid black',
             borderRadius: '20px',

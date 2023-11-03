@@ -15,7 +15,7 @@ const footerStyle = {
             title: {
                 fontSize: '2.6rem',
                 color: 'white',
-                fontWeight: '600'
+                fontWeight: '500'
             },
 
             contactInfo: {
@@ -26,7 +26,7 @@ const footerStyle = {
                 alignItems: 'start',
 
                 title: {
-                    fontSize: '1.5rem',
+                    fontSize: '1.1rem',
                     color: '#909090',
                     display: 'flex',
                     flexDirection: 'column',
@@ -46,7 +46,7 @@ const footerStyle = {
                         display: 'flex',
                         flexDirection: 'row',
                         alignItems: 'center',
-                        fontSize: '1.3rem',
+                        fontSize: '1.1rem',
                         marginBottom: '0.5rem',
                     },
 
@@ -68,7 +68,7 @@ const footerStyle = {
                 alignItems: 'center',
 
                 title: {
-                    fontSize: '1.5rem',
+                    fontSize: '1.1rem',
                     color: '#909090',
                     height: '40%',
                     width: '75%',
@@ -87,7 +87,7 @@ const footerStyle = {
                         display: 'flex',
                         flexDirection: 'row',
                         alignItems: 'start',
-                        fontSize: '1.3rem',
+                        fontSize: '1.1rem',
                         marginBottom: '0.5rem'
                     },
 

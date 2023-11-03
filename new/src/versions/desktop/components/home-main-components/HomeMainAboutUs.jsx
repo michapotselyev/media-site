@@ -35,7 +35,7 @@ function HomeMainAboutUs() {
                 </Typography>
 
                 <Grid container sx={ homeMainAboutUsStyle.section.infoDiv.works }>
-                    <Grid item xs={4}>
+                    <Grid item xs={3}>
                         <Box component={'img'} width={90} height={90} src={'assets/works/icons8-internet-of-things-100.png'} />
 
                         <Typography>
@@ -43,7 +43,7 @@ function HomeMainAboutUs() {
                         </Typography>
                     </Grid>
 
-                    <Grid item xs={4}>
+                    <Grid item xs={3}>
                         <Box component={'img'} width={90} height={90} src={'assets/works/icons8-location-100.png'} />
 
                         <Typography>
@@ -51,7 +51,7 @@ function HomeMainAboutUs() {
                         </Typography>
                     </Grid>
                     
-                    <Grid item xs={4}>
+                    <Grid item xs={3}>
                         <Box component={'img'} width={90} height={90} src={'assets/works/icons8-cloud-development-100.png'} />
 
                         <Typography>
@@ -59,7 +59,7 @@ function HomeMainAboutUs() {
                         </Typography>
                     </Grid>
 
-                    <Grid item xs={4}>
+                    <Grid item xs={3}>
                         <Box component={'img'} width={90} height={90} src={'assets/works/icons8-big-data-100.png'} />
 
                         <Typography>
@@ -67,7 +67,7 @@ function HomeMainAboutUs() {
                         </Typography>
                     </Grid>
 
-                    <Grid item xs={4}>
+                    <Grid item xs={3}>
                         <Box component={'img'} width={90} height={90} src={'assets/works/icons8-ai-100.png'} />
 
                         <Typography>
@@ -75,7 +75,7 @@ function HomeMainAboutUs() {
                         </Typography>
                     </Grid>
                     
-                    <Grid item xs={4}>
+                    <Grid item xs={3}>
                         <Box component={'img'} width={90} height={90} src={'assets/works/icons8-rpa-100.png'} />
 
                         <Typography>
@@ -83,7 +83,7 @@ function HomeMainAboutUs() {
                         </Typography>
                     </Grid>
                     
-                    <Grid item xs={6}>
+                    <Grid item xs={3}>
                         <Box component={'img'} width={90} height={90} src={'assets/works/icons8-cybersecurity-100.png'} />
 
                         <Typography>
@@ -91,7 +91,7 @@ function HomeMainAboutUs() {
                         </Typography>
                     </Grid>
                     
-                    <Grid item xs={6}>
+                    <Grid item xs={3}>
                         <Box component={'img'} width={90} height={90} src={'assets/works/icons8-ui-design-100.png'} />
 
                         <Typography>

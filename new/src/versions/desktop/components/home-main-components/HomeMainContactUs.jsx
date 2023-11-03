@@ -107,9 +107,9 @@ function HomeMainContactUs() {
 
                 <Box
                     sx={{
-                        width: '80%',
+                        width: '50%',
                         display: 'flex',
-                        flexDirection: 'column',
+                        flexDirection: 'row',
                         justifyContent: 'space-between',
                         marginBottom: '1rem',
                         zIndex: '1'
@@ -132,8 +132,8 @@ function HomeMainContactUs() {
                             backgroundColor: 'white',
                             minHeight: '2.25rem',
                             flexGrow: 1,
-                            marginRight: 0,
-                            marginBottom: '1rem',
+                            marginRight: '1rem',
+                            marginBottom: 0,
                             borderRadius: '20px',
                             border: '2px solid black',
                             padding: '1rem',
@@ -165,7 +165,7 @@ function HomeMainContactUs() {
                     />
                 </Box>
 
-                <Box sx={{ width: '80%', minHeight: '25vh', zIndex: '1' }}>
+                <Box sx={{ width: '50%', minHeight: '25vh', zIndex: '1' }}>
                     <textarea
                         name="message"
                         id="mess"
@@ -205,9 +205,10 @@ function HomeMainContactUs() {
                         marginTop: '1.5rem',
                         textAlign: 'center',
 
-                        '&:active': {
-                            transform: 'scale(0.8)'
-                        }
+                        '&:hover:not(&:active)': {
+                            transform: 'scale(1.1)',
+                            backgroundColor: 'white'
+                        },
                     }}
                     type='submit'
                 >

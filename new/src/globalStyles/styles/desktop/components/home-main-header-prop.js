@@ -27,7 +27,7 @@ const homeMainHeaderStyle = {
         flexDirection: 'column',
         justifyContent: 'center',
         height: '100vh',
-        padding: '2rem',
+        padding: '2rem 10rem',
         color: 'white',
 
         '& > h1': {
@@ -48,7 +48,7 @@ const homeMainHeaderStyle = {
             fontSize: '2.3rem',
             fontWeight: '500',
             paddingLeft: '0.3rem',
-            width: '80%'
+            width: '720px'
         }
     }
 }

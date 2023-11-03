@@ -16,7 +16,7 @@ function HomeMainOurAdvantages() {
                     slides.map((element, index) => {
                         return (
                             <React.Fragment key={'' + index}>
-                                <Grid item xs={6} sx={ homeMainOurAdvantagesStyle.gridItem }>
+                                <Grid item xs={4} sx={ homeMainOurAdvantagesStyle.gridItem }>
                                     { element }
                                 </Grid>
                             </React.Fragment>

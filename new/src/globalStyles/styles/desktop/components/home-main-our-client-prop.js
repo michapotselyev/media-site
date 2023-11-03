@@ -25,7 +25,7 @@ const homeMainOurClientStyle = {
         },
         description: {
             fontSize: '1.6rem',
-            padding: '0 5rem',
+            padding: '1rem 20rem',
             background: 'rgba(0,0,0,0.7)'
         },
         author: {

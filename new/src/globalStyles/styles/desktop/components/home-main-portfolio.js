@@ -1,7 +1,7 @@
 const homeMainPortfolioStyle = {
     section: {
         position: 'relative',
-        padding: '2rem',
+        padding: '2rem 0',
         width: '100%',
         backgroundColor: '#F2F2F2',
         zIndex: 1000
@@ -11,7 +11,8 @@ const homeMainPortfolioStyle = {
         fontWeight: '600',
         paddingBottom: '0.5rem',
         marginBottom: '1rem',
-        borderBottom: '3px solid black'
+        borderBottom: '3px solid black',
+        margin: '0 10rem'
     },
     slider: {
         width: '100%',

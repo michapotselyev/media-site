@@ -1,6 +1,6 @@
 const homeMainAboutUsStyle = {
     section: {
-        padding: '2rem',
+        padding: '2rem 10rem',
         width: '100%',
         position: 'relative',
         zIndex: 1000,
@@ -8,7 +8,7 @@ const homeMainAboutUsStyle = {
         infoDiv: {
             width: '100%',
             borderRadius: '20px',
-            padding: '2rem',
+            padding: '3rem 5rem',
             backgroundColor: '#F2F2F2',
 
             title: {

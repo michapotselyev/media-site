@@ -37,7 +37,7 @@ function HomeMainOurServices() {
                     slides.map((element, index) => {
                         return (
                             <React.Fragment key={'' + index}>
-                                <Grid item xs={slides[index + 1] ? 6 : 12} sx={ homeMainOurServicesStyle.gridItem }>
+                                <Grid item xs={index === 3 || index === 4  ? 6 : 4} sx={ homeMainOurServicesStyle.gridItem }>
                                     <Box sx={ homeMainOurServicesStyle.gridItem.wrapper }>
                                         <Box component={'img'} width={'100px'} height={'100px'} src={element.src} />
 
@@ -52,7 +52,7 @@ function HomeMainOurServices() {
                                                 [
                                                     { transition: 'all 0.5s ease-in-out' },
                                                     {
-                                                        height: more && current[index] ? '73vh' : 0,
+                                                        height: more && current[index] ? '100vh' : 0,
                                                         overflow: 'hidden',
                                                         display: 'flex',
                                                         flexDirection: 'column',

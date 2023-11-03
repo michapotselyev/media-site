@@ -1,13 +1,13 @@
 const homeMainOurAdvantagesStyle = {
     section: {
-        padding: '2rem',
+        padding: '2rem 10rem',
         width: '100%',
         position: 'relative',
         zIndex: 1000,
     },
 
     gridItem: {
-        height: 'calc(50vw - 4rem)',
+        height: 'calc(33vw - 10rem)',
         padding: '1rem'
     },
 
