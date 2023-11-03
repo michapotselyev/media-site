@@ -7,7 +7,7 @@ const homeMainOurAdvantagesStyle = {
     },
 
     gridItem: {
-        height: 'calc(33vw - 10rem)',
+        height: '55vh',
         padding: '1rem'
     },
 

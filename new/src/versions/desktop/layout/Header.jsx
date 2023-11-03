@@ -134,7 +134,7 @@ function Header() {
                                 in={open}
                                 timeout={{ enter: 500, exit: 500 }}
                                 unmountOnExit
-                                sx={{ width: '15vw', position: 'absolute' }}
+                                sx={{ width: '13vw', position: 'absolute' }}
                             >
                                 <Box
                                     sx={

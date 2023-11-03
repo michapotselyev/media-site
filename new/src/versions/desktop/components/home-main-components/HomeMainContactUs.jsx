@@ -137,7 +137,7 @@ function HomeMainContactUs() {
                             borderRadius: '20px',
                             border: '2px solid black',
                             padding: '1rem',
-                            fontSize: '1.6rem'
+                            fontSize: '1.1rem'
                         }}
                     />
                     <input
@@ -160,7 +160,7 @@ function HomeMainContactUs() {
                             borderRadius: '20px',
                             border: '2px solid black',
                             padding: '1rem',
-                            fontSize: '1.6rem'
+                            fontSize: '1.1rem'
                         }}
                     />
                 </Box>
@@ -186,7 +186,7 @@ function HomeMainContactUs() {
                             border: '2px solid black',
                             padding: '1rem',
                             outline: 'none',
-                            fontSize: '1.6rem',
+                            fontSize: '1.1rem',
                         }}
                     ></textarea>
                 </Box>
@@ -200,7 +200,7 @@ function HomeMainContactUs() {
                         border: '1px solid black',
                         boxShadow: '0px 0px 5px 1px #000',
                         transition: 'transform 0.3s ease-in-out',
-                        fontSize: '1.5rem',
+                        fontSize: '1.3rem',
                         fontWeight: '700',
                         marginTop: '1.5rem',
                         textAlign: 'center',

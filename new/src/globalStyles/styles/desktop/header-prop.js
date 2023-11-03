@@ -57,7 +57,7 @@ const headerStyle = {
             },
 
             '& > li > a > p': {
-                fontSize: '1.5rem',
+                fontSize: '1.2rem',
                 fontWeight: '500',
                 textAlign: 'center',
                 color: 'white'
@@ -68,10 +68,10 @@ const headerStyle = {
                 flexDirection: 'row',
                 alignItems: 'center',
                 justifyContent: 'space-between',
-                width: '15vw',
+                width: '13vw',
 
                 '& > p': {
-                    fontSize: '1.5rem',
+                    fontSize: '1.2rem',
                     fontWeight: '500',
                     textAlign: 'center',
                     color: 'white'
@@ -98,7 +98,7 @@ const headerStyle = {
                 margin: '1rem 0',
 
                 '& > p': {
-                    fontSize: '1.5rem',
+                    fontSize: '1.2rem',
                     fontWeight: '500',
                     textAlign: 'center',
                     color: 'white'
@@ -123,7 +123,7 @@ const headerStyle = {
             justifyContent: 'center',
             
             '& > div > p': {
-                fontSize: '1.5rem',
+                fontSize: '1.2rem',
                 fontWeight: '600',
                 textAlign: 'center'
             },
