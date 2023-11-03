@@ -22,7 +22,7 @@ const homeMainOurClientStyle = {
             fontWeight: '600'
         },
         description: {
-            fontSize: '2.1rem',
+            fontSize: '1.6rem',
             padding: '0 1.5rem',
             background: 'rgba(0,0,0,0.7)'
         },
@@ -30,7 +30,7 @@ const homeMainOurClientStyle = {
             background: 'rgba(0,0,0,0.7)',
             fontSize: '1.2rem',
             fontWeight: '700',
-            padding: '1.5rem 2rem',
+            padding: '2rem 2rem',
         }
     }
 }
