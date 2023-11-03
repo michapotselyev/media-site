@@ -1,17 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
-import { MainPage, ServicePage, ErrorPage } from "../pages";
+import { MainPage } from "../pages";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <MainPage />,
-        errorElement: <ErrorPage />
-    },
-    {
-        path: "/service/:id",
-        element: <ServicePage />,
-        errorElement: <ErrorPage />
-    },
+        errorElement: <div>Сталася Помилка</div>
+    }
 ]);
 
 export default router;

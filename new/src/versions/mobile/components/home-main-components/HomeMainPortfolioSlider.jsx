@@ -138,7 +138,7 @@ class HomeMainPortfolioSlider extends Component {
                             id="0"
                             sx={
                                 currentIndex === 0 ?
-                                    [ homeMainPortfolioStyle.slider.buttonWrapper.button, { backgroundColor: '#2c9ff2' } ]
+                                    [ homeMainPortfolioStyle.slider.buttonWrapper.button, { backgroundColor: 'black' } ]
                                 :
                                     homeMainPortfolioStyle.slider.buttonWrapper.button
                             }
@@ -154,7 +154,7 @@ class HomeMainPortfolioSlider extends Component {
                             id='1'
                             sx={
                                 currentIndex === 1 ?
-                                    [ homeMainPortfolioStyle.slider.buttonWrapper.button, { backgroundColor: '#2c9ff2' } ]
+                                    [ homeMainPortfolioStyle.slider.buttonWrapper.button, { backgroundColor: 'black' } ]
                                 :
                                     homeMainPortfolioStyle.slider.buttonWrapper.button
                             }
@@ -170,7 +170,7 @@ class HomeMainPortfolioSlider extends Component {
                             id='2'
                             sx={
                                 currentIndex === 2 ?
-                                    [ homeMainPortfolioStyle.slider.buttonWrapper.button, { backgroundColor: '#2c9ff2' } ]
+                                    [ homeMainPortfolioStyle.slider.buttonWrapper.button, { backgroundColor: 'black' } ]
                                 :
                                     homeMainPortfolioStyle.slider.buttonWrapper.button
                             }
@@ -186,7 +186,7 @@ class HomeMainPortfolioSlider extends Component {
                             id='3'
                             sx={
                                 currentIndex === 3 ?
-                                    [ homeMainPortfolioStyle.slider.buttonWrapper.button, { backgroundColor: '#2c9ff2' } ]
+                                    [ homeMainPortfolioStyle.slider.buttonWrapper.button, { backgroundColor: 'black' } ]
                                 :
                                     homeMainPortfolioStyle.slider.buttonWrapper.button
                             }
@@ -202,7 +202,7 @@ class HomeMainPortfolioSlider extends Component {
                             id='4'
                             sx={
                                 currentIndex === 4 ?
-                                    [ homeMainPortfolioStyle.slider.buttonWrapper.button, { backgroundColor: '#2c9ff2' } ]
+                                    [ homeMainPortfolioStyle.slider.buttonWrapper.button, { backgroundColor: 'black' } ]
                                 :
                                     homeMainPortfolioStyle.slider.buttonWrapper.button
                             }
