@@ -34,7 +34,7 @@ function HomeMainContactUs() {
             });
 
             alert('Повідомлення відправлено успішно!');
-            window.location.assign('/contact-us')
+            window.location.reload();
         } catch (error) {
             alert('При відправлені повідомлення сталася помилка, будь-ласка, спробуйте ще раз!');
             console.log('Response data:', error.response.data);
@@ -43,6 +43,7 @@ function HomeMainContactUs() {
 
     return (
         <Box
+            id='contact-us'
             sx={{ 
                 position: 'relative',
                 padding: '2rem',
