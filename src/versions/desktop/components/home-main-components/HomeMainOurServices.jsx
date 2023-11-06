@@ -32,12 +32,12 @@ function HomeMainOurServices() {
                 }
             </Typography>
 
-            <Grid container>
+            <Box sx={ homeMainOurServicesStyle.grid }>
             {
                     slides.map((element, index) => {
                         return (
                             <React.Fragment key={'' + index}>
-                                <Grid item xs={index === 3 || index === 4  ? 6 : 4} sx={ homeMainOurServicesStyle.gridItem }>
+                                <Box item xs={more && current[index] ? 12 : 4} sx={[ homeMainOurServicesStyle.gridItem, { width: more && current[index] ? '100%' : '33%' } ]}>
                                     <Box sx={ homeMainOurServicesStyle.gridItem.wrapper }>
                                         <Box component={'img'} width={'100px'} height={'100px'} src={element.src} />
 
@@ -52,11 +52,12 @@ function HomeMainOurServices() {
                                                 [
                                                     { transition: 'all 0.5s ease-in-out' },
                                                     {
-                                                        height: more && current[index] ? '100vh' : 0,
+                                                        height: more && current[index] ? '45vh' : 0,
                                                         overflow: 'hidden',
                                                         display: 'flex',
                                                         flexDirection: 'column',
-                                                        justifyContent: 'space-between'
+                                                        justifyContent: 'space-between',
+                                                        marginTop: '2rem'
                                                     }
                                                 ]
                                             }
@@ -91,12 +92,12 @@ function HomeMainOurServices() {
                                             </Typography>
                                         </Box>
                                     </Box>
-                                </Grid>
+                                </Box>
                             </React.Fragment>
                         );
                     })
                 }
-            </Grid>
+            </Box>
         </Box>
     );
 }
