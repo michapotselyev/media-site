@@ -13,7 +13,15 @@ const homeMainOurServicesStyle = {
         marginBottom: '1rem',
         borderBottom: '3px solid black'
     },
+    grid: {
+        display: 'flex',
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        width: '100%'
+    },
     gridItem: {
+        transition: 'all 0.5s ease-in-out',
+
         wrapper: {
             border: '1px solid black',
             borderRadius: '20px',
@@ -46,8 +54,7 @@ const homeMainOurServicesStyle = {
 
         moreText: {
             fontSize: '1.2rem',
-            fontWeight: '500',
-            margin: '2rem 0'
+            fontWeight: '500'
         }
     }
 }
