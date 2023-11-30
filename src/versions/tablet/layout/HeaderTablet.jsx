@@ -76,7 +76,7 @@ function HeaderTablet() {
         const currentLung = localStorage.getItem('lung');
 
         if (!currentLung) {
-            localStorage.setItem('lung', 'uk');
+            localStorage.setItem('lung', 'eng');
             window.location.reload();
         }
     }, []);
