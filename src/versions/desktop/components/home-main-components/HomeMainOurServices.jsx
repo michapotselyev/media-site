@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box, Grid, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import homeMainOurServicesStyle from '../../../../globalStyles/styles/desktop/components/home-main-our-services-prop';
 import TEXT_CONSTANTS from '../../../../text-constants';
 
@@ -37,7 +37,7 @@ function HomeMainOurServices() {
                     slides.map((element, index) => {
                         return (
                             <React.Fragment key={'' + index}>
-                                <Box item xs={more && current[index] ? 12 : 4} sx={[ homeMainOurServicesStyle.gridItem, { width: more && current[index] ? '100%' : '33%' } ]}>
+                                <Box xs={more && current[index] ? 12 : 4} sx={[ homeMainOurServicesStyle.gridItem, { width: more && current[index] ? '100%' : '33%' } ]}>
                                     <Box sx={ homeMainOurServicesStyle.gridItem.wrapper }>
                                         <Box component={'img'} width={'100px'} height={'100px'} src={element.src} />
 
@@ -52,7 +52,7 @@ function HomeMainOurServices() {
                                                 [
                                                     { transition: 'all 0.5s ease-in-out' },
                                                     {
-                                                        height: more && current[index] ? '45vh' : 0,
+                                                        height: more && current[index] ? '55vh' : 0,
                                                         overflow: 'hidden',
                                                         display: 'flex',
                                                         flexDirection: 'column',

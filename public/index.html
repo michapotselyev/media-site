@@ -4,15 +4,27 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created for OVBK Media"
-    />
-    <title>ОВБК Медіа</title>
+    <meta name="description" content="With us, innovation knows no boundaries for your business. The OVBK MEDIA team has been working since 2017, implementing successful projects for companies in the banking, financial, fuel, metallurgical, and educational sectors.">
+    <meta name="keywords" content="OVBK MEDIA, innovation, business, projects, banking sector, financial sector, fuel business, metallurgical business, education, Internet of Things, Location Based Services, Cloud & DevOps, Big Data/Analytics, Artificial Intelligence, RPA, Cybersecurity, UI/UX Design, Websites of Future, Licensing, Digital Shield, Desktop Solutions, Mobile World">
+    <title>OVBK MEDIA | Innovation knows no boundaries for your business</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script>
+      var metaDescription = document.querySelector('meta[name="description"]');
+      var metaKeywords = document.querySelector('meta[name="keywords"]');
+
+      if (localStorage.getItem('lung') === 'uk') {
+          document.title = "ОВБК Медіа | Інновації для вашого бізнесу";
+          metaDescription.setAttribute('content', 'З нами інновації для вашого бізнесу без кордонів. Команда ОВБК МЕДІА працює з 2017 року, реалізуючи проекти для компаній у банківському, фінансовому, паливному, металургійному та освітньому секторах.');
+          metaKeywords.setAttribute('content', 'ОВБК Медіа, інновації, бізнес, проекти, банківський сектор, фінансовий сектор, паливний бізнес, металургійний бізнес, освіта, Інтернет речей, послуги з визначення місцезнаходження, хмари та операційна робота, великі дані/аналітика, штучний інтелект, автоматизація бізнес-процесів, кібербезпека, розробка UI/UX, веб-сайти, ліцензування, кібербезпека, розробка UI, мобільні додатки');
+
+      } else {
+          document.title = "OVBK MEDIA | With us, innovation knows no boundaries for your business";
+          metaDescription.setAttribute('content', 'With us, innovation knows no boundaries for your business. The OVBK MEDIA team has been working since 2017, implementing successful projects for companies in the banking, financial, fuel, metallurgical, and educational sectors.');
+          metaKeywords.setAttribute('content', 'OVBK MEDIA, innovation, business, projects, banking sector, financial sector, fuel business, metallurgical business, education, Internet of Things, Location Based Services, Cloud & DevOps, Big Data/Analytics, Artificial Intelligence, RPA, Cybersecurity, UI/UX Design, Websites of Future, Licensing, Digital Shield, Desktop Solutions, Mobile World');
+      }
+    </script>
   </body>
 </html>
