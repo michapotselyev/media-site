@@ -1,6 +1,3 @@
-import { Box, Typography } from "@mui/material";
-import homeMainOurAdvantagesStyle from "./globalStyles/styles/mobile/components/home-main-our-advantages-prop";
-
 const TEXT_CONSTANTS = {
     UK: {
         HEADER: {
@@ -18,100 +15,42 @@ const TEXT_CONSTANTS = {
             stack: 'Наші технології розробки',
             OUR_ADVANTAGES: {
                 slides: [
-                    <Box sx={[ homeMainOurAdvantagesStyle.img, { backgroundImage: 'url(assets/Innovation.jpeg)' } ]}>
-                        <Box sx={ homeMainOurAdvantagesStyle.img.wrapperText }>
-                            <Typography sx={{ color: 'white', fontSize: '2.1rem', fontWeight: '600', textAlign: 'center' }}>Технологічність</Typography>
-                
-                            <Box >
-                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
-                                    - Використовуємо передові технології та інструменти
-                                </Typography>
-                
-                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
-                                    - Впроваджуємо інноваційні рішення для вашого бізнесу
-                                </Typography>
-                            </Box>
-                        </Box>
-                    </Box>,
-                
-                    <Box sx={[ homeMainOurAdvantagesStyle.img, { backgroundImage: 'url(assets/experience-todo.jpeg)' } ]}>
-                        <Box sx={ homeMainOurAdvantagesStyle.img.wrapperText }>
-                            <Typography sx={{ color: 'white', fontSize: '2.1rem', fontWeight: '600', textAlign: 'center' }}>Досвід</Typography>
-                
-                            <Box >
-                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
-                                    - Більше 5 років на ринку IT-&nbsp;аутсорсингу
-                                </Typography>
-                
-                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
-                                    - Проекти в різних напрямках бізнесу
-                                </Typography>
-                            </Box>
-                        </Box>
-                    </Box>,
-                
-                    <Box sx={[ homeMainOurAdvantagesStyle.img, { backgroundImage: 'url(assets/sm.jpeg)' } ]}>
-                        <Box sx={ homeMainOurAdvantagesStyle.img.wrapperText }>
-                            <Typography sx={{ color: 'white', fontSize: '2.1rem', fontWeight: '600', textAlign: 'center' }}>Індивідуальний підхід</Typography>
-                
-                            <Box >
-                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
-                                    - Кожен клієнт для нас особливий
-                                </Typography>
-                
-                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
-                                    - Розробляємо індивідуальні стратегії з усіма побажаннями клієнта та з урахуванням нашого досвіду
-                                </Typography>
-                            </Box>
-                        </Box>
-                    </Box>,
-                
-                    <Box sx={[ homeMainOurAdvantagesStyle.img, { backgroundImage: 'url(assets/yakist.jpeg)' } ]}>
-                        <Box sx={ homeMainOurAdvantagesStyle.img.wrapperText }>
-                            <Typography sx={{ color: 'white', fontSize: '2.1rem', fontWeight: '600', textAlign: 'center' }}>Високі стандарти якості</Typography>
-                
-                            <Box >
-                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
-                                    - Наші рішення відповідають всім стандартам IT
-                                </Typography>
-                
-                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
-                                    - Регулярно вивчаємо та оптимізуємо проекти у відповідності з останніми тенденціями
-                                </Typography>
-                            </Box>
-                        </Box>
-                    </Box>,
-                    <Box sx={[ homeMainOurAdvantagesStyle.img, { backgroundImage: 'url(assets/Hnychkist.jpeg)' } ]}>
-                        <Box sx={ homeMainOurAdvantagesStyle.img.wrapperText }>
-                            <Typography sx={{ color: 'white', fontSize: '2.1rem', fontWeight: '600', textAlign: 'center' }}>Гнучкість</Typography>
-                
-                            <Box >
-                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
-                                    - Швидко адаптуємося до змін у ринкових умовах
-                                </Typography>
-                
-                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
-                                    - Готові до викликів будь-якої складності
-                                </Typography>
-                            </Box>
-                        </Box>
-                    </Box>,
-                    
-                    <Box sx={[ homeMainOurAdvantagesStyle.img, { backgroundImage: 'url(assets/comanda-profof.jpeg)' } ]}>
-                        <Box sx={ homeMainOurAdvantagesStyle.img.wrapperText }>
-                            <Typography sx={{ color: 'white', fontSize: '2.1rem', fontWeight: '600', textAlign: 'center' }}>Команда професіоналів</Typography>
-                
-                            <Box >
-                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
-                                    - Ми експерти у своїй сфері
-                                </Typography>
-                
-                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
-                                    - Постійно навчаємось та підвищуємо кваліфікацію
-                                </Typography>
-                            </Box>
-                        </Box>
-                    </Box>
+                    {
+                        backgroundImage: 'assets/Innovation.jpeg',
+                        title: 'Технологічність',
+                        p1: 'Застосовуємо передові технології та інструменти',
+                        p2: 'Впроваджуємо інноваційні рішення в бізнес',
+                    },
+                    {
+                        backgroundImage: 'assets/experience-todo.jpeg',
+                        title: 'Досвід',
+                        p1: 'Більше 5 років на ринку IT-аутсорсингу',
+                        p2: 'Успішні проекти в різних галузях бізнесу',
+                    },
+                    {
+                        backgroundImage: 'assets/sm.jpeg',
+                        title: 'Індивідуальний підхід',
+                        p1: 'Кожен клієнт для нас особливий',
+                        p2: 'Розробляємо стратегії за бажанням клієнта й досвідом',
+                    },
+                    {
+                        backgroundImage: 'assets/yakist.jpeg',
+                        title: 'Високі стандарти якості',
+                        p1: 'Наші рішення відповідають стандартам IT',
+                        p2: 'Оптимізуємо проекти відповідно до останніх тенденцій',
+                    },
+                    {
+                        backgroundImage: 'assets/Hnychkist.jpeg',
+                        title: 'Гнучкість',
+                        p1: 'Швидко адаптуємося до змін у ринкових умовах',
+                        p2: 'Готові до викликів будь-якої складності',
+                    },
+                    {
+                        backgroundImage: 'assets/comanda-profof.jpeg',
+                        title: 'Команда професіоналів',
+                        p1: 'Ми експерти у своїй сфері',
+                        p2: 'Постійно навчаємось та підвищуємо кваліфікацію',
+                    },
                 ]
             }
         },
@@ -227,9 +166,9 @@ const TEXT_CONSTANTS = {
             subtitle1: 'КОНТАКТНА ІНФОРМАЦІЯ',
             subtitle2: 'ОФІС',
             place: 'Вулиця Алмазова Генерала буд. 4, оф. 6, м Київ',
-            route1: 'Історії',
-            route2: 'Співпраця',
-            route3: 'Конфедіційність',
+            route1: '',
+            route2: '',
+            route3: 'Наші проекти',
 
         }
     },
@@ -241,107 +180,50 @@ const TEXT_CONSTANTS = {
             LANGUAGE: 'Language',
             BUTTON: 'Contact with us'
         },
-        COMPANY_NAME: 'OVBK MEDIA',
+        COMPANY_NAME: 'OVBK Media',
         INDRODUCTION: 'With us, innovation knows no boundaries for your business',
         ABOUT_US: {
             title: 'ABOUT US',
-            description: 'The OVBK MEDIA team has been working since 2017. During this time, successful projects have been implemented for companies in the banking and financial sectors, as well as in the fuel and metallurgical industries, and in the field of education',
+            description: 'The OVBK Media team has been working since 2017. During this time, successful projects have been implemented for companies in the banking and financial sectors, as well as in the fuel and metallurgical industries, and in the field of education',
             stack: 'Our development technologies',
             OUR_ADVANTAGES: {
                 slides: [
-                    <Box sx={[ homeMainOurAdvantagesStyle.img, { backgroundImage: 'url(assets/Innovation.jpeg)' } ]}>
-                        <Box sx={ homeMainOurAdvantagesStyle.img.wrapperText }>
-                            <Typography sx={{ color: 'white', fontSize: '2.1rem', fontWeight: '600', textAlign: 'center' }}>Technological Excellence</Typography>
-                
-                            <Box >
-                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
-                                    - We utilize cutting-edge technologies and tools
-                                </Typography>
-                
-                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
-                                    - Implement innovative solutions for your business
-                                </Typography>
-                            </Box>
-                        </Box>
-                    </Box>,
-                
-                    <Box sx={[ homeMainOurAdvantagesStyle.img, { backgroundImage: 'url(assets/experience-todo.jpeg)' } ]}>
-                        <Box sx={ homeMainOurAdvantagesStyle.img.wrapperText }>
-                            <Typography sx={{ color: 'white', fontSize: '2.1rem', fontWeight: '600', textAlign: 'center' }}>Experience</Typography>
-                
-                            <Box >
-                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
-                                    - Over 5 years in the IT outsourcing market
-                                </Typography>
-                
-                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
-                                    - Projects in various business domains
-                                </Typography>
-                            </Box>
-                        </Box>
-                    </Box>,
-                
-                    <Box sx={[ homeMainOurAdvantagesStyle.img, { backgroundImage: 'url(assets/sm.jpeg)' } ]}>
-                        <Box sx={ homeMainOurAdvantagesStyle.img.wrapperText }>
-                            <Typography sx={{ color: 'white', fontSize: '2.1rem', fontWeight: '600', textAlign: 'center' }}>Individual Approach</Typography>
-                
-                            <Box >
-                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
-                                    - Every client is special to us
-                                </Typography>
-                
-                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
-                                    - We develop individual strategies tailored to client preferences and our expertise
-                                </Typography>
-                            </Box>
-                        </Box>
-                    </Box>,
-                
-                    <Box sx={[ homeMainOurAdvantagesStyle.img, { backgroundImage: 'url(assets/yakist.jpeg)' } ]}>
-                        <Box sx={ homeMainOurAdvantagesStyle.img.wrapperText }>
-                            <Typography sx={{ color: 'white', fontSize: '2.1rem', fontWeight: '600', textAlign: 'center' }}>High Quality Standards</Typography>
-                
-                            <Box >
-                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
-                                    - Our solutions meet all IT standards
-                                </Typography>
-                
-                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
-                                    - We regularly study and optimize projects in line with the latest trends
-                                </Typography>
-                            </Box>
-                        </Box>
-                    </Box>,
-                    <Box sx={[ homeMainOurAdvantagesStyle.img, { backgroundImage: 'url(assets/Hnychkist.jpeg)' } ]}>
-                        <Box sx={ homeMainOurAdvantagesStyle.img.wrapperText }>
-                            <Typography sx={{ color: 'white', fontSize: '2.1rem', fontWeight: '600', textAlign: 'center' }}>Flexibility</Typography>
-                
-                            <Box >
-                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
-                                    - Quick adaptation to changing market conditions
-                                </Typography>
-                
-                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
-                                    - Ready for challenges of any complexity
-                                </Typography>
-                            </Box>
-                        </Box>
-                    </Box>,
-                    <Box sx={[ homeMainOurAdvantagesStyle.img, { backgroundImage: 'url(assets/comanda-profof.jpeg)' } ]}>
-                        <Box sx={ homeMainOurAdvantagesStyle.img.wrapperText }>
-                            <Typography sx={{ color: 'white', fontSize: '2.1rem', fontWeight: '600', textAlign: 'center' }}>Professional Team</Typography>
-                
-                            <Box >
-                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
-                                    - We are experts in our field
-                                </Typography>
-                
-                                <Typography sx={{ color: 'white', fontSize: '1.1rem', fontWeight: '500', textAlign: 'center' }}>
-                                    - We constantly learn and improve our qualifications
-                                </Typography>
-                            </Box>
-                        </Box>
-                    </Box>
+                    {
+                        backgroundImage: 'assets/Innovation.jpeg',
+                        title: 'Innovation',
+                        p1: 'Applying advanced tools and technologies',
+                        p2: 'Introducing innovative solutions into business',
+                    },
+                    {
+                        backgroundImage: 'assets/experience-todo.jpeg',
+                        title: 'Experience',
+                        p1: 'Over 5 years in the IT outsourcing market',
+                        p2: 'Successful projects in various business domains',
+                    },
+                    {
+                        backgroundImage: 'assets/sm.jpeg',
+                        title: 'Individual Approach',
+                        p1: 'Every client is special to us',
+                        p2: 'Developing strategies based on client desires and experience',
+                    },
+                    {
+                        backgroundImage: 'assets/yakist.jpeg',
+                        title: 'High Quality Standards',
+                        p1: 'Our solutions meet IT standards',
+                        p2: 'Optimizing projects according to the latest trends',
+                    },
+                    {
+                        backgroundImage: 'assets/Hnychkist.jpeg',
+                        title: 'Flexibility',
+                        p1: 'Quick adaptation to changes in market conditions',
+                        p2: 'Ready for challenges of any complexity',
+                    },
+                    {
+                        backgroundImage: 'assets/comanda-profof.jpeg',
+                        title: 'Professional Team',
+                        p1: 'We are experts in our field',
+                        p2: 'Constantly learning and improving qualifications',
+                    },
                 ]
             }
         },
@@ -354,7 +236,7 @@ const TEXT_CONSTANTS = {
             {
                 "src": 'assets/icons8-website-100.png',
                 "title": 'Websites:',
-                subtitle: 'Websites of the Future',
+                subtitle: 'Websites of Future',
                 "description": {
                     p1: 'Our skilled team is ready to provide you with cutting-edge solutions to optimize your business using the latest technologies such as React and Node.js, along with the implementation of agile development methodologies',
                     p2: 'Each website created by our team embodies the highest craftsmanship and cutting-edge innovation, employing modern development stacks such as MERN or MEAN, as well as leveraging high-performance Frontend and Backend development tools',
@@ -456,9 +338,9 @@ const TEXT_CONSTANTS = {
             subtitle1: 'CONTACT INFO',
             subtitle2: 'OFFICE',
             place: '4 Almazova Street, Office 6, Kyiv',
-            route1: 'Stories',
-            route2: 'Cooperation',
-            route3: 'Privacy',
+            route1: '',
+            route2: '',
+            route3: 'Our projects',
 
         }
     }

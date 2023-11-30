@@ -42,6 +42,7 @@ const headerStyle = {
         right: 0,
         transition: 'all 0.3s ease-out',
         overflow: 'hidden',
+        zIndex: '999',
 
         header: {
             display: 'flex',

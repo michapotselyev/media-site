@@ -65,10 +65,10 @@ function Footer() {
 
                                         <Link
                                             sx={ footerStyle.grid.item.contactInfo.contacts.link }
-                                            href='tel:+380668371142'
+                                            href='tel:+380994514540'
                                             target='_blank'
                                         >
-                                            +380 66 837 11 42
+                                            +380 99 451 45 40
                                         </Link>
                                     </Box>
 

@@ -17,6 +17,60 @@ class HomeMainPortfolioSlider extends Component {
         this.isSmallScreen = this.props.isSmallScreen;
     }
 
+    handleTouchStart = (event) => {
+        this.touchStartX = event.touches[0].clientX;
+    }
+
+    handleTouchMove = (event) => {
+        if (!this.touchStartX) {
+            return;
+        }
+
+        const touchEndX = event.touches[0].clientX;
+        const deltaX = touchEndX - this.touchStartX;
+
+        if (Math.abs(deltaX) > 50) {
+            const move = deltaX > 0 ? true : false;
+            const { currentIndex, isAnimate } = this.state;
+            const { slides } = this.props;
+
+            if (!isAnimate) {
+                const prevIndex = currentIndex;
+                const counter = move ? currentIndex - 1 : currentIndex + 1;
+                this.setState({ currentIndex: counter < 0 ? slides.length - 1 : counter > slides.length - 1 ? 0 : counter }, () => this.sliderChanger(prevIndex, move));
+            }
+
+            this.touchStartX = null;
+        }
+    }
+
+    handleMouseDragStart = (event) => {
+        this.mouseDownX = event.clientX;
+    }
+
+    handleMouseDragEnd = (event) => {
+        if (!this.mouseDownX) {
+            return;
+        }
+
+        const mouseUpX = event.clientX;
+        const deltaX = mouseUpX - this.mouseDownX;
+
+        if (Math.abs(deltaX) > 50) {
+            const move = deltaX > 0 ? true : false;
+            const { currentIndex, isAnimate } = this.state;
+            const { slides } = this.props;
+
+            if (!isAnimate) {
+                const prevIndex = currentIndex;
+                const counter = move ? currentIndex - 1 : currentIndex + 1;
+                this.setState({ currentIndex: counter < 0 ? slides.length - 1 : counter > slides.length - 1 ? 0 : counter }, () => this.sliderChanger(prevIndex, move));
+            }
+        }
+
+        this.mouseDownX = null;
+    }
+
     componentDidMount() {
         const timerId = setInterval(() => {
             const { isAnimate, currentIndex } = this.state;
@@ -27,9 +81,15 @@ class HomeMainPortfolioSlider extends Component {
             if (isAnimate) return;
 
             this.setState({ currentIndex: counter }, () => this.sliderChanger(prevIndex, false));
-        }, 5000);
+        }, 8000);
 
         this.setState({ timerId });
+
+        document.addEventListener('touchstart', this.handleTouchStart);
+        document.addEventListener('touchmove', this.handleTouchMove);
+
+        document.addEventListener('mousedown', this.handleMouseDragStart);
+        document.addEventListener('mouseup', this.handleMouseDragEnd);
     }
 
     componentWillUnmount() {
@@ -74,33 +134,45 @@ class HomeMainPortfolioSlider extends Component {
                 }), 20)
             })
         :
-            prevIndex === 0  && currentIndex === slides.length - 2 ?
+            prevIndex === 1 && currentIndex === slides.length - 1 ?
                 this.setState({ swipeData:  this.isSmallScreen ? -200 : -250, isAnimate: false, visibleSlides: slidesQuery }, () => {
                     setTimeout(() => this.setState({ isAnimate: true, swipeData: this.isSmallScreen ? 0 : -50 }, () => {
                         setTimeout(() => this.setState({ isAnimate: false }), 1000)
                     }), 20)
                 })
             :
-                prevIndex === slides.length - 1  && currentIndex === 0 ?
-                    this.setState({ swipeData: ( this.isSmallScreen ? -100 : -150), isAnimate: true }, () => {
+                prevIndex === slides.length - 1  && currentIndex === 1 ?
+                    this.setState({ swipeData: ( this.isSmallScreen ? -200 : -250), isAnimate: true }, () => {
                         setTimeout(() => this.setState({ isAnimate: false, swipeData: this.isSmallScreen ? 0 : -50, visibleSlides: slidesQuery }), 1000)
                     })
                 :
-                    prevIndex === slides.length - 2  && currentIndex === 0 ?
-                        this.setState({ swipeData: ( this.isSmallScreen ? -100 : -150) - 100 * (prevIndex - 2), isAnimate: true }, () => {
-                            setTimeout(() => this.setState({ isAnimate: false, swipeData: this.isSmallScreen ? 0 : -50, visibleSlides: slidesQuery }), 1000)
+                    prevIndex === 0  && currentIndex === slides.length - 2 ?
+                        this.setState({ swipeData:  this.isSmallScreen ? -200 : -250, isAnimate: false, visibleSlides: slidesQuery }, () => {
+                            setTimeout(() => this.setState({ isAnimate: true, swipeData: this.isSmallScreen ? 0 : -50 }, () => {
+                                setTimeout(() => this.setState({ isAnimate: false }), 1000)
+                            }), 20)
                         })
                     :
-                        move ?
-                            this.setState({ swipeData: ( this.isSmallScreen ? -100 : -150) - 100 * (prevIndex - 1 - currentIndex), isAnimate: false, visibleSlides: slidesQuery  }, () => {
-                                setTimeout(() => this.setState({ isAnimate: true, swipeData: this.isSmallScreen ? 0 : -50 }, () => {
-                                    setTimeout(() => this.setState({ isAnimate: false }), 1000)
-                                }), 20)
-                            })
-                        :
-                            this.setState({ swipeData: ( this.isSmallScreen ? -100 : -150) - 100 * (currentIndex - 1 - prevIndex), isAnimate: true }, () => {
+                        prevIndex === slides.length - 1  && currentIndex === 0 ?
+                            this.setState({ swipeData: ( this.isSmallScreen ? -100 : -150), isAnimate: true }, () => {
                                 setTimeout(() => this.setState({ isAnimate: false, swipeData: this.isSmallScreen ? 0 : -50, visibleSlides: slidesQuery }), 1000)
                             })
+                        :
+                            prevIndex === slides.length - 2  && currentIndex === 0 ?
+                                this.setState({ swipeData: ( this.isSmallScreen ? -100 : -150) - 100 * (prevIndex - 2), isAnimate: true }, () => {
+                                    setTimeout(() => this.setState({ isAnimate: false, swipeData: this.isSmallScreen ? 0 : -50, visibleSlides: slidesQuery }), 1000)
+                                })
+                            :
+                                move ?
+                                    this.setState({ swipeData: ( this.isSmallScreen ? -100 : -150) - 100 * (prevIndex - 1 - currentIndex), isAnimate: false, visibleSlides: slidesQuery  }, () => {
+                                        setTimeout(() => this.setState({ isAnimate: true, swipeData: this.isSmallScreen ? 0 : -50 }, () => {
+                                            setTimeout(() => this.setState({ isAnimate: false }), 1000)
+                                        }), 20)
+                                    })
+                                :
+                                    this.setState({ swipeData: ( this.isSmallScreen ? -100 : -150) - 100 * (currentIndex - 1 - prevIndex), isAnimate: true }, () => {
+                                        setTimeout(() => this.setState({ isAnimate: false, swipeData: this.isSmallScreen ? 0 : -50, visibleSlides: slidesQuery }), 1000)
+                                    })
     }
 
     render() {
@@ -118,7 +190,8 @@ class HomeMainPortfolioSlider extends Component {
                                         ...homeMainPortfolioStyle.slider.item,
                                         width: this.isSmallScreen ? '100%' : '50%',
                                         transform: `translateX(${swipeData}%)`,
-                                        transition: isAnimate ? 'transform 1s ease-in-out' : ''
+                                        transition: isAnimate ? 'transform 1s ease-in-out' : '',
+                                        userSelect: 'none'
                                     }}
                                 >
                                     {slide}
