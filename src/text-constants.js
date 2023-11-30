@@ -119,7 +119,7 @@ const TEXT_CONSTANTS = {
         PORTFOLIO: {
             TITLE: 'Портфоліо',
             FIRST_PROJECT: {
-                title: 'Банківській та фінансовий сектор',
+                title: 'Фінансовий сектор',
                 p1: '- Розробка плану та модулю для забезпечення інформаційної безпеки окремих операцій',
                 p2: '- Впровадження модулів та методики інформаційної безпеки',
                 p3: '- Розробка реферальної програми для веб-сайту',
@@ -292,7 +292,7 @@ const TEXT_CONSTANTS = {
         PORTFOLIO: {
             TITLE: 'Portfolio',
             FIRST_PROJECT: {
-                title: 'Banking and Financial Sector',
+                title: 'Financial Sector',
                 p1: '- Development of a plan and module to ensure information security of specific transactions',
                 p2: '- Implementation of information security modules and methodologies',
                 p3: '- Development of a referral program for the website',
