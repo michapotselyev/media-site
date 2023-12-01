@@ -13,9 +13,13 @@ import HomeMain from './desktop/components/HomeMain';
 import HomeMainTablet from './tablet/components/HomeMainTablet';
 import HomeMainMobile from './mobile/components/HomeMainMobile';
 
-import ServiceMain from './desktop/components/ServiceMain';
-import ServiceMainTablet from './tablet/components/ServiceMainTablet';
-import ServiceMainMobile from './mobile/components/ServiceMainMobile';
+import ProjectsMain from './desktop/components/ProjectsMain';
+import ProjectsMainTablet from './tablet/components/ProjectsMainTablet';
+import ProjectsMainMobile from './mobile/components/ProjectsMainMobile';
+
+import CategoryMain from './desktop/components/CategoryMain';
+import CategoryMainTablet from './tablet/components/CategoryMainTablet';
+import CategoryMainMobile from './mobile/components/CategoryMainMobile';
 
 import ErrorMain from './desktop/components/ErrorMain';
 import ErrorMainTablet from './tablet/components/ErrorMainTablet';
@@ -23,7 +27,7 @@ import ErrorMainMobile from './mobile/components/ErrorMainMobile';
 
 function Versions({ page }) {
     const isMobile = useMediaQuery('(max-width:600px)');
-    const isTablet = useMediaQuery('(max-width:960px)');
+    const isTablet = useMediaQuery('(max-width:1024px)');
     
     switch (page) {
         case 'main':
@@ -35,11 +39,20 @@ function Versions({ page }) {
                 </>
             );
         
-        case 'service':
+        case 'projects':
             return (
                 <>
                     { isMobile ? <HeaderMobile /> : isTablet ? <HeaderTablet /> : <Header /> }
-                    { isMobile ? <ServiceMainMobile /> : isTablet ? <ServiceMainTablet /> : <ServiceMain /> }
+                    { isMobile ? <ProjectsMainMobile /> : isTablet ? <ProjectsMainTablet /> : <ProjectsMain /> }
+                    { isMobile ? <FooterMobile /> : isTablet ? <FooterTablet /> : <Footer /> }
+                </>
+            );
+
+        case 'category':
+            return (
+                <>
+                    { isMobile ? <HeaderMobile /> : isTablet ? <HeaderTablet /> : <Header /> }
+                    { isMobile ? <CategoryMainMobile /> : isTablet ? <CategoryMainTablet /> : <CategoryMain /> }
                     { isMobile ? <FooterMobile /> : isTablet ? <FooterTablet /> : <Footer /> }
                 </>
             );

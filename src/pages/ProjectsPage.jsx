@@ -1,10 +1,10 @@
 import React from 'react';
 import Versions from '../versions/Versions';
 
-function ServicePage() {
+function ProjectsPage() {
     return (
-        <Versions page={'service'} />
+        <Versions page={'projects'} />
     );
 }
 
-export default ServicePage;
+export default ProjectsPage;

@@ -24,12 +24,12 @@ function Header() {
     const handleLungChange = (currentLung) => {
         if (currentLung === 'uk') {
             localStorage.setItem('lung', 'eng');
-            return window.location.assign(window.location.pathname);
+            return window.location.reload();
         }
 
         if (currentLung === 'eng') {
             localStorage.setItem('lung', 'uk');
-            window.location.assign('/');
+            return window.location.reload();
         }
     }
 
@@ -37,22 +37,22 @@ function Header() {
         switch (event.target.id) {
             case 'first':
                 closeHandler();
-                window.location.assign('#about-us');
+                window.location.assign('/#about-us');
                 return;
 
             case 'second':
                 closeHandler();
-                window.location.assign('#our-services');
+                window.location.assign('/#our-services');
                 return;
 
             case 'third':
                 closeHandler();
-                window.location.assign('#portfolio');
+                window.location.assign('/#portfolio');
                 return;
 
             case 'button':
                 closeHandler();
-                window.location.assign('#contact-us');
+                window.location.assign('/#contact-us');
                 return;
         
             default:
@@ -148,7 +148,7 @@ function Header() {
                                     }
                                     onClick={() => handleLungChange('uk')}
                                 >
-                                    <Box component={'img'} src='assets/usa.png' alt='usa' />
+                                    <Box component={'img'} src='/assets/usa.png' alt='usa' />
                                     <Typography>English</Typography>
                                 </Box>
 
@@ -164,7 +164,7 @@ function Header() {
                                     }
                                     onClick={() => handleLungChange('eng')}
                                 >
-                                    <Box component={'img'} src='assets/ukraine.png' alt='ukraine' />
+                                    <Box component={'img'} src='/assets/ukraine.png' alt='ukraine' />
                                     <Typography>Українська</Typography>
                                 </Box>
                             </Collapse>
