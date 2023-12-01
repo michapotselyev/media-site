@@ -5,19 +5,25 @@ import { useParams } from 'react-router-dom';
 import TEXT_CONSTANTS from '../../../text-constants';
 import CategorySlider from './category-components/CategorySlider';
 
+const getItems = (category) => localStorage.getItem('lung') === 'uk' ?
+                    TEXT_CONSTANTS.UK.PROJECTS.projects_list.filter(project => project.category === category)
+                :
+                    TEXT_CONSTANTS.ENG.PROJECTS.projects_list.filter(project => project.category === category);
+
 function CategoryMain() {
     const { category } = useParams();
     const [items, setItems] = useState([]);
 
     useState(() => {
-        setItems(
-            localStorage.getItem('lung') === 'uk' ?
-                TEXT_CONSTANTS.UK.PROJECTS.projects_list.filter(project => project.category === category)
-            :
-                TEXT_CONSTANTS.ENG.PROJECTS.projects_list.filter(project => project.category === category)
+        const listOfitems = getItems(category);
+        
+        if (!TEXT_CONSTANTS.UK.PROJECTS.links_to_categories[category]) {
+            window.location.assign('/error');
+        }
 
-        );
+        setItems(listOfitems);
     }, []);
+
 
     return (
         <Box

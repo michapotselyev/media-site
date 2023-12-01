@@ -17,7 +17,7 @@ function CategoryMainMobile() {
     useState(() => {
         const listOfitems = getItems(category);
         
-        if (listOfitems.length === 0) {
+        if (!TEXT_CONSTANTS.UK.PROJECTS.links_to_categories[category]) {
             window.location.assign('/error');
         }
 
