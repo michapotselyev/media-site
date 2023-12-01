@@ -18,7 +18,7 @@ function Header() {
     };
 
     const reloadHandler = () => {
-        window.location.reload();
+        window.location.assign('/');
     }
 
     const handleLungChange = (currentLung) => {

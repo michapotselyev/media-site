@@ -90,7 +90,7 @@ function CategoryMain() {
                     }/
                 </Link>
                 <Link
-                    href='/projects'
+                    href={'/projects/' + category}
                     sx={{
                         fontSize: '1.2rem',
                         fontWeight: '500',

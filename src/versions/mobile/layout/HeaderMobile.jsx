@@ -36,12 +36,12 @@ function HeaderMobile() {
     const handleLungChange = (currentLung) => {
         if (currentLung === 'uk') {
             localStorage.setItem('lung', 'eng');
-            return window.location.assign(window.location.pathname);
+            return window.location.reload();
         }
 
         if (currentLung === 'eng') {
             localStorage.setItem('lung', 'uk');
-            return window.location.assign(window.location.pathname);
+            return window.location.reload();
         }
     }
 
