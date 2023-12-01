@@ -161,6 +161,11 @@ const TEXT_CONSTANTS = {
                 sales: 'торгівля',
                 metallurgy: 'металургія'
             },
+            no_projects: 'Тут поки не має проектів...',
+            features_title: 'Основні аспекти',
+            coll_title: 'у колоборації',
+            coll_subtitle: 'з',
+            title: 'Про проект',
             projects_list: [
                 {
                     category: 'education',
@@ -252,7 +257,7 @@ const TEXT_CONSTANTS = {
                     collaboration: true,
                     collaborant: 'LANARS',
                     description: 'Vitalab - ваш інноваційний партнер у світі медичних аналізів. Ми втілили передові технології розробки, використовуючи React та Node.js, щоб створити унікальний онлайн-простір для замовлення та отримання високоточних медичних даних. Співпраця з LANARS дозволяє нам гарантувати не лише безпеку ваших особистих даних, а й швидку обробку результатів завдяки високопродуктивному бекенду на Node.js.',
-                    urls: ['/assets/projects/sales/vatalabs-1.png', '/assets/projects/sales/vatalabs-2.png'],
+                    urls: ['/assets/projects/sales/vitalabs-1.png', '/assets/projects/sales/vitalabs-2.png'],
                     features: [
                         'Унікальний онлайн-простір для замовлення та отримання медичних даних.',
                         'Ефективний бекенд на Node.js для швидкої обробки результатів.',
@@ -443,6 +448,11 @@ const TEXT_CONSTANTS = {
                 sales: 'sales',
                 metallurgy: 'metallurgy'
             },
+            no_projects: 'There are no projects here yet...',
+            features_title: 'Key Aspects',
+            coll_title: 'in collaboration',
+            coll_subtitle: 'with',
+            title: 'About project',
             projects_list: [
                 {
                     category: 'education',

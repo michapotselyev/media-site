@@ -27,7 +27,7 @@ import ErrorMainMobile from './mobile/components/ErrorMainMobile';
 
 function Versions({ page }) {
     const isMobile = useMediaQuery('(max-width:600px)');
-    const isTablet = useMediaQuery('(max-width:960px)');
+    const isTablet = useMediaQuery('(max-width:1024px)');
     
     switch (page) {
         case 'main':

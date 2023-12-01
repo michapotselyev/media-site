@@ -1,21 +1,21 @@
 import { createBrowserRouter } from "react-router-dom";
-import { MainPage, ProjectsPage, CategoryPage } from "../pages";
+import { MainPage, ProjectsPage, CategoryPage, ErrorPage } from "../pages";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <MainPage />,
-        errorElement: <div>Сталася Помилка</div>
+        errorElement: <ErrorPage />
     },
     {
         path: "/projects",
         element: <ProjectsPage />,
-        errorElement: <div>Сталася Помилка</div>
+        errorElement: <ErrorPage />
     },
     {
         path: "/projects/:category",
         element: <CategoryPage />,
-        errorElement: <div>Сталася Помилка</div>
+        errorElement: <ErrorPage />
     }
 ]);
 

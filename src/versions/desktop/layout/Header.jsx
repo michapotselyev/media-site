@@ -148,7 +148,7 @@ function Header() {
                                     }
                                     onClick={() => handleLungChange('uk')}
                                 >
-                                    <Box component={'img'} src='assets/usa.png' alt='usa' />
+                                    <Box component={'img'} src='/assets/usa.png' alt='usa' />
                                     <Typography>English</Typography>
                                 </Box>
 
@@ -164,7 +164,7 @@ function Header() {
                                     }
                                     onClick={() => handleLungChange('eng')}
                                 >
-                                    <Box component={'img'} src='assets/ukraine.png' alt='ukraine' />
+                                    <Box component={'img'} src='/assets/ukraine.png' alt='ukraine' />
                                     <Typography>Українська</Typography>
                                 </Box>
                             </Collapse>
