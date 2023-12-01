@@ -1,5 +1,6 @@
 import MainPage from "./MainPage";
-import ServicePage from "./ServicePage";
+import ProjectsPage from "./ProjectsPage";
+import CategoryPage from "./CategoryPage";
 import ErrorPage from "./ErrorPage";
 
-export { MainPage, ServicePage, ErrorPage };
+export { MainPage, ProjectsPage, CategoryPage, ErrorPage };
