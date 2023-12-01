@@ -41,18 +41,37 @@ const homeMainPortfolioStyle = {
                 wrapperText: {
                     width: '100%',
                     height: '100%',
-                    background: 'rgba(0,0,0,0.7)',
+                    background: 'rgba(0,0,0,0.8)',
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'center',
                     justifyContent: 'end',
                     padding: '2rem',
+                },
 
-                    '& > p': {
-                        color: 'white',
-                        fontSize: '2.3rem',
-                        textAlign: 'center'
+                text: {
+                    width: '100%',
+                    color: 'white!important',
+                    fontSize: '2.3rem',
+                    textAlign: 'start',
+                    textDecoration: 'none',
+                    border: '1px solid white',
+                    padding: '1rem',
+                    display: 'flex',
+                    flexDirection: 'row',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+
+                    '&:hover': {
+                        backgroundColor: 'white',
+                        color: 'black!important',
+                        '& > svg': {
+                            color: 'black',
+                        }
                     }
+                },
+                arrow: {
+                    fontSize: '2.3rem'
                 }
             }
         },

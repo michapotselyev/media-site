@@ -36,12 +36,12 @@ function HeaderTablet() {
     const handleLungChange = (currentLung) => {
         if (currentLung === 'uk') {
             localStorage.setItem('lung', 'eng');
-            return window.location.assign(window.location.pathname);
+            return window.location.reload();
         }
 
         if (currentLung === 'eng') {
             localStorage.setItem('lung', 'uk');
-            return window.location.assign(window.location.pathname);
+            return window.location.reload();
         }
     }
 
@@ -49,22 +49,22 @@ function HeaderTablet() {
         switch (event.target.id) {
             case 'first':
                 closeHandler();
-                window.location.assign('#about-us');
+                window.location.assign('/#about-us');
                 return;
 
             case 'second':
                 closeHandler();
-                window.location.assign('#our-services');
+                window.location.assign('/#our-services');
                 return;
 
             case 'third':
                 closeHandler();
-                window.location.assign('#portfolio');
+                window.location.assign('/#portfolio');
                 return;
 
             case 'button':
                 closeHandler();
-                window.location.assign('#contact-us');
+                window.location.assign('/#contact-us');
                 return;
         
             default:
@@ -109,7 +109,7 @@ function HeaderTablet() {
             >
                 <Box sx={ headerStyle.menuProp.header }>
                     <Box component={'section'} sx={ headerStyle.menuProp.header.logoDiv } onClick={reloadHandler}>
-                        <Box component={'img'} src={'assets/logo-shadow.png'} />
+                        <Box component={'img'} src={'/assets/logo-shadow.png'} />
                     </Box>
 
                     <Box component={'section'} sx={ headerStyle.menuProp.header.closeIco } onClick={closeHandler}>
@@ -241,7 +241,7 @@ function HeaderTablet() {
                                     }
                                     onClick={() => handleLungChange('uk')}
                                 >
-                                    <Box component={'img'} src='assets/usa.png' alt='usa' />
+                                    <Box component={'img'} src='/assets/usa.png' alt='usa' />
                                     <Typography>English</Typography>
                                 </Box>
 
@@ -257,7 +257,7 @@ function HeaderTablet() {
                                     }
                                     onClick={() => handleLungChange('eng')}
                                 >
-                                    <Box component={'img'} src='assets/ukraine.png' alt='ukraine' />
+                                    <Box component={'img'} src='/assets/ukraine.png' alt='ukraine' />
                                     <Typography>Українська</Typography>
                                 </Box>
                             </Collapse>

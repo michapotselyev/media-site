@@ -119,7 +119,7 @@ const TEXT_CONSTANTS = {
         PORTFOLIO: {
             TITLE: 'Портфоліо',
             FIRST_PROJECT: {
-                title: 'Банківській та фінансовий сектор',
+                title: 'Фінансовий сектор',
                 p1: '- Розробка плану та модулю для забезпечення інформаційної безпеки окремих операцій',
                 p2: '- Впровадження модулів та методики інформаційної безпеки',
                 p3: '- Розробка реферальної програми для веб-сайту',
@@ -150,6 +150,121 @@ const TEXT_CONSTANTS = {
                 p2: '- Створення та впровадження корпоративного додатку для функціонування «електронного складу» матеріалів, створення клієнтського додатку для оптової торгівлі кольоровими металами та синхронізація обох систем',
                 
             },
+        },
+        PROJECTS: {
+            link_to_main: 'головна',
+            link_to_projects: 'проекти',
+            links_to_categories: {
+                education: 'освіта',
+                web: 'веб',
+                finance: 'фінанси',
+                sales: 'торгівля',
+                metallurgy: 'металургія'
+            },
+            no_projects: 'Тут поки не має проектів...',
+            features_title: 'Основні аспекти',
+            coll_title: 'у колоборації',
+            coll_subtitle: 'з',
+            title: 'Про проект',
+            projects_list: [
+                {
+                    category: 'education',
+                    title: 'Springer Link',
+                    collaboration: false,
+                    collaborant: undefined,
+                    description: 'Для сайту SpringerLink,  який є провідним науковим  ресурсом, ми розробили  високопродуктивний бекенд з  використанням Java та Spring  Framework, що забезпечує  швидкий доступ до обширної  бази наукових публікацій. Elasticsearch використовується  для оптимізації пошукових  запитів, підвищуючи ефективність  пошуку серед великої кількості  документів. Фронтенд, створений  на основі Angular, пропонує  інтуїтивно зрозумілий та  адаптивний інтерфейс, що  відповідає сучасним стандартам  UX/UI дизайну. Додаткові функції,  такі як персоналізовані  рекомендації та інтелектуальна  навігація, підвищують зручність  використання ресурсу та  задовольняють специфічні  потреби наукової спільноти.',
+                    urls: ['/assets/projects/education/springerlink-1.png', '/assets/projects/education/springerlink-2.png'],
+                    features: [
+                        'Високопродуктивний бекенд на Java та Spring Framework.',
+                        'Використання Elasticsearch для оптимізації пошукових запитів.',
+                        'Інтуїтивний та адаптивний інтерфейс на Angular.',
+                        'Персоналізовані рекомендації та інтелектуальна навігація.'
+                    ]
+                },
+                {
+                    category: 'salse',
+                    title: 'Shoplabs',
+                    collaboration: true,
+                    collaborant: 'LANARS',
+                    description: 'Наш останній проект включав розробку інноваційного сайту для Shoplabs.no, лідера в галузі цифрових рішень для роздрібної торгівлі. Ми створили унікальну платформу RMS (Retail Management System), яка ефективно поєднує POS (Point-of-Sale) та E-Commerce рішення на одному сайті. Цей проект вирізняється завдяки інтерфейсу користувача, розробленому для iPad, який дозволяє освоїти систему менше ніж за хвилину, відображаючи нашу відданість створенню виняткового UX (User Experience).',
+                    urls: ['/assets/projects/salse/shoplabs-1.png', '/assets/projects/salse/shoplabs-2.png'],
+                    features: [
+                        'Інноваційний сайт для роздрібної торгівлі.',
+                        'Унікальна платформа RMS для ефективного управління.',
+                        'Інтерфейс, розроблений для iPad, забезпечує швидке освоєння.',
+                        'Поєднання POS та E-Commerce рішень.'
+                    ]
+                },
+                {
+                    category: 'web',
+                    title: 'Defigo',
+                    collaboration: true,
+                    collaborant: 'LANARS',
+                    description: 'У нашому останньому IT-проекті ми розробили веб-сайт для Defigo, лідера в галузі систем ACS (Access Control Systems). Цей сайт інтегрує UI/UX-дизайн з передовими технологіями, включаючи відзивчиві інтеркоми з сенсорними дисплеями та функціональністю IoT (Internet of Things), зручне веб-адміністрування та віддалений доступ через мобільні додатки. Ми приділили особливу увагу інтеграції з CRM (Customer Relationship Management) та ERP (Enterprise Resource Planning) системами Defigo для забезпечення безшовної взаємодії з клієнтами та ефективного управління бізнес-процесами, демонструючи нашу експертизу в створенні високотехнологічних та інтуїтивно зрозумілих веб-рішень.',
+                    urls: ['/assets/projects/web/defigo-1.png', '/assets/projects/web/defigo-2.png'],
+                    features: [
+                        'Інтеграція UI/UX-дизайну з технологіями IoT та відзивчиві інтеркоми.',
+                        'Зручне веб-адміністрування та віддалений доступ.',
+                        'Інтеграція з CRM та ERP системами для ефективного управління.',
+                        'Використання передових технологій систем ACS.'
+                    ]
+                },
+                {
+                    category: 'finance',
+                    title: 'Weld Money',
+                    collaboration: true,
+                    collaborant: null,
+                    description: 'У проекті реалізовано  інтеграцію з криптобіржами та  електронними гаманцями  через RESTful API, що  забезпечує управління  активами. Бекенд на Node.js  та Express забезпечує  високопродуктивну обробку  даних, у той час як база даних  MongoDB гарантує швидкий  доступ та масштабованість.​ Фронтенд, розроблений на  React, пропонує  оптимізований  користувацький інтерфейс із  застосуванням кращих  практик UX/UI. Включення  блокчейн-технологій та  алгоритмів машинного  навчання виділяє наш продукт​ на ринку.​',
+                    urls: ['/assets/projects/finance/weldmoney-1.png', '/assets/projects/finance/weldmoney-2.png'],
+                    features: [
+                        'Інтеграція з криптобіржами та електронними гаманцями.',
+                        'Високопродуктивний бекенд на Node.js та Express.',
+                        'Оптимізований користувацький інтерфейс на React.',
+                        'Використання блокчейн-технологій та алгоритмів машинного навчання.'
+                    ]
+                },
+                {
+                    category: 'web',
+                    title: 'TOP Real Estate',
+                    collaboration: false,
+                    collaborant: undefined,
+                    description: 'Для агентства нерухомості TOP REAL  ESTATE, яке є еталоном  професіоналізму та надійності на  ринку, ми розробили інтегровану  платформу для купівлі, продажу та  оренди нерухомості.​ Використовуючи передові технології,  такі як бази даних SQL для  ефективного управління об\'єктами  та CRM-системи для  персоналізованого обслуговування  клієнтів, ми забезпечуємо  оптимізацію всіх процесів. Наш веб-сайт, створений на основі React та  Redux для гнучкого інтерфейсу,  інтегрований з API картографічних  сервісів для візуалізації об\'єктів  нерухомості, що дозволяє клієнтам  легко знаходити ідеальні варіанти.​ Використання штучного інтелекту  для аналізу ринкових тенденцій та  автоматизації рекомендацій  підвищує швидкість та якість вибору  нерухомості, гарантуючи високий​ рівень задоволення клієнтів.​',
+                    urls: ['/assets/projects/web/top-real-estate-1.jpg', '/assets/projects/web/top-real-estate-2.jpg'],
+                    features: [
+                        'Інтегрована платформа для купівлі, продажу та оренди нерухомості.',
+                        'Використання баз даних SQL для ефективного управління об\'єктами.',
+                        'Інтеграція з CRM-системою для персоналізованого обслуговування клієнтів.',
+                        'Використання штучного інтелекту для аналізу ринкових тенденцій та автоматизації рекомендацій.'
+                    ]
+                },
+                {
+                    category: 'web',
+                    title: 'Agro Analyst',
+                    collaboration: false,
+                    collaborant: undefined,
+                    description: 'Для веб-сайту AgroAnalyst, який служить адміністрації кадастрів та земельних ділянок, ми створили спеціалізовану GIS-платформу на базі ARCGiS. Ця система дозволяє точно відстежувати, аналізувати та управляти земельними ресурсами з використанням просторових даних. Бекенд, розроблений з використанням Python та Django, інтегрований з ARCGiS для обробки геопросторових запитів, забезпечуючи надійне зберігання та обробку великих обсягів даних. Фронтенд, створений на Angular, пропонує інтуїтивно зрозумілий інтерфейс для користувачів, дозволяючи легко доступати та візуалізувати кадастрові дані. Інтеграція з ARCGiS також надає можливість використання широкого спектру аналітичних інструментів для планування використання земель та прийняття обґрунтованих рішень.​​',
+                    urls: ['/assets/projects/web/agroanalyst.jpg'],
+                    features: [
+                        'Розробка спеціалізованої GIS-платформи на базі ARCGiS.',
+                        'Інтеграція Python та Django для ефективної обробки геопросторових даних.',
+                        'Інтуїтивно зрозумілий інтерфейс на Angular для зручного користування.',
+                        'Використання аналітичних інструментів для раціонального використання земельних ресурсів.',
+                    ]
+                },
+                {
+                    category: 'sales',
+                    title: 'Vitalab',
+                    collaboration: true,
+                    collaborant: 'LANARS',
+                    description: 'Vitalab - ваш інноваційний партнер у світі медичних аналізів. Ми втілили передові технології розробки, використовуючи React та Node.js, щоб створити унікальний онлайн-простір для замовлення та отримання високоточних медичних даних. Співпраця з LANARS дозволяє нам гарантувати не лише безпеку ваших особистих даних, а й швидку обробку результатів завдяки високопродуктивному бекенду на Node.js.',
+                    urls: ['/assets/projects/sales/vitalabs-1.png', '/assets/projects/sales/vitalabs-2.png'],
+                    features: [
+                        'Унікальний онлайн-простір для замовлення та отримання медичних даних.',
+                        'Ефективний бекенд на Node.js для швидкої обробки результатів.',
+                        'Співпраця з LANARS для гарантії безпеки особистих даних.',
+                    ]
+                },
+            ]
         },
         CONTACT_US: {
             title: 'Зв\'язатися з',
@@ -292,7 +407,7 @@ const TEXT_CONSTANTS = {
         PORTFOLIO: {
             TITLE: 'Portfolio',
             FIRST_PROJECT: {
-                title: 'Banking and Financial Sector',
+                title: 'Financial Sector',
                 p1: '- Development of a plan and module to ensure information security of specific transactions',
                 p2: '- Implementation of information security modules and methodologies',
                 p3: '- Development of a referral program for the website',
@@ -322,6 +437,120 @@ const TEXT_CONSTANTS = {
                 p2: '',
                 
             },
+        },
+        PROJECTS: {
+            link_to_main: 'main',
+            link_to_projects: 'projects',
+            links_to_categories: {
+                education: 'education',
+                web: 'web',
+                finance: 'finance',
+                sales: 'sales',
+                metallurgy: 'metallurgy'
+            },
+            no_projects: 'There are no projects here yet...',
+            features_title: 'Key Aspects',
+            coll_title: 'in collaboration',
+            coll_subtitle: 'with',
+            title: 'About project',
+            projects_list: [
+                {
+                    category: 'education',
+                    title: 'Springer Link',
+                    collaboration: false,
+                    collaborant: undefined,
+                    description: 'For the SpringerLink website, a leading scientific resource, we developed a high-performance backend using Java and the Spring Framework, ensuring fast access to an extensive database of scientific publications. Elasticsearch is utilized for optimizing search queries, enhancing efficiency across a large number of documents. The frontend, built on Angular, offers an intuitive and adaptive interface in line with modern UX/UI design standards. Additional features such as personalized recommendations and intelligent navigation enhance user convenience, addressing the specific needs of the scientific community.',
+                    urls: ['/assets/projects/education/springerlink-1.png', '/assets/projects/education/springerlink-2.png'],
+                    features: [
+                        'High-performance backend in Java and the Spring Framework.',
+                        'Utilization of Elasticsearch for optimizing search queries.',
+                        'Intuitive and adaptive Angular-based interface.',
+                        'Additional features include personalized recommendations and intelligent navigation.'
+                    ]
+                },
+                {
+                    category: 'sales',
+                    title: 'Shoplabs',
+                    collaboration: true,
+                    collaborant: 'LANARS',
+                    description: 'Our latest project involved developing an innovative website for Shoplabs.no, a leader in digital solutions for retail. We created a unique Retail Management System (RMS) platform that efficiently combines Point-of-Sale (POS) and E-Commerce solutions on a single site. This project stands out with a user interface designed for iPad, allowing users to master the system in less than a minute, showcasing our commitment to creating exceptional User Experience (UX).',
+                    urls: ['/assets/projects/sales/shoplabs-1.png', '/assets/projects/sales/shoplabs-2.png'],
+                    features: [
+                        'Innovative website for retail with a unique RMS platform.',
+                        'User interface designed for iPad for quick system mastery.',
+                        'Combination of POS and E-Commerce solutions.'
+                    ]
+                },
+                {
+                    category: 'web',
+                    title: 'Defigo',
+                    collaboration: true,
+                    collaborant: 'LANARS',
+                    description: 'In our latest IT project, we developed a website for Defigo, a leader in Access Control Systems (ACS). This site integrates UI/UX design with cutting-edge technologies, including responsive intercoms with touch displays and Internet of Things (IoT) functionality, convenient web administration, and remote access through mobile applications. We paid special attention to integrating with Defigo\'s CRM (Customer Relationship Management) and ERP (Enterprise Resource Planning) systems to ensure seamless customer interaction and efficient business process management, showcasing our expertise in creating high-tech and intuitive web solutions.',
+                    urls: ['/assets/projects/web/defigo-1.png', '/assets/projects/web/defigo-2.png'],
+                    features: [
+                        'Integration of UI/UX design with IoT technologies and responsive intercoms.',
+                        'Convenient web administration and remote access.',
+                        'Integration with CRM and ERP systems for efficient management.',
+                        'Utilization of advanced Access Control Systems (ACS) technologies.'
+                    ]
+                },
+                {
+                    category: 'finance',
+                    title: 'Weld Money',
+                    collaboration: true,
+                    collaborant: null,
+                    description: 'The project includes integration with cryptocurrency exchanges and electronic wallets through RESTful API, providing asset management. The backend, built with Node.js and Express, ensures high-performance data processing, while the MongoDB database ensures fast access and scalability. The frontend, developed using React, offers an optimized user interface applying the best UX/UI practices. The inclusion of blockchain technologies and machine learning algorithms distinguishes our product in the market.',
+                    urls: ['/assets/projects/finance/weldmoney-1.png', '/assets/projects/finance/weldmoney-2.png'],
+                    features: [
+                        'Integration with cryptocurrency exchanges and electronic wallets.',
+                        'High-performance backend with Node.js and Express.',
+                        'Optimized user interface using React.',
+                        'Utilization of blockchain technologies and machine learning algorithms.'
+                    ]
+                },
+                {
+                    category: 'web',
+                    title: 'TOP Real Estate',
+                    collaboration: false,
+                    collaborant: undefined,
+                    description: 'For the real estate agency TOP REAL ESTATE, a benchmark of professionalism and reliability in the market, we developed an integrated platform for buying, selling, and renting properties. Utilizing advanced technologies such as SQL databases for efficient property management and CRM systems for personalized client service, we ensure optimization of all processes. Our website, built on React and Redux for a flexible interface, integrates with mapping service APIs for visualizing property objects, enabling clients to easily find ideal options. The use of artificial intelligence for analyzing market trends and automating recommendations enhances the speed and quality of property selection, ensuring a high level of customer satisfaction.',
+                    urls: ['/assets/projects/web/top-real-estate-1.jpg', '/assets/projects/web/top-real-estate-2.jpg'],
+                    features: [
+                        'Integrated platform for buying, selling, and renting properties.',
+                        'Utilization of SQL databases for efficient property management.',
+                        'Integration with CRM system for personalized client service.',
+                        'Use of artificial intelligence for analyzing market trends and automating recommendations.'
+                    ]
+                },
+                {
+                    category: 'web',
+                    title: 'Agro Analyst',
+                    collaboration: false,
+                    collaborant: undefined,
+                    description: 'For the AgroAnalyst website, serving the administration of cadasters and land plots, we created a specialized GIS platform based on ARCGiS. This system allows precise tracking, analysis, and management of land resources using spatial data. The backend, developed using Python and Django, is integrated with ARCGiS for processing geospatial queries, ensuring reliable storage and processing of large data volumes. The frontend, created with Angular, offers an intuitive interface for users, facilitating easy access and visualization of cadastre data. Integration with ARCGiS also provides the opportunity to use a wide range of analytical tools for land use planning and making informed decisions.',
+                    urls: ['/assets/projects/web/agroanalyst.jpg'],
+                    features: [
+                        'Development of a specialized GIS platform based on ARCGiS.',
+                        'Integration of Python and Django for efficient processing of geospatial data.',
+                        'Intuitive interface on Angular for user convenience.',
+                        'Utilization of analytical tools for land use planning and decision-making.'
+                    ]
+                },
+                {
+                    category: 'sales',
+                    title: 'Vitalab',
+                    collaboration: true,
+                    collaborant: 'LANARS',
+                    description: 'Vitalab - your innovative partner in the world of medical analytics. We implemented cutting-edge development technologies, using React and Node.js, to create a unique online space for ordering and obtaining high-precision medical data. Collaboration with LANARS ensures not only the security of your personal data but also fast results processing thanks to a high-performance Node.js backend.',
+                    urls: ['/assets/projects/sales/vatalabs-1.png', '/assets/projects/sales/vatalabs-2.png'],
+                    features: [
+                        'Unique online space for ordering and obtaining medical data.',
+                        'Efficient backend on Node.js for fast results processing.',
+                        'Collaboration with LANARS to ensure the security of personal data.'
+                    ]
+                },
+            ]
         },
         CONTACT_US: {
             title: 'Contact with',

@@ -9,14 +9,14 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import TEXT_CONSTANTS from '../../../text-constants';
 
 function FooterMobile() {
-    const [dribble, setDribble] = useState('assets/dribble.png');
-    const [behance, setBehance] = useState('assets/be.png');
+    const [dribble, setDribble] = useState('/assets/dribble.png');
+    const [behance, setBehance] = useState('/assets/be.png');
 
-    const handleHoverDribble = () => setDribble('assets/dribble-hover.png');
-    const handleUnHoverDribble = () => setDribble('assets/dribble.png');
+    const handleHoverDribble = () => setDribble('/assets/dribble-hover.png');
+    const handleUnHoverDribble = () => setDribble('/assets/dribble.png');
 
-    const handleHoverBehance = () => setBehance('assets/be-hover.png');
-    const handleUnHoverBehance = () => setBehance('assets/be.png');
+    const handleHoverBehance = () => setBehance('/assets/be-hover.png');
+    const handleUnHoverBehance = () => setBehance('/assets/be.png');
 
     return (
         <Box sx={{ backgroundColor: '#171819', position: 'relative', zIndex: 1000 }}>
@@ -129,23 +129,26 @@ function FooterMobile() {
 
                         <Grid item sx={ footerStyle.grid.item } xs={12}>
                             <Box sx={ footerStyle.grid.item.wrapperBotomSection }>
-                                <Typography
+                                <Link
+                                    href='/projects'
                                     sx={{
                                         fontSize: '1rem',
                                         cursor: 'pointer',
-                                        color: '#666262',
+                                        color: '#666262!important',
+                                        textDecoration: 'none',
                                         '&:hover': {
-                                            color: '#2c9ff2'
+                                            color: '#2c9ff2!important',
+                                            textDecoration: 'none',
                                         }
                                     }}
                                 >
                                     {
                                         localStorage.getItem('lung') === 'uk' ?
-                                            TEXT_CONSTANTS.UK.FOOTER.route1
+                                            TEXT_CONSTANTS.UK.FOOTER.route3
                                         :
-                                            TEXT_CONSTANTS.ENG.FOOTER.route1
+                                            TEXT_CONSTANTS.ENG.FOOTER.route3
                                     }
-                                </Typography>
+                                </Link>
 
                                 <Typography
                                     sx={{
@@ -177,9 +180,9 @@ function FooterMobile() {
                                 >
                                     {
                                         localStorage.getItem('lung') === 'uk' ?
-                                            TEXT_CONSTANTS.UK.FOOTER.route3
+                                            TEXT_CONSTANTS.UK.FOOTER.route1
                                         :
-                                            TEXT_CONSTANTS.ENG.FOOTER.route3
+                                            TEXT_CONSTANTS.ENG.FOOTER.route1
                                     }
                                 </Typography>
                             </Box>
