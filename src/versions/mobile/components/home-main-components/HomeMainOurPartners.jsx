@@ -6,27 +6,44 @@ function HomeMainOurPartners() {
         <Box
           component={'section'}
           sx={
-            {
-              width: '100%',
-              height: '20vh',
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              justifyContent: 'space-between',
+              {
+                width: '100%',
+                height: '20vh',
+              }
             }
-          }>
-            <img width={200} src='assets/partners/Metinvest_Logo.png' alt='metinvest' />
+          >
             <div
               style={
                 {
+                  width: '100%',
                   display: 'flex',
                   flexDirection: 'row',
                   alignItems: 'center',
-                  justifyContent: 'space-between',
+                  justifyContent: 'center',
+                  padding: "0 5rem",
                 }
-              }>
-              <img width={150} src='assets/partners/Dtek-logo.png' alt='dtek' />
-              <img width={100} src='assets/partners/syavo.jpeg' alt='syavo' />
+              }
+            >
+              <img style={{ width: "50%", padding: "1rem" }} src='assets/partners/Metinvest_Logo.png' alt='metinvest' />
+
+              <img style={{ width: "50%", padding: "1rem"   }}  src='assets/partners/Dtek-logo.png' alt='dtek' />
+            </div>
+
+            <div
+              style={
+                {
+                  width: '100%',
+                  display: 'flex',
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  padding: "0 5rem",
+                }
+              }
+            >
+              <img style={{ width: "50%", padding: "1rem"  }}  src='assets/partners/syavo.jpeg' alt='syavo' />
+
+              <img style={{ width: "50%", padding: "1rem"  }}  src='assets/partners/kmz-cropped.svg' alt='kmz' />
             </div>
         </Box>
     );
